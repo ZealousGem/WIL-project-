@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.AI;
+using Unity.VisualScripting;
 
 
 public class PlayerController : MonoBehaviour
@@ -11,24 +12,29 @@ public class PlayerController : MonoBehaviour
     NavMeshAgent agent;
     Camera cam;
 
+    Animator animator;
 
     public float rotationSpeed;
     bool shouldRotate = false;
     Quaternion rotate;
 
-
+    float currentSpeed = 0;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>(); 
         cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Movement();
-        Rotate();
+        //Rotate();
+
+        currentSpeed = agent.velocity.magnitude;
+        animator.SetFloat("Speed", currentSpeed);
     }
 
     void Movement()
@@ -41,9 +47,10 @@ public class PlayerController : MonoBehaviour
             {
                 if (hit.collider.gameObject)
                 {
-                    agent.SetDestination(hit.point);
-                    rotate = Quaternion.LookRotation(hit.point);
-                    shouldRotate = true;
+                    agent.destination = hit.point;
+                    //agent.SetDestination(hit.point);
+                    //rotate = Quaternion.LookRotation(hit.point);
+                    //shouldRotate = true;
 
                   //  gameObject.transform.LookAt(movepls);
                 }
