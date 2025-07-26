@@ -20,10 +20,27 @@ public class PlayerController : MonoBehaviour
 
     float currentSpeed = 0;
 
+    void OnEnable()
+    {
+        EventBus.Subscribe<InputChangeEvent>(ChangingCameras);
+    }
+
+    void OnDisable()
+    {
+        EventBus.Unsubscribe<InputChangeEvent>(ChangingCameras);
+    }
+
+    void ChangingCameras(InputChangeEvent data)
+    {
+        cam = data.cam.GetComponent<Camera>();
+    }
+
+   
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>(); 
-        cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+       // cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         animator = GetComponentInChildren<Animator>();
     }
 

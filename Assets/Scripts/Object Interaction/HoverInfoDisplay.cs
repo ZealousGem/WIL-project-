@@ -14,9 +14,24 @@ public class HoverInfoDisplay : MonoBehaviour
     private bool isHovered = false;
     private Camera mainCam;
 
+     void OnEnable()
+    {
+        EventBus.Subscribe<InputChangeEvent>(ChangingCameras);
+    }
+
+    void OnDisable()
+    {
+        EventBus.Unsubscribe<InputChangeEvent>(ChangingCameras);
+    }
+
+     void ChangingCameras(InputChangeEvent data)
+    {
+        mainCam = data.cam.GetComponent<Camera>();
+    }
+
     private void Start()
     {
-        mainCam = Camera.main;
+        //mainCam = Camera.main;
         originalLayer = gameObject.layer;
 
         if (infoUI != null)
