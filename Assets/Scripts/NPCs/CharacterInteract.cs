@@ -11,6 +11,7 @@ public class CharacterInteract : MonoBehaviour
     ChoiceDialogueState dialogue = new ChoiceDialogueState();
     
 
+
     bool inBox;
 
   
@@ -18,12 +19,17 @@ public class CharacterInteract : MonoBehaviour
     [SerializeField]
      GameObject Interact;
 
+    
+    [SerializeField]
+    string NPCname;
 
    [SerializeField]
     int DialogueIndex;
 
      [SerializeField]
-    int RepeatDialogueIndex;
+   int RepeatDialogueIndex;
+
+    int curIndex;
 
     void Awake()
     {
@@ -54,7 +60,18 @@ public class CharacterInteract : MonoBehaviour
         if (inBox) {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                curCharState.EnterState();
+                if (curCharState is RepeatDialogueState)
+                {
+                       curIndex = RepeatDialogueIndex;
+                        curCharState.EnterState(NPCname, curIndex);
+                }
+
+                else
+                {
+                     curIndex = DialogueIndex;
+                     curCharState.EnterState(NPCname, curIndex);
+                }
+               
                 
                 
             }
