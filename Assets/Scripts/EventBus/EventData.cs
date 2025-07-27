@@ -27,8 +27,18 @@ public class InputChangeEvent : EventData
 {
     public GameObject cam { get; private set; }
 
-     public InputChangeEvent(GameObject _cam, float _cooled = 0) : base(_cooled)
+    public InputChangeEvent(GameObject _cam, float _cooled = 0) : base(_cooled)
     {
         this.cam = _cam;
+    }
+}
+
+public class ChangeStateEvent : EventData
+{
+    public BaseCharacterState state { get; private set; }
+
+     public ChangeStateEvent(BaseCharacterState _state, float _cooled = 0) : base(_cooled)
+    {
+        this.state = _state;
     }
 }

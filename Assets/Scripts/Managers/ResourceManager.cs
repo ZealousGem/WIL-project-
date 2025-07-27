@@ -41,10 +41,10 @@ public class ResourceManager : MonoBehaviour
     private void UpdateUI()
     {
         if (resourceAText != null)
-            resourceAText.text = $"Resource A: {resourceA:F1}";
+            resourceAText.text = $"Energy: {(int)resourceA:F1}";
 
         if (resourceBText != null)
-            resourceBText.text = $"Resource B: {resourceB:F1}";
+            resourceBText.text = $"Money: {(int)resourceB:F1}";
     }
 }
 
