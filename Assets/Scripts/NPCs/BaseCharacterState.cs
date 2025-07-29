@@ -1,5 +1,6 @@
 
 using UnityEditor.Rendering;
+using UnityEditorInternal;
 using UnityEngine;
 
 public abstract class BaseCharacterState
@@ -17,7 +18,8 @@ public abstract class BaseCharacterState
 
 public enum DialogueState
 {
-    Ended
+    Ended,
+    NextDialogue
     
 }
 
@@ -25,41 +27,41 @@ public class ChoiceDialogueState : BaseCharacterState
 {
 
 
-     void OnEnable()
-    {
-        EventBus.Subscribe<DialogueEndedEvent>(EndDialogue);
-    }
+    //  void OnEnable()
+    // {
+    //     EventBus.Subscribe<DialogueEndedEvent>(EndDialogue);
+    // }
 
-    void OnDisable()
-    {
-        EventBus.Unsubscribe<DialogueEndedEvent>(EndDialogue);
-    }
+    // void OnDisable()
+    // {
+    //     EventBus.Unsubscribe<DialogueEndedEvent>(EndDialogue);
+    // }
 
     public override void ChangeState()
     {
         Debug.Log("changing state D");
-        OnDisable();
+       // OnDisable();
         RepeatDialogueState repeatDialogue = new RepeatDialogueState();
         ChangeStateEvent newState = new ChangeStateEvent(repeatDialogue);
         EventBus.Act(newState);
     }
 
-    public void EndDialogue(DialogueEndedEvent state)
-    {
-        //   throw new System.NotImplementedException();
-        if (state.curState == DialogueState.Ended) {
-            ChangeState();
-         }
-        //  ChangeState(name, curIndex);
-    }
+    // public void EndDialogue(DialogueEndedEvent state)
+    // {
+    //     //   throw new System.NotImplementedException();
+    //     if (state.curState == DialogueState.Ended) {
+    //         ChangeState();
+    //      }
+    //     //  ChangeState(name, curIndex);
+    // }
 
     public override void EnterState(string name, int curIndex)
     {
         // throw new System.NotImplementedException();
-
+        
         DialogueEvent setDialogue = new DialogueEvent(name, curIndex);
         EventBus.Act(setDialogue);
-        OnEnable();
+      //  OnEnable();
         // Debug.Log("entering state D");
 
 

@@ -127,10 +127,11 @@ public class DialogueSystem : MonoBehaviour
         //  images.Clear();
         names = "";
         Dialogue.SetActive(false);
-        try
+       
+       try
         {
-           DialogueEndedEvent end = new DialogueEndedEvent(DialogueState.Ended);
-            EventBus.Act(end);
+        DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.NextDialogue);
+        EventBus.Act(ending);
         }
         catch { }
         

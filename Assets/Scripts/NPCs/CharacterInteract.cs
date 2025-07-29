@@ -23,13 +23,15 @@ public class CharacterInteract : MonoBehaviour
     [SerializeField]
     string NPCname;
 
-   [SerializeField]
-    int DialogueIndex;
-
      [SerializeField]
    int RepeatDialogueIndex;
 
+     [SerializeField]
+    int[] DialogueElements;
+
     int curIndex;
+
+    int Counter;
 
     void Awake()
     {
@@ -42,17 +44,40 @@ public class CharacterInteract : MonoBehaviour
         Interact.SetActive(false);
         inBox = false;
         curCharState = dialogue;
+        curIndex = DialogueElements[0];
+        Counter = 0;
     }
 
     void OnEnable()
     {
-         EventBus.Subscribe<ChangeStateEvent>(SwitchState);
+        EventBus.Subscribe<ChangeStateEvent>(SwitchState);
+        EventBus.Subscribe<DialogueEndedEvent>(ChangeCurIndex);
     }
 
     void OnDisable()
     {
-         EventBus.Unsubscribe<ChangeStateEvent>(SwitchState);
+        EventBus.Unsubscribe<ChangeStateEvent>(SwitchState);
+        EventBus.Unsubscribe<DialogueEndedEvent>(ChangeCurIndex);
     }
+
+     void ChangeCurIndex(DialogueEndedEvent data)
+     {
+         if (data.curState == DialogueState.NextDialogue) {
+            Counter++;
+            if (Counter < DialogueElements.Length)
+            {
+                curIndex = curIndex + DialogueElements[Counter];
+            }
+
+            else
+            {
+                curCharState.ChangeState();
+                curIndex = RepeatDialogueIndex;
+            }
+         }
+        
+       
+     }
 
     // Update is called once per frame
     void Update()
@@ -60,17 +85,19 @@ public class CharacterInteract : MonoBehaviour
         if (inBox) {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if (curCharState is RepeatDialogueState)
-                {
-                       curIndex = RepeatDialogueIndex;
-                        curCharState.EnterState(NPCname, curIndex);
-                }
+                // if (curCharState is RepeatDialogueState)
+                // {
+                //         curIndex = RepeatDialogueIndex;
+                //         curCharState.EnterState(NPCname, curIndex);
+                // }
 
-                else
-                {
-                     curIndex = DialogueIndex;
-                     curCharState.EnterState(NPCname, curIndex);
-                }
+                // else
+                // {
+                //      curIndex = DialogueIndex;
+                //      curCharState.EnterState(NPCname, curIndex);
+                // }
+
+                 curCharState.EnterState(NPCname, curIndex);
                
                 
                 
