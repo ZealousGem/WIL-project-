@@ -72,7 +72,19 @@ public class DialogueSystemEvent : EventData
 public class DialogueEndedEvent : EventData
 {
     public DialogueState curState { get; private set; }
-     public DialogueEndedEvent(DialogueState _curstate, float _cooled = 0) : base(_cooled)
+     public int id { get; private set; }
+    public DialogueEndedEvent(DialogueState _curstate, int NewId, float _cooled = 0) : base(_cooled)
+    {
+        curState = _curstate;
+        id = NewId;
+
+    }
+}
+
+public class DialogueCheckEvent : EventData
+{
+    public DialogueTree curState { get; private set; }
+     public DialogueCheckEvent(DialogueTree _curstate, float _cooled = 0) : base(_cooled)
     {
         curState = _curstate;
 

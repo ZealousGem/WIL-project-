@@ -18,12 +18,14 @@ public class DialogueSystem : MonoBehaviour
     private Queue<string> lines;
     // private Queue<Sprite> images;
     //private Queue<string> names;
+    private DialogueTree tree;
+
     private string names;
     public GameObject Dialogue;
     public GameObject Button;
     // public Image image;
 
-   
+
     public TMP_Text Charname;
     public bool isAutomatic;
     public TMP_Text description;
@@ -34,11 +36,13 @@ public class DialogueSystem : MonoBehaviour
     void OnEnable()
     {
         EventBus.Subscribe<DialogueSystemEvent>(StartDialogue);
+        EventBus.Subscribe<DialogueCheckEvent>(GetNextId);
     }
 
     void OnDisable()
     {
-        EventBus.Subscribe<DialogueSystemEvent>(StartDialogue);
+        EventBus.Unsubscribe<DialogueSystemEvent>(StartDialogue);
+        EventBus.Unsubscribe<DialogueCheckEvent>(GetNextId);
     }
 
     void Start()
@@ -75,7 +79,7 @@ public class DialogueSystem : MonoBehaviour
     // Update is called once per frame
     public void DisplayNextSentence()
     {
-         if (lines.Count == 0) // if all the elements have been dequed the dailogue will end
+        if (lines.Count == 0) // if all the elements have been dequed the dailogue will end
         {
             EndDialogue();
             return; // returns method
@@ -127,14 +131,33 @@ public class DialogueSystem : MonoBehaviour
         //  images.Clear();
         names = "";
         Dialogue.SetActive(false);
-       
-       try
+        if (tree.Choices.Count == 2)
         {
-        DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.NextDialogue);
-        EventBus.Act(ending);
+           
+           // blank
+
         }
-        catch { }
+
+        else
+        {
+            try
+            {
+                DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.NextDialogue, tree.Choices[0].Choice);
+                EventBus.Act(ending);
+            }
+            catch { }
+        }
         
+
+    }
+
+    void GetNextId(DialogueCheckEvent data)
+    {
+        if (data != null) {
+            tree = data.curState;
+        }
+     
+       // inNextId 
     }
 
 }

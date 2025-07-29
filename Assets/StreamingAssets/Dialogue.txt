@@ -1,19 +1,29 @@
 {
   "id": [
     {
-      "name": "Bob",
+      "name": "Diane",
       "dialogue": [
         {
           "id": "1",
           "Text": [
-            { "words": "Hello, traveler! Welcome to our village." },
-            { "words": "Feel free to look around and talk to the locals." }
+            { "words": "Hello kid, nothing much to see here" },
+            { "words": "However I do have these 20 bucks if you want" },
+             { "words": "Here you go" }
           ]
         },
         {
           "id": "2",
           "Text": [
-            { "words": "Good to see you again! Enjoy your stay." }
+            { "words": "You still here?" },
+            { "words": "I got nothing to say, head off now" }
+          ]
+        },
+
+          {
+          "id": "3",
+          "Text": [
+            { "words": "bye kid" }
+            
           ]
         }
       ]
