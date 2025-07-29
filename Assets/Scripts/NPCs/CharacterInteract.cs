@@ -24,7 +24,7 @@ public class CharacterInteract : MonoBehaviour
     string NPCname;
 
      [SerializeField]
-   int RepeatDialogueIndex;
+     int RepeatDialogueIndex;
 
      [SerializeField]
     int[] DialogueElements;
@@ -46,6 +46,7 @@ public class CharacterInteract : MonoBehaviour
         curCharState = dialogue;
         curIndex = DialogueElements[0];
         Counter = 0;
+       
     }
 
     void OnEnable()
@@ -67,12 +68,16 @@ public class CharacterInteract : MonoBehaviour
             if (Counter < DialogueElements.Length)
             {
                 curIndex = curIndex + DialogueElements[Counter];
+                inBox = true;
+
             }
 
             else
             {
                 curCharState.ChangeState();
                 curIndex = RepeatDialogueIndex;
+                inBox = true;
+
             }
          }
         
@@ -85,20 +90,13 @@ public class CharacterInteract : MonoBehaviour
         if (inBox) {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                // if (curCharState is RepeatDialogueState)
-                // {
-                //         curIndex = RepeatDialogueIndex;
-                //         curCharState.EnterState(NPCname, curIndex);
-                // }
 
-                // else
-                // {
-                //      curIndex = DialogueIndex;
-                //      curCharState.EnterState(NPCname, curIndex);
-                // }
 
-                 curCharState.EnterState(NPCname, curIndex);
-               
+                curCharState.EnterState(NPCname, curIndex);
+              
+                inBox = false; 
+            
+                
                 
                 
             }
@@ -110,7 +108,10 @@ public class CharacterInteract : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Interact.SetActive(true);
-            inBox = true;
+
+            inBox = true;      
+            
+           
              
 
          }

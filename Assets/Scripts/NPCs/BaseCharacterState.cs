@@ -27,15 +27,7 @@ public class ChoiceDialogueState : BaseCharacterState
 {
 
 
-    //  void OnEnable()
-    // {
-    //     EventBus.Subscribe<DialogueEndedEvent>(EndDialogue);
-    // }
-
-    // void OnDisable()
-    // {
-    //     EventBus.Unsubscribe<DialogueEndedEvent>(EndDialogue);
-    // }
+  
 
     public override void ChangeState()
     {
@@ -46,14 +38,7 @@ public class ChoiceDialogueState : BaseCharacterState
         EventBus.Act(newState);
     }
 
-    // public void EndDialogue(DialogueEndedEvent state)
-    // {
-    //     //   throw new System.NotImplementedException();
-    //     if (state.curState == DialogueState.Ended) {
-    //         ChangeState();
-    //      }
-    //     //  ChangeState(name, curIndex);
-    // }
+   
 
     public override void EnterState(string name, int curIndex)
     {
@@ -61,8 +46,7 @@ public class ChoiceDialogueState : BaseCharacterState
         
         DialogueEvent setDialogue = new DialogueEvent(name, curIndex);
         EventBus.Act(setDialogue);
-      //  OnEnable();
-        // Debug.Log("entering state D");
+     
 
 
 
@@ -79,7 +63,7 @@ public class RepeatDialogueState : BaseCharacterState
     public override void ChangeState()
     {
         // throw new System.NotImplementedException();
-        Debug.Log("changing state");
+       // Debug.Log("changing state");
     }
 
 
@@ -88,7 +72,7 @@ public class RepeatDialogueState : BaseCharacterState
         // throw new System.NotImplementedException();
         DialogueEvent setDialogue = new DialogueEvent(name, curIndex);
         EventBus.Act(setDialogue);
-        Debug.Log("entering state");
+       // Debug.Log("entering state");
     }
 }
 
