@@ -31,12 +31,10 @@ public class CharacterInteract : MonoBehaviour
     [SerializeField]
     int RepeatDialogueIndex;
 
-    [SerializeField]
-    int[] DialogueElements;
 
     int curIndex;
 
-    int Counter;
+   
 
     int RootNode = 0;
 
@@ -51,12 +49,11 @@ public class CharacterInteract : MonoBehaviour
         Interact.SetActive(false);
         inBox = false;
         curCharState = dialogue;
-        // dialogueNodes = new List<DialogueTree>();
+       
         curIndex = dialogueNodes[RootNode].id;
         DialogueCheckEvent tree = new DialogueCheckEvent(dialogueNodes[RootNode]);
         EventBus.Act(tree);
-        //curIndex = DialogueElements[0];
-        // Counter = 0;
+        
 
     }
 
@@ -79,7 +76,7 @@ public class CharacterInteract : MonoBehaviour
 
             if (curIndex == data.id)
             {
-               
+
                 curCharState.ChangeState();
                 curIndex = RepeatDialogueIndex;
                 inBox = true;
@@ -90,31 +87,47 @@ public class CharacterInteract : MonoBehaviour
                 curIndex = data.id;
                 inBox = true;
             }
-
             foreach (DialogueTree x in dialogueNodes)
             {
-                if (curIndex == x.id) {
-                DialogueCheckEvent tree = new DialogueCheckEvent(x);
-                EventBus.Act(tree);
+                if (curIndex == x.id)
+                {
+                    DialogueCheckEvent tree = new DialogueCheckEvent(x);
+                    EventBus.Act(tree);
                 }
-                
+
+            }
+
+        }
+        
+        else if (data.curState == DialogueState.Ended)
+        {
+          
+            if (curIndex != data.id)
+            {
+
+                curIndex = data.id;
+
+
             }
            
-            // if (Counter < DialogueElements.Length)
-            // {
-            //     curIndex = DialogueElements[Counter];
-            //     inBox = true;
+            foreach (DialogueTree x in dialogueNodes)
+            {
+                if (curIndex == x.id)
+                {
+                    DialogueCheckEvent tree = new DialogueCheckEvent(x);
+                    EventBus.Act(tree);
+                    curCharState.EnterState(NPCname, curIndex);
+                    
+                    break;
+                }
 
-            // }
+                else
+                {
+                    Debug.Log("can't find it");
+                }
 
-            // else
-            // {
-            //     curCharState.ChangeState();
-            //     curIndex = RepeatDialogueIndex;
-            //     inBox = true;
-
-            // }
-        }
+            }
+        }      
 
 
     }

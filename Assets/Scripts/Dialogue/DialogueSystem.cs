@@ -21,10 +21,16 @@ public class DialogueSystem : MonoBehaviour
     private DialogueTree tree;
 
     private string names;
+
+    List<int> answers = new List<int>();
+
     public GameObject Dialogue;
     public GameObject Button;
-    // public Image image;
 
+    public GameObject ChoiceButton;
+
+    // public Image image;
+    public TMP_Text[] ButtonText;
 
     public TMP_Text Charname;
     public bool isAutomatic;
@@ -47,6 +53,7 @@ public class DialogueSystem : MonoBehaviour
 
     void Start()
     {
+        ChoiceButton.SetActive(false);
         Dialogue.SetActive(false);
         lines = new Queue<string>();
         names = "";
@@ -131,10 +138,20 @@ public class DialogueSystem : MonoBehaviour
         //  images.Clear();
         names = "";
         Dialogue.SetActive(false);
-        if (tree.Choices.Count == 2)
+        if (tree.Choices.Count >1)
         {
+
+            // blank
+            
+            answers.Clear();
+            ShowButtons();
+            for (int i = 0; i < tree.Choices.Count; i++)
+            {
+
+                answers.Add(tree.Choices[i].Choice);
+                ButtonText[i].text = tree.Choices[i].answer;
+            }
            
-           // blank
 
         }
 
@@ -144,11 +161,39 @@ public class DialogueSystem : MonoBehaviour
             {
                 DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.NextDialogue, tree.Choices[0].Choice);
                 EventBus.Act(ending);
+                //tree = null;
             }
             catch { }
         }
         
 
+    }
+
+   public void Answer1()
+    {
+        if (answers != null)
+        {
+            ChoiceButton.SetActive(false);
+            DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.Ended, answers[0]);
+            EventBus.Act(ending);
+         //   tree = null;
+        }
+    }
+
+   public void Answer2()
+    {
+        if (answers != null)
+        {
+            ChoiceButton.SetActive(false);
+            DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.Ended, answers[1]);
+            EventBus.Act(ending);
+            //tree = null;
+        }
+    }
+
+    void ShowButtons()
+    {
+        ChoiceButton.SetActive(true);
     }
 
     void GetNextId(DialogueCheckEvent data)

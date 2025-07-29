@@ -7,8 +7,8 @@
           "id": "1",
           "Text": [
             { "words": "Hello kid, nothing much to see here" },
-            { "words": "However I do have these 20 bucks if you want" },
-             { "words": "Here you go" }
+            { "words": "However I do have these 20 bucks, I don't really need it" },
+            { "words": "You want it?" }
           ]
         },
         {
@@ -18,12 +18,22 @@
             { "words": "I got nothing to say, head off now" }
           ]
         },
-
-          {
+        {
           "id": "3",
           "Text": [
-            { "words": "bye kid" }
-            
+            { "words": "What now? I'm Busy" }
+          ]
+        },
+        {
+          "id": "4",
+          "Text": [
+            { "words": "Glad you took the money! Spend it wisely." }
+          ]
+        },
+        {
+          "id": "5",
+          "Text": [
+            { "words": "Suit yourself. Maybe next time." }
           ]
         }
       ]

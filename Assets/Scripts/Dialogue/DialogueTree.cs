@@ -8,6 +8,8 @@ using UnityEngine;
 public class DialogueChoice
 {
     public int Choice;
+
+    public string answer;
 }
 
 [System.Serializable]
