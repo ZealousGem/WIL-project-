@@ -8,6 +8,7 @@ using UnityEngine.TextCore.Text;
 using System.IO;
 using TMPro;
 using Unity.VisualScripting;
+using Flexalon;
 
 
 public class DialogueSystem : MonoBehaviour
@@ -39,6 +40,8 @@ public class DialogueSystem : MonoBehaviour
     public bool end;
     public float Speed;
 
+    
+
     void OnEnable()
     {
         EventBus.Subscribe<DialogueSystemEvent>(StartDialogue);
@@ -60,9 +63,59 @@ public class DialogueSystem : MonoBehaviour
         end = true;
     }
 
+    IEnumerator UIAnimation(GameObject _Dialogue)
+    {
+        CanvasGroup cock = _Dialogue.GetComponent<CanvasGroup>();
+        cock.alpha = 0f;
+        float counter = 0f;
+        float maxCounter = 1f;
+        while (counter < maxCounter)
+        {
+
+            counter += Time.deltaTime * 2;
+            cock.alpha = Mathf.Lerp(0, 1, counter / maxCounter);
+             yield return null;
+            
+
+           
+        }
+
+        cock.alpha = 1f;
+    }
+
+    IEnumerator ButtonUIAnimation(GameObject _Button)
+    {
+        CanvasGroup cock = _Button.GetComponent<CanvasGroup>();
+        cock.alpha = 0f;
+        float counter = 0f;
+        float maxCounter = 0.3f;
+        RectTransform T = _Button.GetComponent<RectTransform>();
+        Vector3 StartSc = Vector3.zero;
+        Vector3 EndSc = Vector3.one;
+        T.localScale = StartSc;
+        yield return null;
+
+        while (counter < maxCounter)
+        {
+
+            counter += Time.deltaTime;
+           float transforming = Mathf.SmoothStep(0, 1, counter/ maxCounter);
+            cock.alpha = transforming;
+            T.localScale = Vector3.Lerp(StartSc, EndSc, transforming);
+            yield return null;
+
+
+
+        }
+
+        cock.alpha = 1f;
+        T.localScale = EndSc;
+    }
+
     void StartDialogue(DialogueSystemEvent dia)
     {
-        Dialogue.SetActive(true);
+        Dialogue.SetActive(true); 
+        StartCoroutine(UIAnimation(Dialogue));
         end = false;
         NPC Chart = dia.id;
         names = dia.text;
@@ -147,9 +200,11 @@ public class DialogueSystem : MonoBehaviour
             ShowButtons();
             for (int i = 0; i < tree.Choices.Count; i++)
             {
-
+               
                 answers.Add(tree.Choices[i].Choice);
                 ButtonText[i].text = tree.Choices[i].answer;
+
+
             }
            
 
@@ -174,8 +229,16 @@ public class DialogueSystem : MonoBehaviour
         if (answers != null)
         {
             ChoiceButton.SetActive(false);
+            if (tree != null && tree.Choices[0].amount > 0)
+            {
+                int GiveAmount = tree.Choices[0].amount;
+                GiveMoneyEvent transfer = new GiveMoneyEvent(GiveAmount);
+                EventBus.Act(transfer);
+            }
             DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.Ended, answers[0]);
             EventBus.Act(ending);
+            
+             
          //   tree = null;
         }
     }
@@ -184,6 +247,12 @@ public class DialogueSystem : MonoBehaviour
     {
         if (answers != null)
         {
+            if (tree != null && tree.Choices[1].amount > 0)
+            {
+                int GiveAmount = tree.Choices[1].amount;
+                GiveMoneyEvent transfer = new GiveMoneyEvent(GiveAmount);
+                EventBus.Act(transfer);
+            }
             ChoiceButton.SetActive(false);
             DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.Ended, answers[1]);
             EventBus.Act(ending);
@@ -194,6 +263,7 @@ public class DialogueSystem : MonoBehaviour
     void ShowButtons()
     {
         ChoiceButton.SetActive(true);
+        StartCoroutine(ButtonUIAnimation(ChoiceButton));
     }
 
     void GetNextId(DialogueCheckEvent data)

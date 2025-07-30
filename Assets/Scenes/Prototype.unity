@@ -3922,24 +3922,30 @@ MonoBehaviour:
     Choices:
     - Choice: 4
       answer: Take the Money
+      amount: 5
     - Choice: 5
       answer: Reject the Offer
+      amount: 0
   - id: 2
     Choices:
     - Choice: 3
       answer: 
+      amount: 0
   - id: 3
     Choices:
     - Choice: 3
       answer: 
+      amount: 0
   - id: 4
     Choices:
     - Choice: 2
       answer: 
+      amount: 0
   - id: 5
     Choices:
     - Choice: 2
       answer: 
+      amount: 0
   NPCname: Diane
   RepeatDialogueIndex: 3
 --- !u!1 &1283595166
@@ -5932,6 +5938,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1814924790 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3696779556618261176, guid: 3f7103cd922a5ff4287bf4d9950a6c2c, type: 3}
+  m_PrefabInstance: {fileID: 4013806771752924748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &1814924792
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814924790}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1844833393
 GameObject:
   m_ObjectHideFlags: 0
@@ -6605,13 +6628,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 924970947869120816, guid: 3f7103cd922a5ff4287bf4d9950a6c2c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4013806771752924754}
+    - targetCorrespondingSourceObject: {fileID: 3696779556618261176, guid: 3f7103cd922a5ff4287bf4d9950a6c2c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1814924792}
   m_SourcePrefab: {fileID: 100100000, guid: 3f7103cd922a5ff4287bf4d9950a6c2c, type: 3}
 --- !u!1 &4013806771752924749 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 924970947869120816, guid: 3f7103cd922a5ff4287bf4d9950a6c2c, type: 3}
   m_PrefabInstance: {fileID: 4013806771752924748}
   m_PrefabAsset: {fileID: 0}
+--- !u!225 &4013806771752924754
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4013806771752924749}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!114 &4994331854867201490 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4575608608879833178, guid: 3f7103cd922a5ff4287bf4d9950a6c2c, type: 3}

@@ -90,3 +90,19 @@ public class DialogueCheckEvent : EventData
 
     }
 }
+
+public class GiveMoneyEvent : EventData
+{
+
+    public int moneyAmount { get; private set; }
+
+    public GiveMoneyEvent(int moneyAmount, float _cooled = 0): base(_cooled) {
+     
+        this.moneyAmount = moneyAmount;
+    
+    }
+
+
+
+}
+

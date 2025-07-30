@@ -13,6 +13,19 @@ public class ResourceManager : MonoBehaviour
     public TMP_Text resourceAText;
     public TMP_Text resourceBText;
 
+
+    void OnEnable()
+    {
+        EventBus.Subscribe<GiveMoneyEvent>(GainResources);
+        
+    }
+
+    void OnDisable()
+    {
+        EventBus.Unsubscribe<GiveMoneyEvent>(GainResources);
+        
+    }
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -35,6 +48,15 @@ public class ResourceManager : MonoBehaviour
         resourceA = Mathf.Max(0, resourceA);
         resourceB = Mathf.Max(0, resourceB);
 
+        UpdateUI();
+    }
+
+    void GainResources(GiveMoneyEvent data)
+    {
+        
+        float moneyGained =  data.moneyAmount;
+        resourceB += moneyGained;
+        resourceB = Mathf.Max(0, resourceB);
         UpdateUI();
     }
 

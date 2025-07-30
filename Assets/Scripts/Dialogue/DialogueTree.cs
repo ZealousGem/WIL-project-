@@ -10,6 +10,8 @@ public class DialogueChoice
     public int Choice;
 
     public string answer;
+
+    public int amount;
 }
 
 [System.Serializable]
