@@ -65,9 +65,7 @@ public class PlayerController : MonoBehaviour
                 if (hit.collider.gameObject)
                 {
                     agent.destination = hit.point;
-                    //agent.SetDestination(hit.point);
-                    //rotate = Quaternion.LookRotation(hit.point);
-                    //shouldRotate = true;
+                    
 
                   //  gameObject.transform.LookAt(movepls);
                 }
@@ -75,15 +73,5 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void Rotate()
-    {
-        if (shouldRotate)
-        {
-            transform.rotation = Quaternion.Slerp(transform.rotation, rotate,rotationSpeed * Time.deltaTime);
-            if (Quaternion.Angle(transform.rotation, rotate) < 1f)
-            {
-                shouldRotate = false;
-            }
-        }
-    }
+   
 }

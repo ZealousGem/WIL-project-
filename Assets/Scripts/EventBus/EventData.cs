@@ -106,3 +106,23 @@ public class GiveMoneyEvent : EventData
 
 }
 
+public class GameObjectEvent : EventData
+{
+    public GameObject go;
+
+    public GameObjectEvent(GameObject _go)
+    {
+        go = _go;
+    }
+}
+
+public class itemEvent : EventData
+{
+    public itemSO go;
+
+    public itemEvent(itemSO _go)
+    {
+        go = _go;
+    }
+}
+
