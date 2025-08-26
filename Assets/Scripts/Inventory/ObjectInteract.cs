@@ -7,41 +7,47 @@ public class ObjectInteract : MonoBehaviour
     public itemSO item;
     public GameObject interact;
 
+    bool inBox = false;
+
     private void Start()
     {
         interact.SetActive(false);
     }
 
-    private void OnTriggerStay(Collider collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag("Player"))
         {
+            interact.SetActive(true);
+            inBox = true;
            
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-
-
-                Debug.Log("here");
-                GameObjectEvent obj = new GameObjectEvent(this.gameObject);
-                EventBus.Act(obj);
-
-                itemEvent it = new itemEvent(item);
-                EventBus.Act(it); 
-
-
-
-            }
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+
+    void Update()
     {
-        if (other.CompareTag("Player"))
+        if (inBox)
         {
-            interact.SetActive(true);
+         if (Input.GetKeyDown(KeyCode.E))
+        {
+
+
+            Debug.Log("here");
+            GameObjectEvent obj = new GameObjectEvent(this.gameObject);
+            EventBus.Act(obj);
+
+            itemEvent it = new itemEvent(item);
+            EventBus.Act(it);
+
+
+
+        }
         }
         
     }
+
+
 
 
     private void OnTriggerExit(Collider other)
@@ -49,7 +55,8 @@ public class ObjectInteract : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             interact.SetActive(false);
+            inBox = false;
         }
-           
+
     }
 }

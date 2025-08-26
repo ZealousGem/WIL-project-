@@ -126,3 +126,16 @@ public class itemEvent : EventData
     }
 }
 
+public class itemUIEvent : EventData
+{
+    public itemSO go;
+
+    public int index;
+
+    public itemUIEvent(itemSO _go, int _index)
+    {
+        go = _go;
+        index = _index;
+    }
+}
+

@@ -15,8 +15,8 @@ public class PlayerController : MonoBehaviour
     Animator animator;
 
     public float rotationSpeed;
-    bool shouldRotate = false;
-    Quaternion rotate;
+    bool ReachedDestination = true;
+    
 
     float currentSpeed = 0;
 
@@ -48,10 +48,28 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Movement();
+        AnimateCharacter();
         //Rotate();
 
-        currentSpeed = agent.velocity.magnitude;
-        animator.SetFloat("Speed", currentSpeed);
+
+    }
+
+    void AnimateCharacter()
+    {
+        if (!ReachedDestination)
+        {
+            currentSpeed = agent.velocity.magnitude;
+            animator.SetFloat("Speed", currentSpeed);
+           // Debug.Log(ReachedDestination);
+        }
+
+        else
+        {
+            currentSpeed = 0;
+            animator.SetFloat("Speed", currentSpeed);
+         //   Debug.Log(ReachedDestination);
+        }
+        
     }
 
     void Movement()
@@ -64,10 +82,14 @@ public class PlayerController : MonoBehaviour
             {
                 if (hit.collider.gameObject)
                 {
+                    ReachedDestination = false;
                     agent.destination = hit.point;
-                    
+                    if (agent.destination == hit.point)
+                    {
+                        ReachedDestination = true;
+                    }
 
-                  //  gameObject.transform.LookAt(movepls);
+                    //  gameObject.transform.LookAt(movepls);
                 }
             }
         }

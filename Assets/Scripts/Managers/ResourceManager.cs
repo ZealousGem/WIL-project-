@@ -13,6 +13,8 @@ public class ResourceManager : MonoBehaviour
     public TMP_Text resourceAText;
     public TMP_Text resourceBText;
 
+    
+
 
     void OnEnable()
     {
@@ -39,6 +41,8 @@ public class ResourceManager : MonoBehaviour
 
         UpdateUI();
     }
+
+   
 
     public void SpendResources(float costA, float costB)
     {

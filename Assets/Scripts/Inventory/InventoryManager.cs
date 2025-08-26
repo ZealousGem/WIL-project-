@@ -85,6 +85,8 @@ public class InventoryManager : MonoBehaviour
             items.Add(itemTemp);
             // Debug.Log("worked");
             size = items.Count - 1;
+            itemUIEvent ui = new itemUIEvent(item, size);
+            EventBus.Act(ui);
           //  observer.TellObervers(PlayerActions.ActionSeven, itemTemp.item);
             try { Destroyobj(); } catch { }
 
@@ -126,11 +128,7 @@ public class InventoryManager : MonoBehaviour
 
         }
 
-        else
-        {
-            itemSO item = null;
-           // observer.TellObervers(PlayerActions.ActionSeven, item);
-        }
+       
 
        // observer.TellObervers(PlayerActions.ActionOne, items);
     }
@@ -160,7 +158,7 @@ public class InventoryManager : MonoBehaviour
 
                 else
                 {
-                    itemSO item = null;
+                   // itemSO item = null;
                    // observer.TellObervers(PlayerActions.ActionSeven, item);
                 }
                // observer.TellObervers(PlayerActions.ActionOne, items);
