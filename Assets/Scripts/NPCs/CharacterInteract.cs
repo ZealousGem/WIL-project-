@@ -21,20 +21,18 @@ public class CharacterInteract : MonoBehaviour
     [SerializeField]
     GameObject Interact;
 
-    [SerializeField]
-    public List<DialogueTree> dialogueNodes; // Editable in Inspector
-
+    List<DialogueTree> dialogueNodes = new List<DialogueTree>(); // Editable in Inspector
 
     [SerializeField]
+    public List<NPCDialogue> dialogueState;
+
+    
     string NPCname;
 
-    [SerializeField]
     int RepeatDialogueIndex;
 
 
     int curIndex;
-
-   
 
     int RootNode = 0;
 
@@ -48,8 +46,10 @@ public class CharacterInteract : MonoBehaviour
     {
         Interact.SetActive(false);
         inBox = false;
+        dialogueNodes = dialogueState[0].dialogueNodes;
+        NPCname = dialogueState[0].name;
+        RepeatDialogueIndex = dialogueState[0].RepeatDialogueIndex;
         curCharState = dialogue;
-       
         curIndex = dialogueNodes[RootNode].id;
         DialogueCheckEvent tree = new DialogueCheckEvent(dialogueNodes[RootNode]);
         EventBus.Act(tree);

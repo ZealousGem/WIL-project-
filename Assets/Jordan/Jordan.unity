@@ -4911,37 +4911,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Interact: {fileID: 1777233150}
-  dialogueNodes:
-  - id: 1
-    Choices:
-    - Choice: 4
-      answer: Take the Money
-      amount: 2
-    - Choice: 5
-      answer: Reject the Offer
-      amount: 0
-  - id: 2
-    Choices:
-    - Choice: 3
-      answer: 
-      amount: 0
-  - id: 3
-    Choices:
-    - Choice: 3
-      answer: 
-      amount: 0
-  - id: 4
-    Choices:
-    - Choice: 2
-      answer: 
-      amount: 0
-  - id: 5
-    Choices:
-    - Choice: 2
-      answer: 
-      amount: 0
-  NPCname: Diane
-  RepeatDialogueIndex: 3
+  dialogueState:
+  - {fileID: 11400000, guid: 60f9bf77df1398b408a80a87a4373059, type: 2}
 --- !u!1 &1252264975
 GameObject:
   m_ObjectHideFlags: 0
