@@ -19,7 +19,8 @@ public class DialogueSystem : MonoBehaviour
     private Queue<string> lines;
     // private Queue<Sprite> images;
     //private Queue<string> names;
-    private DialogueTree tree;
+    [SerializeField]
+    public DialogueTree tree;
 
     private string names;
 
@@ -61,6 +62,12 @@ public class DialogueSystem : MonoBehaviour
         lines = new Queue<string>();
         names = "";
         end = true;
+       
+    }
+
+   public void ChangeTree(DialogueTree _tree)
+    {
+        tree = _tree;
     }
 
     IEnumerator UIAnimation(GameObject _Dialogue)
@@ -114,7 +121,7 @@ public class DialogueSystem : MonoBehaviour
 
     void StartDialogue(DialogueSystemEvent dia)
     {
-        Dialogue.SetActive(true); 
+        Dialogue.SetActive(true);
         StartCoroutine(UIAnimation(Dialogue));
         end = false;
         NPC Chart = dia.id;
@@ -134,6 +141,11 @@ public class DialogueSystem : MonoBehaviour
         else
         {
             Debug.Log("not found");
+        }
+        
+         if (tree == null)
+         {
+            Debug.Log("tree is null");    
         }
     }
     // Update is called once per frame
@@ -189,11 +201,15 @@ public class DialogueSystem : MonoBehaviour
         end = true;
         counter = 0;
         //  images.Clear();
-       
+
+        if (tree == null) {
+          Debug.Log("tree is null");
+       }
+         //Debug.Log(tree.Choices);
         Dialogue.SetActive(false);
         if (tree.Choices.Count >1)
         {
-
+           
             // blank
             
             answers.Clear();
@@ -207,7 +223,7 @@ public class DialogueSystem : MonoBehaviour
 
             }
            
-
+           
         }
 
         else
@@ -216,6 +232,7 @@ public class DialogueSystem : MonoBehaviour
             {
                 DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.NextDialogue, names, tree.Choices[0].Choice);
                 EventBus.Act(ending);
+              //  Debug.Log(names);
                 names = "";
                 //tree = null;
             }
@@ -238,7 +255,7 @@ public class DialogueSystem : MonoBehaviour
             }
             DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.Ended, names, answers[0]);
             EventBus.Act(ending);
-            
+           
              
          //   tree = null;
         }
@@ -257,6 +274,7 @@ public class DialogueSystem : MonoBehaviour
             ChoiceButton.SetActive(false);
             DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.Ended, names, answers[1]);
             EventBus.Act(ending);
+             
             //tree = null;
         }
     }
@@ -269,8 +287,15 @@ public class DialogueSystem : MonoBehaviour
 
     void GetNextId(DialogueCheckEvent data)
     {
-        if (data != null) {
+        if (data != null)
+        {
+            tree = new DialogueTree();
             tree = data.curState;
+        }
+
+        else
+        {
+            Debug.Log("tree is null");
         }
      
        // inNextId 

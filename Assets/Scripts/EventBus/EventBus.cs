@@ -16,6 +16,7 @@ public static class EventBus
         {
 
             ActionExists.DynamicInvoke(data);
+            //Debug.Log(newType.ToString());
         }
 
     }

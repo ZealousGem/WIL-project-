@@ -27,7 +27,7 @@ public class DialogueManager : MonoBehaviour
 
     public void PassingData(DialogueEvent data)
     {
-
+       // Debug.Log("huh");
         SetName(data.name);
         SetID(data.id);
         StartCoroutine(LoadData());
@@ -36,12 +36,14 @@ public class DialogueManager : MonoBehaviour
 
     string SetName(string name)
     {
+      //  Debug.Log(name); 
         this.CurName = name;
         return CurName;
     }
 
     string SetID(int _id)
     {
+       //  Debug.Log(_id); 
         this.CurId = _id.ToString();
         return CurId;
     }
@@ -82,7 +84,7 @@ public class DialogueManager : MonoBehaviour
                 if (tempChar.name == CurName)
                 {
                     curCharacter = tempChar;
-                   // Debug.Log("dialogue here");
+                   
 
 
                 }              
@@ -99,7 +101,7 @@ public class DialogueManager : MonoBehaviour
 
         else
         {
-
+            // Debug.Log("null here");
             return null;
 
         }
@@ -113,6 +115,7 @@ public class DialogueManager : MonoBehaviour
         {
             if (_curId == scene.id)
             {
+               // Debug.Log("working");
                 NPC temp = scene;
                 DialogueSystemEvent t = new DialogueSystemEvent(temp, CurName);
                 EventBus.Act(t);

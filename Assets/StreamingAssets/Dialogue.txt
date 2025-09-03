@@ -37,6 +37,24 @@
           ]
         }
       ]
+    },
+    {
+      "name": "John",
+      "dialogue": [
+        {
+          "id": "1",
+          "Text": [
+            { "words": "Hey there, traveler!" },
+            { "words": "The weather is lovely today, isn't it?" }
+          ]
+        },
+        {
+          "id": "2",
+          "Text": [
+            { "words": "Just heading to the market." }
+          ]
+        }
+      ]
     }
   ]
 }

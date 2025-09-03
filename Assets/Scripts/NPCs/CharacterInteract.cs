@@ -31,6 +31,7 @@ public class CharacterInteract : MonoBehaviour
 
     int RepeatDialogueIndex;
 
+    DialogueTree fuck;
 
     int curIndex;
 
@@ -51,9 +52,12 @@ public class CharacterInteract : MonoBehaviour
         RepeatDialogueIndex = dialogueState[0].RepeatDialogueIndex;
         curCharState = dialogue;
         curIndex = dialogueNodes[RootNode].id;
-        DialogueCheckEvent tree = new DialogueCheckEvent(dialogueNodes[RootNode]);
-        EventBus.Act(tree);
+        fuck = dialogueNodes[RootNode];
         
+        // DialogueCheckEvent tree = new DialogueCheckEvent(dialogueNodes[RootNode]);
+        // EventBus.Act(tree);
+
+
 
     }
 
@@ -73,7 +77,7 @@ public class CharacterInteract : MonoBehaviour
     {
         if (data.curState == DialogueState.NextDialogue && data.name == NPCname)
         {
-
+            Debug.Log("triggered");
             if (curIndex == data.id)
             {
 
@@ -85,21 +89,26 @@ public class CharacterInteract : MonoBehaviour
             else
             {
                 curIndex = data.id;
+            //    Debug.Log(data.id + gameObject.name + data.name);
                 inBox = true;
             }
             foreach (DialogueTree x in dialogueNodes)
             {
                 if (curIndex == x.id)
                 {
-                    DialogueCheckEvent tree = new DialogueCheckEvent(x);
-                    EventBus.Act(tree);
+                    // DialogueCheckEvent tree = new DialogueCheckEvent(x);
+                    // EventBus.Act(tree);
+                    DialogueSystem pepe = GameObject.FindWithTag("Finish").GetComponent<DialogueSystem>();
+                    pepe.ChangeTree(x);
+                    fuck = x;
+                    break;
                 }
 
             }
 
         }
         
-        else if (data.curState == DialogueState.Ended)
+        else if (data.curState == DialogueState.Ended && data.name == NPCname)
         {
           
             if (curIndex != data.id)
@@ -114,8 +123,11 @@ public class CharacterInteract : MonoBehaviour
             {
                 if (curIndex == x.id)
                 {
-                    DialogueCheckEvent tree = new DialogueCheckEvent(x);
-                    EventBus.Act(tree);
+                    // DialogueCheckEvent tree = new DialogueCheckEvent(x);
+                    // EventBus.Act(tree);
+                    DialogueSystem pepe = GameObject.FindWithTag("Finish").GetComponent<DialogueSystem>();
+                    pepe.ChangeTree(x);
+                    fuck = x;
                     curCharState.EnterState(NPCname, curIndex);
                     
                     break;
@@ -123,7 +135,7 @@ public class CharacterInteract : MonoBehaviour
 
                 else
                 {
-                    Debug.Log("can't find it");
+                 //   Debug.Log("can't find it");
                 }
 
             }
@@ -137,14 +149,19 @@ public class CharacterInteract : MonoBehaviour
     {
         if (inBox)
         {
+            
             if (Input.GetKeyDown(KeyCode.E))
             {
 
 
+
+
+                DialogueSystem pepe = GameObject.FindWithTag("Finish").GetComponent<DialogueSystem>();
+                pepe.ChangeTree(fuck);
                 curCharState.EnterState(NPCname, curIndex);
-
+            //    Debug.Log(curIndex);
                 inBox = false;
-
+               // Debug.Log("clicked " + gameObject.name);
 
 
 
@@ -178,5 +195,7 @@ public class CharacterInteract : MonoBehaviour
     void SwitchState(ChangeStateEvent newState)
     {
         curCharState = newState.state;
+
+       // Debug.Log(NPCname);
     }
 }
