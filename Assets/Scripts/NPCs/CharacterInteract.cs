@@ -71,7 +71,7 @@ public class CharacterInteract : MonoBehaviour
 
     void ChangeCurIndex(DialogueEndedEvent data)
     {
-        if (data.curState == DialogueState.NextDialogue)
+        if (data.curState == DialogueState.NextDialogue && data.name == NPCname)
         {
 
             if (curIndex == data.id)

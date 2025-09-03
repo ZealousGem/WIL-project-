@@ -189,7 +189,7 @@ public class DialogueSystem : MonoBehaviour
         end = true;
         counter = 0;
         //  images.Clear();
-        names = "";
+       
         Dialogue.SetActive(false);
         if (tree.Choices.Count >1)
         {
@@ -214,8 +214,9 @@ public class DialogueSystem : MonoBehaviour
         {
             try
             {
-                DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.NextDialogue, tree.Choices[0].Choice);
+                DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.NextDialogue, names, tree.Choices[0].Choice);
                 EventBus.Act(ending);
+                names = "";
                 //tree = null;
             }
             catch { }
@@ -235,7 +236,7 @@ public class DialogueSystem : MonoBehaviour
                 GiveMoneyEvent transfer = new GiveMoneyEvent(GiveAmount);
                 EventBus.Act(transfer);
             }
-            DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.Ended, answers[0]);
+            DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.Ended, names, answers[0]);
             EventBus.Act(ending);
             
              
@@ -254,7 +255,7 @@ public class DialogueSystem : MonoBehaviour
                 EventBus.Act(transfer);
             }
             ChoiceButton.SetActive(false);
-            DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.Ended, answers[1]);
+            DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.Ended, names, answers[1]);
             EventBus.Act(ending);
             //tree = null;
         }
