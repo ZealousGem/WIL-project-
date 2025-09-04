@@ -122,6 +122,8 @@ public class DialogueSystem : MonoBehaviour
     void StartDialogue(DialogueSystemEvent dia)
     {
         Dialogue.SetActive(true);
+        PlayerController player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        player.enabled = false;
         StartCoroutine(UIAnimation(Dialogue));
         end = false;
         NPC Chart = dia.id;
@@ -207,29 +209,29 @@ public class DialogueSystem : MonoBehaviour
        }
          //Debug.Log(tree.Choices);
         Dialogue.SetActive(false);
-        if (tree.Choices.Count >1)
+        if (tree.Choices.Count > 1)
         {
-           
+
             // blank
-            
+
             answers.Clear();
             ShowButtons();
             for (int i = 0; i < tree.Choices.Count; i++)
             {
-               
+
                 answers.Add(tree.Choices[i].Choice);
                 ButtonText[i].text = tree.Choices[i].answer;
 
 
             }
-           
-           
+
+
         }
 
         else
         {
 
-             
+
             GiveAmount(0);
             try
             {
@@ -240,6 +242,8 @@ public class DialogueSystem : MonoBehaviour
                 //tree = null;
             }
             catch { }
+            PlayerController player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+            player.enabled = true;
         }
         
 
@@ -280,7 +284,7 @@ public class DialogueSystem : MonoBehaviour
             DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.Ended, names, answers[0]);
             EventBus.Act(ending);
 
-
+            
             //   tree = null;
         }
     }
