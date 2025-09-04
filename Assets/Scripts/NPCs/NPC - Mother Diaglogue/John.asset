@@ -15,13 +15,17 @@ MonoBehaviour:
   dialogueNodes:
   - id: 1
     Choices:
-    - Choice: 1
+    - Choice: 2
       answer: 
       amount: 0
+      item: {fileID: 0}
+      eventChanged: 
   - id: 2
     Choices:
     - Choice: 2
       answer: 
       amount: 0
+      item: {fileID: 0}
+      eventChanged: 
   Name: John
   RepeatDialogueIndex: 2

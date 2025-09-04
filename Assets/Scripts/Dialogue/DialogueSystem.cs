@@ -228,11 +228,14 @@ public class DialogueSystem : MonoBehaviour
 
         else
         {
+
+             
+            GiveAmount(0);
             try
             {
                 DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.NextDialogue, names, tree.Choices[0].Choice);
                 EventBus.Act(ending);
-              //  Debug.Log(names);
+                //  Debug.Log(names);
                 names = "";
                 //tree = null;
             }
@@ -242,22 +245,43 @@ public class DialogueSystem : MonoBehaviour
 
     }
 
+    void GiveAmount(int index)
+    {
+         if (tree != null)
+            {
+
+                if (tree.Choices[index].amount > 0)
+                {
+                    int GiveAmount = tree.Choices[index].amount;
+                    GiveMoneyEvent transfer = new GiveMoneyEvent(GiveAmount);
+                    EventBus.Act(transfer);
+                }
+
+                if (tree.Choices[index].eventChanged != null && tree.Choices[index].eventChanged != "")
+                {
+                    Debug.Log(tree.Choices[index].eventChanged + "we have an answer");
+                }
+
+                else if (tree.Choices[index].item != null)
+                {
+                    Debug.Log(tree.Choices[index].item + "we have found an item");
+
+                }
+
+            }
+    }
+
    public void Answer1()
     {
         if (answers != null)
         {
             ChoiceButton.SetActive(false);
-            if (tree != null && tree.Choices[0].amount > 0)
-            {
-                int GiveAmount = tree.Choices[0].amount;
-                GiveMoneyEvent transfer = new GiveMoneyEvent(GiveAmount);
-                EventBus.Act(transfer);
-            }
+            GiveAmount(0);
             DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.Ended, names, answers[0]);
             EventBus.Act(ending);
-           
-             
-         //   tree = null;
+
+
+            //   tree = null;
         }
     }
 
@@ -265,13 +289,10 @@ public class DialogueSystem : MonoBehaviour
     {
         if (answers != null)
         {
-            if (tree != null && tree.Choices[1].amount > 0)
-            {
-                int GiveAmount = tree.Choices[1].amount;
-                GiveMoneyEvent transfer = new GiveMoneyEvent(GiveAmount);
-                EventBus.Act(transfer);
-            }
+
+           
             ChoiceButton.SetActive(false);
+            GiveAmount(1);
             DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.Ended, names, answers[1]);
             EventBus.Act(ending);
              

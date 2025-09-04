@@ -12,6 +12,10 @@ public class DialogueChoice
     public string answer;
 
     public int amount;
+
+    public itemSO item;
+
+    public string eventChanged;
 }
 
 [System.Serializable]
