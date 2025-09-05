@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using Unity.VisualScripting;
+using TMPro;
 
 public class InventoryUI : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class InventoryUI : MonoBehaviour
     public List<Image> InvUI;
 
     int size = 0;
+
+    public TMP_Text text; 
+
+    int curIndex = 0;
 
     public GameObject UI;
 
@@ -33,7 +38,7 @@ public class InventoryUI : MonoBehaviour
         InventoryItem item = new InventoryItem(data.go);
         AddItem(item);
         size = data.index;
-        showItem();
+        showInv(0);
     }
     
     void AddItem(InventoryItem item)
@@ -56,9 +61,61 @@ public class InventoryUI : MonoBehaviour
 
         else
         {
-            showItem();
+            //showItem();
+            showInv(curIndex);
             UI.SetActive(true);
             displayed = true;
+        }
+    }
+
+    public void ClickUpArrow()
+    {
+        if (0 < curIndex)
+        {
+
+            curIndex--;
+            showInv(curIndex);
+
+        }
+
+        else
+        {
+            curIndex = items.Count - 1;
+            showInv(curIndex);
+        }
+    }
+
+    void showInv(int index)
+    {
+        if (items.Count > 0)
+        {
+            InvUI[0].color = Color.white;
+            InvUI[0].sprite = items[index].item.obj;
+            text.text = items[index].item.name;
+        }
+
+        else
+        {
+            InvUI[0].color = Color.clear;
+            text.text = "No Item";
+        }
+        
+    }
+
+    public void ClickDownArrow()
+    {
+        if (items.Count - 1 > curIndex)
+        {
+
+            curIndex++;
+            showInv(curIndex);
+
+        }
+
+        else
+        {
+            curIndex = 0;
+            showInv(curIndex);
         }
     }
 
