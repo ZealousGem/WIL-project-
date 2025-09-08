@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Linq;
-
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -100,6 +99,20 @@ public class InventoryManager : MonoBehaviour
        // observer.TellObervers(PlayerActions.ActionOne, items);
     }
 
+    void RemoveItem(Image image)
+    {
+        for (int i = 0; i < items.Count; i++)
+        {
+            if (image.sprite == items[i].item.obj)
+            {
+                itemUIEvent ui = new itemUIEvent(items[i].item, size);
+                EventBus.Act(ui);
+                items.Remove(items[i]);
+                break;
+            }
+        }
+    }
+
     GameObject Destroyobj()
     {
         Destroy(obj);
@@ -131,40 +144,6 @@ public class InventoryManager : MonoBehaviour
        
 
        // observer.TellObervers(PlayerActions.ActionOne, items);
-    }
-
-    void RemoveItemFromUI(Image pick)
-    {
-        for (int i = 0; i < items.Count; i++)
-        {
-            if (pick.sprite == items[i].item.obj)
-            {
-
-             //   observer.TellObervers(PlayerActions.Actionagt, items[i].item);
-                items.RemoveAt(i);
-
-                if (size >= items.Count)
-                {
-                    size = Mathf.Max(0, items.Count - 1);
-
-
-                }
-
-                if (items.Count > 0)
-                {
-                 //   observer.TellObervers(PlayerActions.ActionSeven, items[size].item);
-
-                }
-
-                else
-                {
-                   // itemSO item = null;
-                   // observer.TellObervers(PlayerActions.ActionSeven, item);
-                }
-               // observer.TellObervers(PlayerActions.ActionOne, items);
-                break;
-            }
-        }
     }
 
     void SpawnItem(InventoryItem item)

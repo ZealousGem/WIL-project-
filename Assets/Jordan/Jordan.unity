@@ -2598,6 +2598,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Interact: {fileID: 505483988}
   UICam: {fileID: 868574224}
+  addedItems:
+  - {fileID: 1035517340}
+  - {fileID: 1619561738}
+  - {fileID: 883934864}
+  - {fileID: 566349291}
+  requiredItems: []
 --- !u!65 &527835933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2767,8 +2773,8 @@ GameObject:
   - component: {fileID: 566349292}
   - component: {fileID: 566349291}
   m_Layer: 5
-  m_Name: item
-  m_TagString: Untagged
+  m_Name: item4
+  m_TagString: Inventory
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4115,8 +4121,8 @@ GameObject:
   - component: {fileID: 883934865}
   - component: {fileID: 883934864}
   m_Layer: 5
-  m_Name: item
-  m_TagString: Untagged
+  m_Name: item3
+  m_TagString: Inventory
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4624,8 +4630,8 @@ GameObject:
   - component: {fileID: 1035517341}
   - component: {fileID: 1035517340}
   m_Layer: 5
-  m_Name: item
-  m_TagString: Untagged
+  m_Name: item1
+  m_TagString: Inventory
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7358,8 +7364,8 @@ GameObject:
   - component: {fileID: 1619561739}
   - component: {fileID: 1619561738}
   m_Layer: 5
-  m_Name: item
-  m_TagString: Untagged
+  m_Name: item2
+  m_TagString: Inventory
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
