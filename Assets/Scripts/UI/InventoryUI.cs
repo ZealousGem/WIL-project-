@@ -2,9 +2,11 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using Unity.VisualScripting;
+using UnityEngine.EventSystems;
 using TMPro;
 
-public class InventoryUI : MonoBehaviour
+
+public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
@@ -15,22 +17,29 @@ public class InventoryUI : MonoBehaviour
 
     int size = 0;
 
-    public TMP_Text text; 
+    public TMP_Text text;
 
     int curIndex = 0;
 
     public GameObject UI;
 
+    Image tempItemPrefab;
+
+    Vector3 it;
+
     bool displayed = false;
+
+   [HideInInspector]
+    public static bool inPuzzle = false;
 
     void OnEnable()
     {
-         EventBus.Subscribe<itemUIEvent>(itemTrans);
+        EventBus.Subscribe<itemUIEvent>(itemTrans);
     }
 
     void OnDisable()
     {
-         EventBus.Unsubscribe<itemUIEvent>(itemTrans);
+        EventBus.Unsubscribe<itemUIEvent>(itemTrans);
     }
 
     void itemTrans(itemUIEvent data)
@@ -40,10 +49,26 @@ public class InventoryUI : MonoBehaviour
         size = data.index;
         showInv(0);
     }
-    
+
     void AddItem(InventoryItem item)
     {
         items.Add(item);
+    }
+
+    void RemoveItem(Image image)
+    {
+        for (int i = 0; i < items.Count; i++)
+        {
+            if (items[i].item.obj == image.sprite)
+            {
+                items.Remove(items[i]);
+            }
+        }
+        if (displayed)
+        {
+             showInv(0);
+        }
+       
     }
 
     void Start()
@@ -99,7 +124,7 @@ public class InventoryUI : MonoBehaviour
             InvUI[0].color = Color.clear;
             text.text = "No Item";
         }
-        
+
     }
 
     public void ClickDownArrow()
@@ -129,27 +154,121 @@ public class InventoryUI : MonoBehaviour
                 InvUI[i].sprite = items[i].item.obj;
             }
 
-            for (int i = items.Count; i < InvUI.Count; i ++)
-             {
-                 InvUI[i].color = Color.clear;
-                
-             }
-            
+            for (int i = items.Count; i < InvUI.Count; i++)
+            {
+                InvUI[i].color = Color.clear;
+
+            }
+
         }
 
         else
         {
             for (int i = 0; i < InvUI.Count; i++)
             {
-               InvUI[i].color = Color.clear;
+                InvUI[i].color = Color.clear;
             }
         }
-        
+
     }
 
     // Update is called once per frame
-    void RemoveItem()
+
+    public void OnPointerDown(PointerEventData eventData)
     {
-        // will do this later
+        //throw new System.NotImplementedException();
+        if (eventData.button == PointerEventData.InputButton.Left && inPuzzle)
+        {
+            GameObject ob = eventData.pointerCurrentRaycast.gameObject;
+
+            //  List<GameObject> tempIamge = new List<GameObject>(); 
+
+            for (int i = 0; i < InvUI.Count; i++)
+            {
+                if (InvUI[i].color == Color.white && ob == InvUI[i].gameObject)
+                {
+                    // tempIamge.Add(item[i].gameObject);
+                    tempItemPrefab = ob.GetComponent<Image>();
+                    it = InvUI[i].transform.position;
+                    tempItemPrefab.raycastTarget = false;
+                    break;
+                }
+            }
+        }
+    }
+
+    public void OnDrag(PointerEventData eventData)
+    {
+        // throw new System.NotImplementedException();
+        if (tempItemPrefab != null)
+        {
+            tempItemPrefab.transform.position = eventData.position;
+
+        }
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        // If we're not dragging an item, do nothing
+        if (tempItemPrefab == null)
+        {
+            return;
+        }
+
+        // Check for a UI element in the screen space canvas first
+        GameObject ob = eventData.pointerCurrentRaycast.gameObject;
+
+        // If no UI element was hit, try a raycast into the 3D world
+        if (ob == null)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(eventData.position);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))
+            {
+                ob = hit.collider.gameObject;
+            }
+        }
+
+        // Now, check if the found object (either from UI or world raycast) is a valid inventory slot
+        if (ob != null)
+        {
+            // Use a null check and then CompareTag to be safe
+            if (ob.CompareTag("Inventory") && ob.GetComponent<Image>() != null)
+            {
+                Image hitImage = ob.GetComponent<Image>();
+                if (hitImage.color == Color.clear)
+                {
+                    Debug.Log("Found a valid inventory slot in world space!" + ob.gameObject.name);
+                    PuzzleEvent puzzle = new PuzzleEvent(tempItemPrefab, hitImage);
+                    EventBus.Act(puzzle);
+                    imageEvent removeItem = new imageEvent(tempItemPrefab);
+                    EventBus.Act(removeItem);
+                    RemoveItem(tempItemPrefab);
+                     
+
+                }
+
+                else
+                {
+                    Debug.Log("Invalid drop target.");
+                }
+
+
+                // You can now proceed with your swap logic here
+            }
+            else
+            {
+                Debug.Log("Invalid drop target.");
+            }
+        }
+        else
+        {
+            Debug.Log("No object found to drop on.");
+        }
+
+        // Always return the item to its original position regardless of drop success
+        tempItemPrefab.transform.position = it;
+        tempItemPrefab.raycastTarget = true;
+        tempItemPrefab = null;
     }
 }

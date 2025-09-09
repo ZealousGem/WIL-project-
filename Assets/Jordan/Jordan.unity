@@ -2576,7 +2576,6 @@ RectTransform:
   - {fileID: 1334427542}
   - {fileID: 1878987056}
   - {fileID: 505483992}
-  - {fileID: 868574225}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2604,6 +2603,8 @@ MonoBehaviour:
   - {fileID: 883934864}
   - {fileID: 566349291}
   requiredItems: []
+  changedIndex: 3
+  index: 0
 --- !u!65 &527835933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3886,8 +3887,8 @@ GameObject:
   - component: {fileID: 868574227}
   - component: {fileID: 868574226}
   m_Layer: 0
-  m_Name: Camera
-  m_TagString: Untagged
+  m_Name: PuzzleCamera
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3899,16 +3900,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868574224}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1010}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -12.124676}
+  m_LocalScale: {x: 0.002243836, y: 0.002243836, z: 0.002243836}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 527835931}
+  m_Father: {fileID: 1928578565}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 36, y: -37}
+  m_AnchoredPosition: {x: 8.897881, y: 11.551308}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &868574226
@@ -8079,6 +8080,7 @@ MonoBehaviour:
   - {fileID: 411779511}
   - {fileID: 1220261825}
   - {fileID: 135727750}
+  - {fileID: 868574224}
 --- !u!4 &1798388534
 Transform:
   m_ObjectHideFlags: 0
@@ -8472,6 +8474,7 @@ Transform:
   - {fileID: 411779514}
   - {fileID: 1220261830}
   - {fileID: 135727755}
+  - {fileID: 868574225}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1940503538

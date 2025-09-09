@@ -46,6 +46,7 @@ public class InventoryManager : MonoBehaviour
         // observer.RemoveObserver(this);
         EventBus.Unsubscribe<GameObjectEvent>(GameObjectTrans);
         EventBus.Unsubscribe<itemEvent>(itemTrans);
+        EventBus.Unsubscribe<imageEvent>(Inventory);
     }
 
     private void OnEnable()
@@ -53,6 +54,12 @@ public class InventoryManager : MonoBehaviour
         //  observer.AddObersver(this);
         EventBus.Subscribe<GameObjectEvent>(GameObjectTrans);
         EventBus.Subscribe<itemEvent>(itemTrans);
+        EventBus.Subscribe<imageEvent>(Inventory);
+    }
+
+     public void Inventory(imageEvent data)
+    {
+        RemoveItem(data.go);
     }
 
 
@@ -105,8 +112,6 @@ public class InventoryManager : MonoBehaviour
         {
             if (image.sprite == items[i].item.obj)
             {
-                itemUIEvent ui = new itemUIEvent(items[i].item, size);
-                EventBus.Act(ui);
                 items.Remove(items[i]);
                 break;
             }

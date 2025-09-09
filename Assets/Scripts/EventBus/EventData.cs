@@ -2,6 +2,7 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.UI;
 
 public class EventData
 {
@@ -141,4 +142,28 @@ public class itemUIEvent : EventData
         index = _index;
     }
 }
+
+public class imageEvent : EventData
+{
+    public Image go;
+
+    public imageEvent(Image _go)
+    {
+        go = _go;
+    }
+}
+
+public class PuzzleEvent : EventData
+{
+    public Image go;
+    public Image go2;
+
+    public PuzzleEvent(Image _go, Image _go2)
+    {
+        go = _go;
+        go2 = _go2;
+    }
+}
+
+
 
