@@ -10,7 +10,7 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-    bool inBox = false;
+    bool inBox2 = false;
 
     bool displayed = false; 
 
@@ -116,15 +116,17 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
         if (counter == requiredCounter)
         {
             // solved puzzle
-            Debug.Log("solved puzzle");
+         //   Debug.Log("solved puzzle");
             HideBox();
             PuzzleCompleted = true;
             Interact.SetActive(false);
+            ChangeDialogueState change = new ChangeDialogueState(DialougeChange.TutorialPuzzle, 1);
+            EventBus.Act(change);
         }
 
         else
         {
-            Debug.Log("not solved");
+          //  Debug.Log("not solved");
 
         }
     }
@@ -133,7 +135,7 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
     {
         if (!PuzzleCompleted)
         {
-            if (inBox)
+            if (inBox2)
         {
 
             if (Input.GetKeyDown(KeyCode.E))
@@ -190,7 +192,7 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
             {
             Interact.SetActive(true);
 
-            inBox = true;
+            inBox2 = true;
             }
         }
         
@@ -202,7 +204,7 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
         if (other.CompareTag("Player"))
         {
             Interact.SetActive(false);
-            inBox = false;
+            inBox2 = false;
         }
     }
  

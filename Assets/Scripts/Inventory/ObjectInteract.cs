@@ -33,7 +33,7 @@ public class ObjectInteract : MonoBehaviour
         {
 
 
-            Debug.Log("here");
+//            Debug.Log("here");
             GameObjectEvent obj = new GameObjectEvent(this.gameObject);
             EventBus.Act(obj);
 

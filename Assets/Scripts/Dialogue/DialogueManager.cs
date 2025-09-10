@@ -27,10 +27,11 @@ public class DialogueManager : MonoBehaviour
 
     public void PassingData(DialogueEvent data)
     {
-       // Debug.Log("huh");
+        // Debug.Log("huh");
         SetName(data.name);
         SetID(data.id);
         StartCoroutine(LoadData());
+        Debug.Log(data.id + data.name);
 
     }
 
@@ -101,7 +102,7 @@ public class DialogueManager : MonoBehaviour
 
         else
         {
-            // Debug.Log("null here");
+             Debug.Log("null here" + CurName);
             return null;
 
         }

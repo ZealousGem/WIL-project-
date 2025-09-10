@@ -12,7 +12,7 @@ public abstract class BaseCharacterState
 
   
 
-    public abstract void ChangeState();
+    public abstract void ChangeState(string name);
 }
 
 
@@ -29,12 +29,12 @@ public class ChoiceDialogueState : BaseCharacterState
 
   
 
-    public override void ChangeState()
+    public override void ChangeState(string name)
     {
-        Debug.Log("changing state D");
+      //  Debug.Log("changing state D");
        // OnDisable();
         RepeatDialogueState repeatDialogue = new RepeatDialogueState();
-        ChangeStateEvent newState = new ChangeStateEvent(repeatDialogue);
+        ChangeStateEvent newState = new ChangeStateEvent(repeatDialogue, name);
         EventBus.Act(newState);
     }
 
@@ -60,7 +60,7 @@ public class ChoiceDialogueState : BaseCharacterState
 
 public class RepeatDialogueState : BaseCharacterState
 {
-    public override void ChangeState()
+    public override void ChangeState(string name)
     {
         // throw new System.NotImplementedException();
        // Debug.Log("changing state");
@@ -72,7 +72,7 @@ public class RepeatDialogueState : BaseCharacterState
         // throw new System.NotImplementedException();
         DialogueEvent setDialogue = new DialogueEvent(name, curIndex);
         EventBus.Act(setDialogue);
-       // Debug.Log("entering state");
+     //   Debug.Log("entering state");
     }
 }
 

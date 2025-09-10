@@ -5595,6 +5595,8 @@ MonoBehaviour:
   Interact: {fileID: 1777233150}
   dialogueState:
   - {fileID: 11400000, guid: 60f9bf77df1398b408a80a87a4373059, type: 2}
+  pepe: {fileID: 4994331854867201490}
+  eventChange: 01000000
 --- !u!1 &1252264975
 GameObject:
   m_ObjectHideFlags: 0
@@ -7526,6 +7528,9 @@ MonoBehaviour:
   Interact: {fileID: 1304375745}
   dialogueState:
   - {fileID: 11400000, guid: 11b248704648e744ab7c599f8dcf8358, type: 2}
+  - {fileID: 11400000, guid: 7e59261eb8f1afd499c069799af5a2c8, type: 2}
+  pepe: {fileID: 4994331854867201490}
+  eventChange: 00000000
 --- !u!136 &1573964017
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7660,7 +7665,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8717641293637305204, guid: 9e2b2e8ac1ba85449924e04eec09845f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.38
+      value: -5.962
       objectReference: {fileID: 0}
     - target: {fileID: 8717641293637305204, guid: 9e2b2e8ac1ba85449924e04eec09845f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7668,7 +7673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8717641293637305204, guid: 9e2b2e8ac1ba85449924e04eec09845f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.71
+      value: 10.194
       objectReference: {fileID: 0}
     - target: {fileID: 8717641293637305204, guid: 9e2b2e8ac1ba85449924e04eec09845f, type: 3}
       propertyPath: m_LocalRotation.w

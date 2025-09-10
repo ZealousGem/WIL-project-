@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.UI;
+using JetBrains.Annotations;
 
 public class EventData
 {
@@ -39,9 +40,12 @@ public class ChangeStateEvent : EventData
 {
     public BaseCharacterState state { get; private set; }
 
-    public ChangeStateEvent(BaseCharacterState _state, float _cooled = 0) : base(_cooled)
+    public string name;
+
+    public ChangeStateEvent(BaseCharacterState _state, string _name, float _cooled = 0) : base(_cooled)
     {
         this.state = _state;
+        name = _name;
     }
 }
 
@@ -163,6 +167,23 @@ public class PuzzleEvent : EventData
         go = _go;
         go2 = _go2;
     }
+}
+
+public class ChangeDialogueState : EventData
+{
+
+    //public string name
+    public DialougeChange change;
+
+    public int index;
+
+    public ChangeDialogueState(DialougeChange _change, int _index)
+    {
+        change = _change;
+        index = _index;
+    }
+
+
 }
 
 

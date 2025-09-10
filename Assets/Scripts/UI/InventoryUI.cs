@@ -238,7 +238,7 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
                 Image hitImage = ob.GetComponent<Image>();
                 if (hitImage.color == Color.clear)
                 {
-                    Debug.Log("Found a valid inventory slot in world space!" + ob.gameObject.name);
+//                    Debug.Log("Found a valid inventory slot in world space!" + ob.gameObject.name);
                     PuzzleEvent puzzle = new PuzzleEvent(tempItemPrefab, hitImage);
                     EventBus.Act(puzzle);
                     imageEvent removeItem = new imageEvent(tempItemPrefab);
@@ -258,7 +258,7 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
             }
             else
             {
-                Debug.Log("Invalid drop target.");
+        //        Debug.Log("Invalid drop target.");
             }
         }
         else

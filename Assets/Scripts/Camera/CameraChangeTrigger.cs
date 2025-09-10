@@ -18,7 +18,7 @@ public class CameraChangeTrigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player")) {
 
-            Debug.Log("passed");
+//            Debug.Log("passed");
             if (!NewRoom)
             {
                   NewRoom = true;

@@ -57,7 +57,21 @@
           "Text": [
             { "words": "What are you doing? Hurry before they wake up" }
           ]
-        }
+        },
+
+         {
+          "id": "3",
+          "Text": [
+            { "words": "Nice job, you packed everything correclty" },
+            { "words": "I can now relax, you better going to school. Time is ticking" }
+          ]
+         },
+         {
+          "id": "4",
+          "Text": [
+            { "words": "Huh, you still here dont have school to get to'?" }
+          ]
+         }
       ]
     }
   ]

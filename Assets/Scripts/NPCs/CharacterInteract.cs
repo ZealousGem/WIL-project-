@@ -5,7 +5,14 @@ using Unity.Collections;
 using UnityEngine;
 
 
+public enum DialougeChange
+{
 
+    TutorialPuzzle,
+  
+    none
+
+}
 
 public class CharacterInteract : MonoBehaviour
 {
@@ -26,8 +33,11 @@ public class CharacterInteract : MonoBehaviour
     [SerializeField]
     public List<NPCDialogue> dialogueState;
 
-    
+    [SerializeField]
+    DialogueSystem pepe;
     string NPCname;
+
+    string id;
 
     int RepeatDialogueIndex;
 
@@ -36,6 +46,8 @@ public class CharacterInteract : MonoBehaviour
     int curIndex;
 
     int RootNode = 0;
+
+    public List<DialougeChange> eventChange;
 
     void Awake()
     {
@@ -65,12 +77,45 @@ public class CharacterInteract : MonoBehaviour
     {
         EventBus.Subscribe<ChangeStateEvent>(SwitchState);
         EventBus.Subscribe<DialogueEndedEvent>(ChangeCurIndex);
+        EventBus.Subscribe<ChangeDialogueState>(ChangeDialogueState);
     }
 
     void OnDisable()
     {
         EventBus.Unsubscribe<ChangeStateEvent>(SwitchState);
         EventBus.Unsubscribe<DialogueEndedEvent>(ChangeCurIndex);
+        EventBus.Unsubscribe<ChangeDialogueState>(ChangeDialogueState);
+    }
+
+    void ChangeDialogueState(ChangeDialogueState data)
+    {
+        foreach (DialougeChange option in eventChange)
+        {
+            if (data.change == option)
+            {
+                Change(data.index);
+//                Debug.Log(option+ NPCname);
+                break;
+            }
+        }
+    }
+
+    void Change(int index)
+    {
+        for (int i = 0; i < dialogueState.Count; i++)
+        {
+            if (i == index)
+            {
+                dialogueNodes = dialogueState[index].dialogueNodes;
+                NPCname = dialogueState[index].Name;
+                RepeatDialogueIndex = dialogueState[index].RepeatDialogueIndex;
+                curIndex = dialogueNodes[RootNode].id;
+                fuck = dialogueNodes[RootNode];
+                curCharState.ChangeState(NPCname);
+              //  Debug.Log("changed");
+                break;
+            }
+        }
     }
 
     void ChangeCurIndex(DialogueEndedEvent data)
@@ -80,8 +125,8 @@ public class CharacterInteract : MonoBehaviour
             Debug.Log("triggered");
             if (curIndex == data.id)
             {
-
-                curCharState.ChangeState();
+                
+                curCharState.ChangeState(NPCname);
                 curIndex = RepeatDialogueIndex;
                 inBox = true;
             }
@@ -98,7 +143,7 @@ public class CharacterInteract : MonoBehaviour
                 {
                     // DialogueCheckEvent tree = new DialogueCheckEvent(x);
                     // EventBus.Act(tree);
-                    DialogueSystem pepe = GameObject.FindWithTag("Finish").GetComponent<DialogueSystem>();
+                  //  DialogueSystem pepe = GameObject.FindWithTag("Finish").GetComponent<DialogueSystem>();
                     pepe.ChangeTree(x);
                     fuck = x;
                     break;
@@ -125,7 +170,7 @@ public class CharacterInteract : MonoBehaviour
                 {
                     // DialogueCheckEvent tree = new DialogueCheckEvent(x);
                     // EventBus.Act(tree);
-                    DialogueSystem pepe = GameObject.FindWithTag("Finish").GetComponent<DialogueSystem>();
+                  //  DialogueSystem pepe = GameObject.FindWithTag("Finish").GetComponent<DialogueSystem>();
                     pepe.ChangeTree(x);
                     fuck = x;
                     curCharState.EnterState(NPCname, curIndex);
@@ -155,13 +200,13 @@ public class CharacterInteract : MonoBehaviour
 
 
 
-
-                DialogueSystem pepe = GameObject.FindWithTag("Finish").GetComponent<DialogueSystem>();
+              
+                //DialogueSystem pepe = GameObject.FindWithTag("Finish").GetComponent<DialogueSystem>();
                 pepe.ChangeTree(fuck);
                 curCharState.EnterState(NPCname, curIndex);
             //    Debug.Log(curIndex);
                 inBox = false;
-               // Debug.Log("clicked " + gameObject.name);
+                Debug.Log("clicked " + gameObject.name);
 
 
 
@@ -174,7 +219,7 @@ public class CharacterInteract : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Interact.SetActive(true);
-
+            //id = gameObject.name;
             inBox = true;
 
 
@@ -194,7 +239,12 @@ public class CharacterInteract : MonoBehaviour
 
     void SwitchState(ChangeStateEvent newState)
     {
-        curCharState = newState.state;
+
+        if (NPCname == newState.name)
+        {
+           curCharState = newState.state;
+        }
+      
 
        // Debug.Log(NPCname);
     }
