@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine;
 using UnityEngine.Rendering.HighDefinition;
+using TMPro;
 
 public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
 {
@@ -21,16 +22,21 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
     [SerializeField]
     List<Image> addedItems;
 
-    int requiredCounter = 12;
+    int requiredCounter = 4;
     
     [SerializeField]
     List<itemSO> requiredItems;
+
+    [SerializeField]
+    List<TMP_Text> text;
 
     Vector3 it;
 
     public int changedIndex = 0;
 
     public int index = 0;
+
+    public Sprite image; 
 
     Camera cam;
 
@@ -64,6 +70,15 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
         {
             addedItems[i].color = Color.clear;
         }
+        
+        for (int i = 0; i < text.Count; i++)
+        {
+            text[i].text = requiredItems[i].name;
+        }
+
+        addedItems[1].color = Color.white;
+        addedItems[1].sprite = image;
+       
     }
 
     // Update is called once per frame
@@ -78,12 +93,11 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
                 addedItems[i].sprite = image.sprite;
                 addedItems[i].color = Color.white;
                 break;
-                Debug.Log("through");
             }
 
         }
 
-        //CheckIfCorrect();
+        CheckIfCorrect();
     }
 
     void CheckIfCorrect()
@@ -91,7 +105,7 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
         int counter = 0;
         for (int i = 0; i < requiredItems.Count; i++)
         {
-            if (addedItems[i].sprite == requiredItems[i])
+            if (addedItems[i].sprite == requiredItems[i].obj)
             {
                 counter++;
             }
@@ -100,6 +114,12 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
         if (counter == requiredCounter)
         {
             // solved puzzle
+            Debug.Log("solved puzzle");
+        }
+
+        else
+        {
+            Debug.Log("not solved");
         }
     }
 
@@ -133,6 +153,7 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
         InventoryUI.inPuzzle = true;
         cam = Camera.main;
         draggedPlane = new Plane(cam.transform.forward, transform.position);
+        CheckIfCorrect();
         
  
     }
@@ -244,6 +265,7 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
 
             hitImage.sprite = tempSprite;
             hitImage.color = tempColor;
+            CheckIfCorrect();
 
            // Debug.Log("Item dropped on world-space inventory!");
         }

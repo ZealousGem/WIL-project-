@@ -17,13 +17,14 @@ public class PlayerController : MonoBehaviour
     Animator animator;
 
     public float rotationSpeed;
-    bool ReachedDestination = true;
+    bool ReachedDestination = false;
 
     public float movementThreshold = 0.1f;
 
 
     float currentSpeed = 0;
 
+    float agentSpeed = 3.5f;
     void OnEnable()
     {
         EventBus.Subscribe<InputChangeEvent>(ChangingCameras);
@@ -37,6 +38,7 @@ public class PlayerController : MonoBehaviour
     void ChangingCameras(InputChangeEvent data)
     {
         cam = data.cam.GetComponent<Camera>();
+
     }
 
 
@@ -73,17 +75,34 @@ public class PlayerController : MonoBehaviour
             ReachedDestination = true;
             //   Debug.Log(ReachedDestination);
         }
-        
-         currentSpeed = agent.velocity.magnitude;
-            animator.SetFloat("Speed", currentSpeed);
+
+        currentSpeed = agent.velocity.magnitude;
+        animator.SetFloat("Speed", currentSpeed);
+       // Debug.Log(currentSpeed);
 
     }
 
     void Movement()
     {
+        if (agent.remainingDistance <= agent.stoppingDistance && !agent.pathPending)
+        {
+
+            agent.isStopped = true;
+            agent.speed = 0;
+
+
+        }
+
+
+
+
+
         if (Input.GetMouseButtonDown(1))
         {
+            agent.speed = agentSpeed;
+            // cam = Camera.main;
             Ray raycast = cam.ScreenPointToRay(Input.mousePosition);
+
 
             if (Physics.Raycast(raycast, out RaycastHit hit))
             {
@@ -91,18 +110,26 @@ public class PlayerController : MonoBehaviour
                 {
                     NavMeshHit hitted;
 
-                    if (NavMesh.SamplePosition(hit.point, out hitted, 1.0f, NavMesh.AllAreas)) {
-                         agent.destination = hitted.position;
+                    if (NavMesh.SamplePosition(hit.point, out hitted, 1.0f, NavMesh.AllAreas))
+                    {
+
+                        agent.destination = hitted.position;
+                        // Debug.Log(hitted.position);
+                        agent.isStopped = false;
+                        agent.stoppingDistance = 0.1f;
                     }
-                   
-                   
+
+
 
                     //  gameObject.transform.LookAt(movepls);
                 }
             }
         }
+
+        //   agent.isStopped = ReachedDestination;
+
     }
-    
+
     void Rotate()
     {
         // Only rotate if the agent has a path and is not at the destination
@@ -116,11 +143,12 @@ public class PlayerController : MonoBehaviour
             {
                 // Calculate the rotation needed to look at the steering target
                 Quaternion targetRotation = Quaternion.LookRotation(direction);
+              //  Debug.Log(direction);
                 // Smoothly rotate the character towards that direction
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
             }
         }
     }
 
-   
+
 }
