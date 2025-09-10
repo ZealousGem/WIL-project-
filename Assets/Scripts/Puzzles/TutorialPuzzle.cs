@@ -36,7 +36,9 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
 
     public int index = 0;
 
-    public Sprite image; 
+    public Sprite image;
+
+    bool PuzzleCompleted = false;
 
     Camera cam;
 
@@ -115,17 +117,23 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
         {
             // solved puzzle
             Debug.Log("solved puzzle");
+            HideBox();
+            PuzzleCompleted = true;
+            Interact.SetActive(false);
         }
 
         else
         {
             Debug.Log("not solved");
+
         }
     }
 
     void Update()
     {
-        if (inBox)
+        if (!PuzzleCompleted)
+        {
+            if (inBox)
         {
 
             if (Input.GetKeyDown(KeyCode.E))
@@ -142,6 +150,9 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
 
             }
         }
+        }
+
+        
     }
 
     void ShowBox()
@@ -173,20 +184,21 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
     
      void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (!PuzzleCompleted)
         {
+            if (other.CompareTag("Player"))
+            {
             Interact.SetActive(true);
 
             inBox = true;
-
-
-
-
+            }
         }
+        
     }
 
     void OnTriggerExit(Collider other)
     {
+       
         if (other.CompareTag("Player"))
         {
             Interact.SetActive(false);
