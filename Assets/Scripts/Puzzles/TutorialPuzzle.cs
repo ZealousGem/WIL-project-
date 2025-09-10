@@ -73,10 +73,11 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
         for (int i = 0; i < addedItems.Count; i++)
         {
 
-            if (FoundImage.sprite == addedItems[i].sprite && addedItems[i].color == Color.clear)
+            if (FoundImage == addedItems[i] && addedItems[i].color == Color.clear)
             {
                 addedItems[i].sprite = image.sprite;
                 addedItems[i].color = Color.white;
+                break;
                 Debug.Log("through");
             }
 
