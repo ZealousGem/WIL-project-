@@ -5596,6 +5596,7 @@ MonoBehaviour:
   dialogueState:
   - {fileID: 11400000, guid: 60f9bf77df1398b408a80a87a4373059, type: 2}
   pepe: {fileID: 4994331854867201490}
+  id: 1
   eventChange: 01000000
 --- !u!1 &1252264975
 GameObject:
@@ -7530,6 +7531,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 11b248704648e744ab7c599f8dcf8358, type: 2}
   - {fileID: 11400000, guid: 7e59261eb8f1afd499c069799af5a2c8, type: 2}
   pepe: {fileID: 4994331854867201490}
+  id: 2
   eventChange: 00000000
 --- !u!136 &1573964017
 CapsuleCollider:

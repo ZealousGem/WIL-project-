@@ -37,7 +37,9 @@ public class CharacterInteract : MonoBehaviour
     DialogueSystem pepe;
     string NPCname;
 
-    string id;
+    public int id;
+
+    int curId;
 
     int RepeatDialogueIndex;
 
@@ -65,6 +67,7 @@ public class CharacterInteract : MonoBehaviour
         curCharState = dialogue;
         curIndex = dialogueNodes[RootNode].id;
         fuck = dialogueNodes[RootNode];
+        curId = dialogueState[0].CharacterId;
         
         // DialogueCheckEvent tree = new DialogueCheckEvent(dialogueNodes[RootNode]);
         // EventBus.Act(tree);
@@ -111,6 +114,7 @@ public class CharacterInteract : MonoBehaviour
                 RepeatDialogueIndex = dialogueState[index].RepeatDialogueIndex;
                 curIndex = dialogueNodes[RootNode].id;
                 fuck = dialogueNodes[RootNode];
+                curId = dialogueState[index].CharacterId;
                 curCharState.ChangeState(NPCname);
               //  Debug.Log("changed");
                 break;
@@ -195,7 +199,7 @@ public class CharacterInteract : MonoBehaviour
         if (inBox)
         {
             
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && id == curId)
             {
 
 

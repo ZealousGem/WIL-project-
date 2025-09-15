@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64a368a819c40ed4a82005d97325fbe2, type: 3}
   m_Name: John
   m_EditorClassIdentifier: 
+  CharacterId: 2
   dialogueNodes:
   - id: 1
     Choices:

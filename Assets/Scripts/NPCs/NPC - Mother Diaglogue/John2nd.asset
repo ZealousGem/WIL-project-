@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64a368a819c40ed4a82005d97325fbe2, type: 3}
   m_Name: John2nd
   m_EditorClassIdentifier: 
+  CharacterId: 2
   dialogueNodes:
   - id: 3
     Choices:
     - Choice: 4
       answer: 
       amount: 0
-      item: {fileID: 0}
+      item: {fileID: 11400000, guid: ee7758b5e2b9e4947a06b68c24bfc219, type: 2}
       eventChanged: 
   - id: 4
     Choices:
