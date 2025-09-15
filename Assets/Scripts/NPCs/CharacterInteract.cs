@@ -196,10 +196,10 @@ public class CharacterInteract : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (inBox)
+        if (inBox && id == curId)
         {
             
-            if (Input.GetKeyDown(KeyCode.E) && id == curId)
+            if (Input.GetKeyDown(KeyCode.E))
             {
 
 
@@ -210,7 +210,7 @@ public class CharacterInteract : MonoBehaviour
                 curCharState.EnterState(NPCname, curIndex);
             //    Debug.Log(curIndex);
                 inBox = false;
-                Debug.Log("clicked " + gameObject.name);
+                Debug.Log("clicked " + gameObject.name + "id " + curId);
 
 
 
