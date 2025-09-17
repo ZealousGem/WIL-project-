@@ -9,6 +9,7 @@ using System.IO;
 using TMPro;
 using Unity.VisualScripting;
 using Flexalon;
+using static UnityEditor.Progress;
 
 
 public class DialogueSystem : MonoBehaviour
@@ -269,8 +270,10 @@ public class DialogueSystem : MonoBehaviour
                 else if (tree.Choices[index].item != null)
                 {
                     Debug.Log(tree.Choices[index].item + "we have found an item");
+                    itemEvent it = new itemEvent(tree.Choices[index].item);
+                    EventBus.Act(it);
 
-                }
+            }
 
             }
     }
