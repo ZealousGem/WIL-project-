@@ -11,7 +11,7 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
 
-    List<InventoryItem> items = new List<InventoryItem>();
+   public List<InventoryItem> items = new List<InventoryItem>();
 
     public List<Image> InvUI;
 
@@ -57,11 +57,13 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
     void RemoveItem(Image image)
     {
+       
         for (int i = 0; i < items.Count; i++)
         {
             if (items[i].item.obj == image.sprite)
             {
                 items.Remove(items[i]);
+                break;
             }
         }
         if (displayed)
