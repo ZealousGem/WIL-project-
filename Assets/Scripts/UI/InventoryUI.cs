@@ -36,11 +36,19 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
     void OnEnable()
     {
         EventBus.Subscribe<itemUIEvent>(itemTrans);
+        EventBus.Subscribe<spriteEvent>(SpriteChange);
     }
 
     void OnDisable()
     {
         EventBus.Unsubscribe<itemUIEvent>(itemTrans);
+        EventBus.Unsubscribe<spriteEvent>(SpriteChange);
+    }
+
+    void SpriteChange(spriteEvent data)
+    {
+        RemoveItem(data.go);
+       // Debug.Log("im tired");
     }
 
     void itemTrans(itemUIEvent data)
@@ -56,17 +64,21 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
         items.Add(item);
     }
 
-    void RemoveItem(Image image)
+    void RemoveItem(Sprite image)
     {
        
         for (int i = 0; i < items.Count; i++)
         {
-            if (items[i].item.obj == image.sprite)
+            if (items[i].item.obj == image)
             {
                 items.Remove(items[i]);
                 if (curIndex > 0)
                 {
-                    curIndex--;    
+                    curIndex--;
+                    if (curIndex <= 0)
+                    {
+                        curIndex = 0;  
+                    }    
                 }
                 break;
             }
@@ -251,7 +263,7 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
                     EventBus.Act(puzzle);
                     imageEvent removeItem = new imageEvent(tempItemPrefab);
                     EventBus.Act(removeItem);
-                    RemoveItem(tempItemPrefab);
+                    RemoveItem(tempItemPrefab.sprite);
                      
 
                 }

@@ -1,4 +1,6 @@
+
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LockedDoor : MonoBehaviour
 {
@@ -8,11 +10,14 @@ public class LockedDoor : MonoBehaviour
 
     public itemSO item;
 
+    public DoorMovement door;
+
     bool nearDoor = false;
 
     bool doorOpened = false; 
 
     public GameObject interact;
+
     
     
 
@@ -27,6 +32,10 @@ public class LockedDoor : MonoBehaviour
                 if (inventory.items[i].item == item)
                 {
                     doorOpened = true;
+                    door.Open(GameObject.FindGameObjectWithTag("Player").transform.position);
+                    spriteEvent sprite = new spriteEvent(inventory.items[i].item.obj);
+                    EventBus.Act(sprite);
+                    inventory.RemoveItem(inventory.items[i].item.obj);
                     break; 
 
                 }

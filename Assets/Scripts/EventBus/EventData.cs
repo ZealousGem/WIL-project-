@@ -186,5 +186,15 @@ public class ChangeDialogueState : EventData
 
 }
 
+public class spriteEvent : EventData
+{
+    public Sprite go;
+
+    public spriteEvent(Sprite _go)
+    {
+        go = _go;
+    }
+}
+
 
 

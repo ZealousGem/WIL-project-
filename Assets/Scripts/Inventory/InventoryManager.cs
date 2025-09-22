@@ -59,7 +59,7 @@ public class InventoryManager : MonoBehaviour
 
      public void Inventory(imageEvent data)
     {
-        RemoveItem(data.go);
+        RemoveItem(data.go.sprite);
     }
 
 
@@ -106,17 +106,19 @@ public class InventoryManager : MonoBehaviour
        // observer.TellObervers(PlayerActions.ActionOne, items);
     }
 
-    void RemoveItem(Image image)
+    public void RemoveItem(Sprite image)
     {
         for (int i = 0; i < items.Count; i++)
         {
-            if (image.sprite == items[i].item.obj)
+            if (image == items[i].item.obj)
             {
                 items.Remove(items[i]);
                 break;
             }
         }
     }
+
+   
 
     GameObject Destroyobj()
     {
