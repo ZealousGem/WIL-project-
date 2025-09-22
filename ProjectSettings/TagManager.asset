@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 3
   tags:
   - Inventory
+  - signleton
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - NPC & Doors
   - Water
   - UI
   - Outline

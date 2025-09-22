@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
 
     Animator animator;
 
+    LayerMask ignoredLayerMask;
+
     public float rotationSpeed;
     bool ReachedDestination = false;
 
@@ -49,6 +51,7 @@ public class PlayerController : MonoBehaviour
         // cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         animator = GetComponentInChildren<Animator>();
         agent.updateRotation = false;
+        ignoredLayerMask = ~LayerMask.GetMask("NPC & Doors");
     }
 
     // Update is called once per frame
@@ -104,7 +107,7 @@ public class PlayerController : MonoBehaviour
             Ray raycast = cam.ScreenPointToRay(Input.mousePosition);
 
 
-            if (Physics.Raycast(raycast, out RaycastHit hit))
+            if (Physics.Raycast(raycast, out RaycastHit hit, Mathf.Infinity, ignoredLayerMask))
             {
                 if (hit.collider.gameObject)
                 {

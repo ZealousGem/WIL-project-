@@ -4,6 +4,7 @@ using UnityEngine;
 using Unity.VisualScripting;
 using UnityEngine.EventSystems;
 using TMPro;
+using System;
 
 
 public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
@@ -63,6 +64,10 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
             if (items[i].item.obj == image.sprite)
             {
                 items.Remove(items[i]);
+                if (curIndex > 0)
+                {
+                    curIndex--;    
+                }
                 break;
             }
         }
@@ -114,6 +119,7 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
     void showInv(int index)
     {
+        Debug.Log(index);
         if (items.Count > 0)
         {
             InvUI[0].color = Color.white;
