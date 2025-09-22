@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine.EventSystems;
 using TMPro;
 using System;
+using System.Collections;
 
 
 public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
@@ -19,6 +20,8 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
     int size = 0;
 
     public TMP_Text text;
+
+    public TMP_Text info;
 
     int curIndex = 0;
 
@@ -62,6 +65,7 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
     void AddItem(InventoryItem item)
     {
         items.Add(item);
+        StartCoroutine(TextEvent(item.item, true));
     }
 
     void RemoveItem(Sprite image)
@@ -71,6 +75,7 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
         {
             if (items[i].item.obj == image)
             {
+                StartCoroutine(TextEvent(items[i].item, false));
                 items.Remove(items[i]);
                 if (curIndex > 0)
                 {
@@ -88,6 +93,24 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
              showInv(0);
         }
        
+    }
+
+    IEnumerator TextEvent(itemSO item, bool state)
+    {
+        if (state)
+        {
+            info.text = item.name + " added";
+
+
+        }
+
+        else
+        {
+            info.text = item.name + " removed";
+        }
+        
+         yield return new WaitForSeconds(1f);
+            info.text = "";
     }
 
     void Start()
@@ -131,7 +154,7 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
     void showInv(int index)
     {
-        Debug.Log(index);
+      //  Debug.Log(index);
         if (items.Count > 0)
         {
             InvUI[0].color = Color.white;
