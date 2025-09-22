@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Plate
   m_EditorClassIdentifier: 
   id: 1
-  obj: {fileID: 1699070962, guid: 069a00c4a21d8654bbe27600f3ba7103, type: 3}
+  obj: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   prefab: {fileID: 7767337661109325057, guid: 9e2b2e8ac1ba85449924e04eec09845f, type: 3}
