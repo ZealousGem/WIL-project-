@@ -196,5 +196,15 @@ public class spriteEvent : EventData
     }
 }
 
+public class CheckedEvent : EventData
+{
+    public bool Checked;
+
+    public CheckedEvent(bool _go)
+    {
+        Checked = _go;
+    }
+}
+
 
 

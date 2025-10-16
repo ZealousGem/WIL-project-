@@ -29,6 +29,8 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
     Image tempItemPrefab;
 
+    bool isPuzzle = false;
+
     Vector3 it;
 
     bool displayed = false;
@@ -40,12 +42,19 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
     {
         EventBus.Subscribe<itemUIEvent>(itemTrans);
         EventBus.Subscribe<spriteEvent>(SpriteChange);
+        EventBus.Subscribe<CheckedEvent>(PuzzleEvent);
     }
 
     void OnDisable()
     {
         EventBus.Unsubscribe<itemUIEvent>(itemTrans);
         EventBus.Unsubscribe<spriteEvent>(SpriteChange);
+        EventBus.Subscribe<CheckedEvent>(PuzzleEvent);
+    }
+
+    void PuzzleEvent(CheckedEvent data)
+    {
+        setPuzzle(data.Checked);
     }
 
     void SpriteChange(spriteEvent data)
@@ -66,6 +75,11 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
     {
         items.Add(item);
         StartCoroutine(TextEvent(item.item, true));
+    }
+
+    void setPuzzle(bool setTo)
+    {
+        isPuzzle = setTo;
     }
 
     void RemoveItem(Sprite image)
@@ -284,9 +298,20 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 //                    Debug.Log("Found a valid inventory slot in world space!" + ob.gameObject.name);
                     PuzzleEvent puzzle = new PuzzleEvent(tempItemPrefab, hitImage);
                     EventBus.Act(puzzle);
-                    imageEvent removeItem = new imageEvent(tempItemPrefab);
-                    EventBus.Act(removeItem);
-                    RemoveItem(tempItemPrefab.sprite);
+
+                    if (isPuzzle)
+                    {
+                        imageEvent removeItem = new imageEvent(tempItemPrefab);
+                        EventBus.Act(removeItem);
+                        RemoveItem(tempItemPrefab.sprite);
+                        isPuzzle = false;
+                    }
+                    
+                    else
+                    {
+                          Debug.Log("Wrong Puzzle");
+                    }
+                    
                      
 
                 }

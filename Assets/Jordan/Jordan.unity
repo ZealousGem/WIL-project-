@@ -3043,7 +3043,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7767337661109325057, guid: 9e2b2e8ac1ba85449924e04eec09845f, type: 3}
       propertyPath: m_Name
-      value: 'Keys '
+      value: Plate
       objectReference: {fileID: 0}
     - target: {fileID: 8717641293637305204, guid: 9e2b2e8ac1ba85449924e04eec09845f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8150,7 +8150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7767337661109325057, guid: 9e2b2e8ac1ba85449924e04eec09845f, type: 3}
       propertyPath: m_Name
-      value: Keys  (1)
+      value: Plate
       objectReference: {fileID: 0}
     - target: {fileID: 8717641293637305204, guid: 9e2b2e8ac1ba85449924e04eec09845f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10150,7 +10150,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: fdf3d016d2c14b840b29a6b7cdc9bd6d, type: 2}
     - target: {fileID: 7767337661109325057, guid: 9e2b2e8ac1ba85449924e04eec09845f, type: 3}
       propertyPath: m_Name
-      value: Keys
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 8717641293637305204, guid: 9e2b2e8ac1ba85449924e04eec09845f, type: 3}
       propertyPath: m_LocalPosition.x

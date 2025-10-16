@@ -92,8 +92,17 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
 
             if (FoundImage == addedItems[i] && addedItems[i].color == Color.clear)
             {
-                addedItems[i].sprite = image.sprite;
-                addedItems[i].color = Color.white;
+
+                for (int j = 0;  j <requiredItems.Count; j++)
+                {
+                    if (image.sprite == requiredItems[j].obj)
+                    {
+                       addedItems[i].sprite = image.sprite;
+                       addedItems[i].color = Color.white;
+                       CheckedEvent check = new CheckedEvent(true);
+                       EventBus.Act(check);
+                    }
+                }
                 break;
             }
 
