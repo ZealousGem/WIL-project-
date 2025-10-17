@@ -162,10 +162,13 @@ public class PuzzleEvent : EventData
     public Image go;
     public Image go2;
 
-    public PuzzleEvent(Image _go, Image _go2)
+    public TutorialPuzzle puzzle;
+
+    public PuzzleEvent(Image _go, Image _go2, TutorialPuzzle _puzzle)
     {
         go = _go;
         go2 = _go2;
+        puzzle = _puzzle;
     }
 }
 

@@ -44,9 +44,10 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
 
     Vector3 offSet;
 
-    Plane draggedPlane; 
+    Plane draggedPlane;
 
     Image tempItemPrefab;
+    GameManager Game;
 
      private void OnDisable()
     {
@@ -60,13 +61,18 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
     }
 
     public void Inventory(PuzzleEvent data)
+    {        
+        if (data.puzzle != this) 
     {
+        return; // Ignore the event if it's not meant for this puzzle instance
+    }
         additem(data.go, data.go2);
     }
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        Game = GameObject.FindGameObjectWithTag("signleton").GetComponent<GameManager>();
         Interact.SetActive(false);
         for (int i = 0; i < addedItems.Count; i++)
         {
@@ -129,8 +135,9 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
             HideBox();
             PuzzleCompleted = true;
             Interact.SetActive(false);
-            ChangeDialogueState change = new ChangeDialogueState(DialougeChange.TutorialPuzzle, 1);
-            EventBus.Act(change);
+            Game.PuzzleCompleted(1);
+            // ChangeDialogueState change = new ChangeDialogueState(DialougeChange.TutorialPuzzle, 1);
+            // EventBus.Act(change);
         }
 
         else

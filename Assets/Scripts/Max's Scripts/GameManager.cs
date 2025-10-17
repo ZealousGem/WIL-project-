@@ -3,33 +3,23 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
-    public static GameManager Instance;
 
-    public PlayerStats playerStats;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    int PuzzleCounter = 0;
+  
+    // Start is called once before the first execution of Update after the MonoBehaviour is create
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
-    private void Awake()
+    public void PuzzleCompleted(int count)
     {
-        if (Instance == null)
+        PuzzleCounter += count;
+         Debug.Log("completed");
+        if (PuzzleCounter == 3)
         {
-            Instance = this;
-            playerStats = new PlayerStats();
-        }
-        else
-        {
-            Destroy(gameObject);
+             ChangeDialogueState change = new ChangeDialogueState(DialougeChange.TutorialPuzzle, 1);
+             EventBus.Act(change);
         }
     }
+
 
     public void GameOver(string reason)
     {

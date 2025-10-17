@@ -293,10 +293,12 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
             if (ob.CompareTag("Inventory") && ob.GetComponent<Image>() != null)
             {
                 Image hitImage = ob.GetComponent<Image>();
-                if (hitImage.color == Color.clear)
+
+                TutorialPuzzle targetPuzzle = ob.GetComponentInParent<TutorialPuzzle>();
+                if (hitImage.color == Color.clear && targetPuzzle != null)
                 {
 //                    Debug.Log("Found a valid inventory slot in world space!" + ob.gameObject.name);
-                    PuzzleEvent puzzle = new PuzzleEvent(tempItemPrefab, hitImage);
+                    PuzzleEvent puzzle = new PuzzleEvent(tempItemPrefab, hitImage, targetPuzzle);
                     EventBus.Act(puzzle);
 
                     if (isPuzzle)

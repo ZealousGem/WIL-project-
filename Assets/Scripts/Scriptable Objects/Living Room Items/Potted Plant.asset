@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d47522aef65fd443a60c26505697d3b, type: 3}
-  m_Name: Book
+  m_Name: Potted Plant
   m_EditorClassIdentifier: 
-  id: 2
-  obj: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  prefab: {fileID: 7767337661109325057, guid: 9e2b2e8ac1ba85449924e04eec09845f, type: 3}
+  id: 14
+  obj: {fileID: -1497371589, guid: 069a00c4a21d8654bbe27600f3ba7103, type: 3}
+  prefab: {fileID: 840372520357081670, guid: cac1b0847e8650a40a536680453ee90e, type: 3}
