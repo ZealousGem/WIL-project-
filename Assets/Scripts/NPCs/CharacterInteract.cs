@@ -126,7 +126,7 @@ public class CharacterInteract : MonoBehaviour
     {
         if (data.curState == DialogueState.NextDialogue && data.name == NPCname)
         {
-            Debug.Log("triggered");
+          //  Debug.Log("triggered");
             if (curIndex == data.id)
             {
                 
@@ -210,7 +210,7 @@ public class CharacterInteract : MonoBehaviour
                 curCharState.EnterState(NPCname, curIndex);
             //    Debug.Log(curIndex);
                 inBox = false;
-                Debug.Log("clicked " + gameObject.name + "id " + curId);
+               // Debug.Log("clicked " + gameObject.name + "id " + curId);
 
 
 

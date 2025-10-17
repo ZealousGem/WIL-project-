@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64a368a819c40ed4a82005d97325fbe2, type: 3}
-  m_Name: John
+  m_Name: Mom2nd
   m_EditorClassIdentifier: 
   CharacterId: 2
   dialogueNodes:
-  - id: 1
+  - id: 3
     Choices:
-    - Choice: 2
+    - Choice: 4
+      answer: 
+      amount: 0
+      item: {fileID: 11400000, guid: 2afcf0a6e7239084cb0021459d9a4c97, type: 2}
+      eventChanged: 
+  - id: 4
+    Choices:
+    - Choice: 4
       answer: 
       amount: 0
       item: {fileID: 0}
       eventChanged: 
-  - id: 2
-    Choices:
-    - Choice: 2
-      answer: 
-      amount: 0
-      item: {fileID: 0}
-      eventChanged: 
-  Name: John
-  RepeatDialogueIndex: 2
+  Name: Mom
+  RepeatDialogueIndex: 4

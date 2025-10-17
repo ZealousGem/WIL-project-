@@ -1,7 +1,7 @@
 {
   "id": [
     {
-      "name": "Diane",
+      "name": "Dad",
       "dialogue": [
         {
           "id": "1",
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "name": "John",
+      "name": "Mom",
       "dialogue": [
         {
           "id": "1",
@@ -48,14 +48,14 @@
             { "words": "I'm not letting you out until you clean it up, I did it last time so it's your turn to do it now" },
             { "words": "If you have fogotten, I'll tell you just so you don't cause any more trouble" },
             { "words": "All you need to do is pickup any books or items that are laid around the house" },
-            { "words": "Then place it on the shelf in the Main room, but make sure to put it in the right spots, mother will lose it if it's placed incorrectly" },
-            { "words": "That's all, you got it now? Good, now go clean it up beofre the rents wake up" }
+            { "words": "Then place it on the shelf in the Main room, but make sure to put it in the right spots, I will lose it if it's placed incorrectly" },
+            { "words": "That's all, you got it now? Good, now go clean it up before so you can get to school on time" }
           ]
         },
         {
           "id": "2",
           "Text": [
-            { "words": "What are you doing? Hurry before they wake up" }
+            { "words": "What are you doing? Hurry up or you will be late" }
           ]
         },
 

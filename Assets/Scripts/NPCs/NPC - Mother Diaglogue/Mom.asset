@@ -10,49 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64a368a819c40ed4a82005d97325fbe2, type: 3}
-  m_Name: Diane
+  m_Name: Mom
   m_EditorClassIdentifier: 
-  CharacterId: 1
+  CharacterId: 2
   dialogueNodes:
   - id: 1
     Choices:
-    - Choice: 4
-      answer: Take the Money
-      amount: 2
-      item: {fileID: 0}
-      eventChanged: 
-    - Choice: 5
-      answer: Reject the Offer
+    - Choice: 2
+      answer: 
       amount: 0
       item: {fileID: 0}
       eventChanged: 
   - id: 2
     Choices:
-    - Choice: 3
-      answer: 
-      amount: 0
-      item: {fileID: 0}
-      eventChanged: 
-  - id: 3
-    Choices:
-    - Choice: 3
-      answer: 
-      amount: 0
-      item: {fileID: 0}
-      eventChanged: 
-  - id: 4
-    Choices:
     - Choice: 2
       answer: 
       amount: 0
       item: {fileID: 0}
       eventChanged: 
-  - id: 5
-    Choices:
-    - Choice: 2
-      answer: 
-      amount: 0
-      item: {fileID: 0}
-      eventChanged: 
-  Name: Diane
-  RepeatDialogueIndex: 3
+  Name: Mom
+  RepeatDialogueIndex: 2

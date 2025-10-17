@@ -31,7 +31,7 @@ public class DialogueManager : MonoBehaviour
         SetName(data.name);
         SetID(data.id);
         StartCoroutine(LoadData());
-        Debug.Log(data.id + data.name);
+        //Debug.Log(data.id + data.name);
 
     }
 
