@@ -7,7 +7,26 @@ public class ObjectInteract : MonoBehaviour
     public itemSO item;
     public GameObject interact;
 
+    private Camera mainCam;
+
+    public Vector3 uiOffset = new Vector3(0, 1f, 0);
+
     bool inBox = false;
+
+    void OnEnable()
+    {
+        EventBus.Subscribe<InputChangeEvent>(ChangingCameras);
+    }
+
+    void OnDisable()
+    {
+        EventBus.Unsubscribe<InputChangeEvent>(ChangingCameras);
+    }
+
+     void ChangingCameras(InputChangeEvent data)
+    {
+        mainCam = data.cam.GetComponent<Camera>();
+    }
 
     private void Start()
     {
@@ -29,10 +48,11 @@ public class ObjectInteract : MonoBehaviour
     {
         if (inBox)
         {
-         if (Input.GetKeyDown(KeyCode.E))
+            UpdateUIPosition();
+         if (Input.GetMouseButtonDown(0))
         {
 
-
+             
 //            Debug.Log("here");
             GameObjectEvent obj = new GameObjectEvent(this.gameObject);
             EventBus.Act(obj);
@@ -58,5 +78,16 @@ public class ObjectInteract : MonoBehaviour
             inBox = false;
         }
 
+    }
+
+    void UpdateUIPosition()
+    {
+        if (interact != null)
+        {
+            interact.transform.position = transform.position + uiOffset;
+
+            Vector3 camDirection = interact.transform.position - mainCam.transform.position;
+            interact.transform.rotation = Quaternion.LookRotation(camDirection);
+        }
     }
 }

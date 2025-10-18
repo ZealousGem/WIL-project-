@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.555, y: -195}
-  m_SizeDelta: {x: 1106.104, y: 144.013}
+  m_AnchoredPosition: {x: 5.735, y: -198}
+  m_SizeDelta: {x: 1361.621, y: 108.379}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3226836
 MonoBehaviour:
@@ -9908,7 +9908,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 108898809900750350, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_text
-      value: Press E
+      value: Press Left Click
       objectReference: {fileID: 0}
     - target: {fileID: 217871535993950399, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_Name
@@ -9920,7 +9920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 217871535993950399, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2870530076074868354, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_Layer
@@ -13563,7 +13563,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 108898809900750350, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_text
-      value: Press E
+      value: Press Left Click
       objectReference: {fileID: 0}
     - target: {fileID: 217871535993950399, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_Name

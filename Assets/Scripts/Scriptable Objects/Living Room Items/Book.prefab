@@ -49,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: fdf3d016d2c14b840b29a6b7cdc9bd6d, type: 2}
   interact: {fileID: 7318943243670432874}
+  uiOffset: {x: 0, y: 1, z: 0}
 --- !u!65 &2729382768630540669
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -142,7 +143,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 108898809900750350, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_text
-      value: Press E
+      value: Press Left Click
       objectReference: {fileID: 0}
     - target: {fileID: 217871535993950399, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_Name
