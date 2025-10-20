@@ -3315,7 +3315,7 @@ MonoBehaviour:
   - {fileID: 287907703}
   changedIndex: 5
   index: 2
-  image: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  image: {fileID: 21300000, guid: 499669a9fd4cc6742acc88e044d25877, type: 3}
 --- !u!65 &322387583
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4994,7 +4994,7 @@ MonoBehaviour:
   - {fileID: 915245020}
   changedIndex: 3
   index: 0
-  image: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  image: {fileID: 21300000, guid: fd76954858732b64399119199b8bdd77, type: 3}
 --- !u!65 &527835933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5474,7 +5474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &568277890
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9402,7 +9402,7 @@ MonoBehaviour:
   - {fileID: 1294642127}
   changedIndex: 4
   index: 1
-  image: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  image: {fileID: 21300000, guid: fd76954858732b64399119199b8bdd77, type: 3}
 --- !u!65 &1263450394
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15582,11 +15582,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8142152805154576729, guid: 700b44b64fef5f549a611cba1c7522c2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -378749.16
+      value: -378720
       objectReference: {fileID: 0}
     - target: {fileID: 8142152805154576729, guid: 700b44b64fef5f549a611cba1c7522c2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5593.101
+      value: -5619
       objectReference: {fileID: 0}
     - target: {fileID: 8142152805154576729, guid: 700b44b64fef5f549a611cba1c7522c2, type: 3}
       propertyPath: m_LocalRotation.w
