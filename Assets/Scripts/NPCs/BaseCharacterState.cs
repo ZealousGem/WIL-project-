@@ -1,6 +1,5 @@
 
 using UnityEditor.Rendering;
-using UnityEditorInternal;
 using UnityEngine;
 
 public abstract class BaseCharacterState

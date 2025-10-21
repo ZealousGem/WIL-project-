@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using UnityEditor.Search;
+
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine;
-using UnityEngine.Rendering.HighDefinition;
+
 using TMPro;
 
 public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
