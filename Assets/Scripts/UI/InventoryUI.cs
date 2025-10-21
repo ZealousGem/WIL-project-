@@ -122,9 +122,17 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
         {
             info.text = item.name + " removed";
         }
+
+        yield return new WaitForSeconds(1f);
+        info.text = "";
+    }
+    
+    IEnumerator TextInfo(string parameter)
+    {
         
-         yield return new WaitForSeconds(1f);
-            info.text = "";
+        info.text = parameter;
+        yield return new WaitForSeconds(1f);
+        info.text = "";
     }
 
     void Start()
@@ -311,7 +319,9 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
                     
                     else
                     {
-                          Debug.Log("Wrong Puzzle");
+                        Debug.Log("Wrong Puzzle");
+                        info.text = "wrong shelf";
+                        StartCoroutine(TextInfo(info.text));
                     }
                     
                      

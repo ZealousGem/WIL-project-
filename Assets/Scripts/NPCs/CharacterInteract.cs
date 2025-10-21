@@ -49,7 +49,11 @@ public class CharacterInteract : MonoBehaviour
 
     int RootNode = 0;
 
+    public Vector3 uiOffset = new Vector3(0, 1f, 0);
+
     public List<DialougeChange> eventChange;
+
+    private Camera mainCam;
 
     void Awake()
     {
@@ -81,6 +85,7 @@ public class CharacterInteract : MonoBehaviour
         EventBus.Subscribe<ChangeStateEvent>(SwitchState);
         EventBus.Subscribe<DialogueEndedEvent>(ChangeCurIndex);
         EventBus.Subscribe<ChangeDialogueState>(ChangeDialogueState);
+        EventBus.Subscribe<InputChangeEvent>(ChangingCameras);
     }
 
     void OnDisable()
@@ -88,6 +93,23 @@ public class CharacterInteract : MonoBehaviour
         EventBus.Unsubscribe<ChangeStateEvent>(SwitchState);
         EventBus.Unsubscribe<DialogueEndedEvent>(ChangeCurIndex);
         EventBus.Unsubscribe<ChangeDialogueState>(ChangeDialogueState);
+        EventBus.Unsubscribe<InputChangeEvent>(ChangingCameras);
+    }
+
+     void UpdateUIPosition()
+    {
+        if (Interact != null)
+        {
+            Interact.transform.position = transform.position + uiOffset;
+
+            Vector3 camDirection = Interact.transform.position - mainCam.transform.position;
+            Interact.transform.rotation = Quaternion.LookRotation(camDirection);
+        }
+    }
+
+     void ChangingCameras(InputChangeEvent data)
+    {
+        mainCam = data.cam.GetComponent<Camera>();
     }
 
     void ChangeDialogueState(ChangeDialogueState data)
@@ -198,7 +220,7 @@ public class CharacterInteract : MonoBehaviour
     {
         if (inBox && id == curId)
         {
-            
+            UpdateUIPosition();
             if (Input.GetKeyDown(KeyCode.E))
             {
 

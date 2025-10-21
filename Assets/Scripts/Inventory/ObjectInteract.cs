@@ -7,11 +7,12 @@ public class ObjectInteract : MonoBehaviour
     public itemSO item;
     public GameObject interact;
 
-    private Camera mainCam;
 
     public Vector3 uiOffset = new Vector3(0, 1f, 0);
 
     bool inBox = false;
+
+    private Camera mainCam;
 
     void OnEnable()
     {

@@ -3087,6 +3087,7 @@ MonoBehaviour:
   changedIndex: 5
   index: 2
   image: {fileID: 21300000, guid: b3c2eac5f09223e4691388500485018a, type: 3}
+  uiOffset: {x: -1, y: 1, z: -1}
 --- !u!65 &322387583
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3223,10 +3224,11 @@ MonoBehaviour:
   image: {fileID: 1552907415}
   dialouge:
   - Drag the items from the inventory then place into the shelf boxes
-  - Place it in the right order to complete packing up the shelf
+  - Place it in the right order to complete packing up the shelf, press E again to
+    quit the shelf
   images:
-  - {fileID: -1428079781, guid: 069a00c4a21d8654bbe27600f3ba7103, type: 3}
-  - {fileID: 1856912378, guid: 069a00c4a21d8654bbe27600f3ba7103, type: 3}
+  - {fileID: 21300000, guid: de73bd31557aaf7439cd3e17aa68b920, type: 3}
+  - {fileID: 21300000, guid: 7786cc4acad6f9048b47f2d3d23099b5, type: 3}
   title: Puzzles
   Speed: 0.05
   StartTutoruail: 0
@@ -4687,6 +4689,7 @@ MonoBehaviour:
   changedIndex: 3
   index: 0
   image: {fileID: 21300000, guid: 499669a9fd4cc6742acc88e044d25877, type: 3}
+  uiOffset: {x: 0, y: 1, z: -1}
 --- !u!65 &527835933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4727,10 +4730,11 @@ MonoBehaviour:
   image: {fileID: 1552907415}
   dialouge:
   - Drag the items from the inventory then place into the shelf boxes
-  - Place it in the right order to complete packing up the shelf
+  - Place it in the right order to complete packing up the shelf, press E again to
+    quit the shelf
   images:
-  - {fileID: -1428079781, guid: 069a00c4a21d8654bbe27600f3ba7103, type: 3}
-  - {fileID: 1856912378, guid: 069a00c4a21d8654bbe27600f3ba7103, type: 3}
+  - {fileID: 21300000, guid: de73bd31557aaf7439cd3e17aa68b920, type: 3}
+  - {fileID: 21300000, guid: 7786cc4acad6f9048b47f2d3d23099b5, type: 3}
   title: Puzzles
   Speed: 0.05
   StartTutoruail: 0
@@ -8052,7 +8056,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -246.24222, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -9078,6 +9082,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 60f9bf77df1398b408a80a87a4373059, type: 2}
   pepe: {fileID: 4994331854867201490}
   id: 1
+  uiOffset: {x: 0, y: 2, z: 0}
   eventChange: 01000000
 --- !u!114 &1240230874
 MonoBehaviour:
@@ -9097,15 +9102,15 @@ MonoBehaviour:
   titleUI: {fileID: 982452670}
   image: {fileID: 1552907415}
   dialouge:
-  - Taliking to the townsfold, will give objective and clues to how the puzzles need
+  - Taliking to the townsfolk, will give objective and clues to how the puzzles need
     to be completed
   - Sometimes they will offer you a choiece that can affect majors parts of the game
   - Make sure to choose the right decision to obtain desired items or progressiing
     through the game
   images:
-  - {fileID: -1428079781, guid: 069a00c4a21d8654bbe27600f3ba7103, type: 3}
-  - {fileID: 1856912378, guid: 069a00c4a21d8654bbe27600f3ba7103, type: 3}
-  - {fileID: -1448324343, guid: 069a00c4a21d8654bbe27600f3ba7103, type: 3}
+  - {fileID: 21300000, guid: f804408cbdcf2614784cfb4c8849cbfc, type: 3}
+  - {fileID: 21300000, guid: 4b5f476ac1938b149a5eebd17aa28181, type: 3}
+  - {fileID: 21300000, guid: 701c273f27f8ef0419202adf8ffa5b0e, type: 3}
   title: Characters
   Speed: 0.05
   StartTutoruail: 0
@@ -9238,6 +9243,7 @@ MonoBehaviour:
   changedIndex: 4
   index: 1
   image: {fileID: 21300000, guid: 54c92968bc6131f49952754d003caa6f, type: 3}
+  uiOffset: {x: 0, y: 1, z: -1}
 --- !u!65 &1263450394
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9374,10 +9380,11 @@ MonoBehaviour:
   image: {fileID: 1552907415}
   dialouge:
   - Drag the items from the inventory then place into the shelf boxes
-  - Place it in the right order to complete packing up the shelf
+  - Place it in the right order to complete packing up the shelf, press E again to
+    quit the shelf
   images:
-  - {fileID: -1428079781, guid: 069a00c4a21d8654bbe27600f3ba7103, type: 3}
-  - {fileID: 1856912378, guid: 069a00c4a21d8654bbe27600f3ba7103, type: 3}
+  - {fileID: 21300000, guid: de73bd31557aaf7439cd3e17aa68b920, type: 3}
+  - {fileID: 21300000, guid: 7786cc4acad6f9048b47f2d3d23099b5, type: 3}
   title: Puzzles
   Speed: 0.05
   StartTutoruail: 0
@@ -9912,7 +9919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.148
+      value: 0.24
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9932,11 +9939,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.471
+      value: 0.95
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.309
+      value: 1.53
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12455,6 +12462,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7e59261eb8f1afd499c069799af5a2c8, type: 2}
   pepe: {fileID: 4994331854867201490}
   id: 2
+  uiOffset: {x: 0, y: 2, z: 0}
   eventChange: 00000000
 --- !u!136 &1573964017
 CapsuleCollider:
@@ -12566,15 +12574,15 @@ MonoBehaviour:
   titleUI: {fileID: 982452670}
   image: {fileID: 1552907415}
   dialouge:
-  - Taliking to the townsfold, will give objective and clues to how the puzzles need
+  - Taliking to the townsfolk, will give objective and clues to how the puzzles need
     to be completed
   - Sometimes they will offer you a choiece that can affect majors parts of the game
   - Make sure to choose the right decision to obtain desired items or progressiing
     through the game
   images:
-  - {fileID: -1428079781, guid: 069a00c4a21d8654bbe27600f3ba7103, type: 3}
-  - {fileID: 1856912378, guid: 069a00c4a21d8654bbe27600f3ba7103, type: 3}
-  - {fileID: -1448324343, guid: 069a00c4a21d8654bbe27600f3ba7103, type: 3}
+  - {fileID: 21300000, guid: f804408cbdcf2614784cfb4c8849cbfc, type: 3}
+  - {fileID: 21300000, guid: 4b5f476ac1938b149a5eebd17aa28181, type: 3}
+  - {fileID: 21300000, guid: 701c273f27f8ef0419202adf8ffa5b0e, type: 3}
   title: Characters
   Speed: 0.05
   StartTutoruail: 0
@@ -13526,7 +13534,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657407703}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 696db03bab7483b49bd4a08ef04cd65c, type: 3}
   m_Name: 
@@ -13537,14 +13545,14 @@ MonoBehaviour:
   titleUI: {fileID: 982452670}
   image: {fileID: 1552907415}
   dialouge:
-  - to move the characer around press right click on the mouse to move the player
-  - the camera static so when the chatacter leaves to  another room, cameras will
+  - To move the characer around press right click on the mouse to move the player
+  - The is camera static so when the chatacter leaves to another room, cameras will
     switch
-  - to interact with items press Left Click to interact with npcs, items and puzzles
+  - To interact with items press E to interact with npcs, items and puzzles
   images:
-  - {fileID: -1428079781, guid: 069a00c4a21d8654bbe27600f3ba7103, type: 3}
-  - {fileID: 1856912378, guid: 069a00c4a21d8654bbe27600f3ba7103, type: 3}
-  - {fileID: -1196241393, guid: 069a00c4a21d8654bbe27600f3ba7103, type: 3}
+  - {fileID: 21300000, guid: a2bc077d4b4e2c24ca425adedbcb4d77, type: 3}
+  - {fileID: 21300000, guid: 8b0b02595ddbcfd469e3d73e7c47156a, type: 3}
+  - {fileID: 21300000, guid: ded090a8619e9d648bde54d29e5ea110, type: 3}
   title: Controls
   Speed: 0.05
   StartTutoruail: 1

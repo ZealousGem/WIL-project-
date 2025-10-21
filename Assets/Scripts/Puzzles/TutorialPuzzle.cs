@@ -12,18 +12,18 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
 
     bool inBox2 = false;
 
-    bool displayed = false; 
+    bool displayed = false;
 
     [SerializeField]
     GameObject Interact;
 
     PlayerController player;
-    
+
     [SerializeField]
     List<Image> addedItems;
 
     int requiredCounter = 4;
-    
+
     [SerializeField]
     List<itemSO> requiredItems;
 
@@ -49,23 +49,34 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
     Image tempItemPrefab;
     GameManager Game;
 
-     private void OnDisable()
+    public Vector3 uiOffset = new Vector3(0, 1f, 0);
+
+    private Camera mainCam;
+
+    private void OnDisable()
     {
-        
+
         EventBus.Unsubscribe<PuzzleEvent>(Inventory);
+        EventBus.Unsubscribe<InputChangeEvent>(ChangingCameras);
     }
 
     private void OnEnable()
     {
         EventBus.Subscribe<PuzzleEvent>(Inventory);
+        EventBus.Subscribe<InputChangeEvent>(ChangingCameras);
+    }
+
+    void ChangingCameras(InputChangeEvent data)
+    {
+        mainCam = data.cam.GetComponent<Camera>();
     }
 
     public void Inventory(PuzzleEvent data)
-    {        
-        if (data.puzzle != this) 
     {
-        return; // Ignore the event if it's not meant for this puzzle instance
-    }
+        if (data.puzzle != this)
+        {
+            return; // Ignore the event if it's not meant for this puzzle instance
+        }
         additem(data.go, data.go2);
     }
 
@@ -78,7 +89,7 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
         {
             addedItems[i].color = Color.clear;
         }
-        
+
         for (int i = 0; i < text.Count; i++)
         {
             text[i].text = requiredItems[i].name;
@@ -86,27 +97,27 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
 
         addedItems[1].color = Color.white;
         addedItems[1].sprite = image;
-       
+
     }
 
     // Update is called once per frame
     void additem(Image image, Image FoundImage)
     {
-        
+
         for (int i = 0; i < addedItems.Count; i++)
         {
 
             if (FoundImage == addedItems[i] && addedItems[i].color == Color.clear)
             {
 
-                for (int j = 0;  j <requiredItems.Count; j++)
+                for (int j = 0; j < requiredItems.Count; j++)
                 {
                     if (image.sprite == requiredItems[j].obj)
                     {
-                       addedItems[i].sprite = image.sprite;
-                       addedItems[i].color = Color.white;
-                       CheckedEvent check = new CheckedEvent(true);
-                       EventBus.Act(check);
+                        addedItems[i].sprite = image.sprite;
+                        addedItems[i].color = Color.white;
+                        CheckedEvent check = new CheckedEvent(true);
+                        EventBus.Act(check);
                     }
                 }
                 break;
@@ -131,7 +142,7 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
         if (counter == requiredCounter)
         {
             // solved puzzle
-         //   Debug.Log("solved puzzle");
+            //   Debug.Log("solved puzzle");
             HideBox();
             PuzzleCompleted = true;
             Interact.SetActive(false);
@@ -142,7 +153,7 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
 
         else
         {
-          //  Debug.Log("not solved");
+            //  Debug.Log("not solved");
 
         }
     }
@@ -152,25 +163,25 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
         if (!PuzzleCompleted)
         {
             if (inBox2)
-        {
-
-            if (Input.GetKeyDown(KeyCode.E))
             {
-                if (displayed)
+              UpdateUIPosition();
+                if (Input.GetKeyDown(KeyCode.E))
                 {
-                    HideBox();
-                }
+                    if (displayed)
+                    {
+                        HideBox();
+                    }
 
-                else
-                {
-                    ShowBox();
-                }
+                    else
+                    {
+                        ShowBox();
+                    }
 
+                }
             }
         }
-        }
 
-        
+
     }
 
     void ShowBox()
@@ -183,8 +194,8 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
         cam = Camera.main;
         draggedPlane = new Plane(cam.transform.forward, transform.position);
         CheckIfCorrect();
-        
- 
+
+
     }
 
 
@@ -196,34 +207,34 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
         CameraChangeEvent cam = new CameraChangeEvent(index, 0f);
         EventBus.Act(cam);
         InventoryUI.inPuzzle = false;
-        
-       
+
+
     }
-    
-     void OnTriggerEnter(Collider other)
+
+    void OnTriggerEnter(Collider other)
     {
         if (!PuzzleCompleted)
         {
             if (other.CompareTag("Player"))
             {
-            Interact.SetActive(true);
+                Interact.SetActive(true);
 
-            inBox2 = true;
+                inBox2 = true;
             }
         }
-        
+
     }
 
     void OnTriggerExit(Collider other)
     {
-       
+
         if (other.CompareTag("Player"))
         {
             Interact.SetActive(false);
             inBox2 = false;
         }
     }
- 
+
     public void OnPointerDown(PointerEventData eventData)
     {
         if (eventData.button == PointerEventData.InputButton.Left)
@@ -234,10 +245,10 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
                 if (addedItems[i].color == Color.white && ob == addedItems[i].gameObject)
                 {
                     it = addedItems[i].transform.position;
-                 //   Debug.Log("clicked");
+                    //   Debug.Log("clicked");
                     tempItemPrefab = ob.GetComponent<Image>();
                     tempItemPrefab.raycastTarget = false;
-                    
+
                     // Calculate the offset so the item doesn't jump to the mouse's center
                     Ray ray = cam.ScreenPointToRay(eventData.position);
                     float distance;
@@ -245,7 +256,7 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
                     {
                         offSet = it - ray.GetPoint(distance);
                     }
-                       tempItemPrefab.transform.SetAsLastSibling();
+                    tempItemPrefab.transform.SetAsLastSibling();
                     break;
                 }
             }
@@ -255,11 +266,11 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
     public void OnDrag(PointerEventData eventData)
     {
         // throw new System.NotImplementedException();
-      if (tempItemPrefab != null)
+        if (tempItemPrefab != null)
         {
             Ray ray = cam.ScreenPointToRay(eventData.position);
             float distance;
-            
+
             if (draggedPlane.Raycast(ray, out distance))
             {
                 Vector3 newPosition = ray.GetPoint(distance) + offSet;
@@ -268,43 +279,55 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
         }
     }
 
-   public void OnPointerUp(PointerEventData eventData)
-{
-   
-    if (tempItemPrefab == null)
+    public void OnPointerUp(PointerEventData eventData)
     {
-        return;
+
+        if (tempItemPrefab == null)
+        {
+            return;
+        }
+
+
+        GameObject dropTarget = eventData.pointerCurrentRaycast.gameObject;
+        // -----------------------------------------------------------------
+
+
+        if (dropTarget != null)
+        {
+
+            if (dropTarget.CompareTag("Inventory") && dropTarget.GetComponent<Image>())
+            {
+                Image hitImage = dropTarget.GetComponent<Image>();
+                Sprite tempSprite = tempItemPrefab.sprite;
+                Color tempColor = tempItemPrefab.color;
+
+                tempItemPrefab.sprite = hitImage.sprite;
+                tempItemPrefab.color = hitImage.color;
+
+                hitImage.sprite = tempSprite;
+                hitImage.color = tempColor;
+                CheckIfCorrect();
+
+                // Debug.Log("Item dropped on world-space inventory!");
+            }
+        }
+
+        // Always return the dragged item to its original position
+        // and reset the raycast target property and prefab variable
+        tempItemPrefab.transform.position = it;
+        tempItemPrefab.raycastTarget = true;
+        tempItemPrefab = null;
     }
 
-    
-    GameObject dropTarget = eventData.pointerCurrentRaycast.gameObject;
-    // -----------------------------------------------------------------
-
-   
-    if (dropTarget != null)
+ void UpdateUIPosition()
     {
-        
-        if (dropTarget.CompareTag("Inventory") && dropTarget.GetComponent<Image>())
+        if (Interact != null)
         {
-            Image hitImage = dropTarget.GetComponent<Image>();
-            Sprite tempSprite = tempItemPrefab.sprite;
-            Color tempColor = tempItemPrefab.color;
+            Interact.transform.position = transform.position + uiOffset;
 
-            tempItemPrefab.sprite = hitImage.sprite;
-            tempItemPrefab.color = hitImage.color;
-
-            hitImage.sprite = tempSprite;
-            hitImage.color = tempColor;
-            CheckIfCorrect();
-
-           // Debug.Log("Item dropped on world-space inventory!");
+            Vector3 camDirection = Interact.transform.position - mainCam.transform.position;
+            Interact.transform.rotation = Quaternion.LookRotation(camDirection);
         }
     }
 
-    // Always return the dragged item to its original position
-    // and reset the raycast target property and prefab variable
-    tempItemPrefab.transform.position = it;
-    tempItemPrefab.raycastTarget = true;
-    tempItemPrefab = null;
-}
 }
