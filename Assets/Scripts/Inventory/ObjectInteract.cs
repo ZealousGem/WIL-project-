@@ -49,7 +49,7 @@ public class ObjectInteract : MonoBehaviour
         if (inBox)
         {
             UpdateUIPosition();
-         if (Input.GetMouseButtonDown(0))
+         if (Input.GetKeyDown(KeyCode.E))
         {
 
              

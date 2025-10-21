@@ -81,7 +81,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 108898809900750350, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_text
-      value: Press Left Click
+      value: Press E
       objectReference: {fileID: 0}
     - target: {fileID: 217871535993950399, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_Name

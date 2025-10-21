@@ -199,7 +199,7 @@ public class CharacterInteract : MonoBehaviour
         if (inBox && id == curId)
         {
             
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.E))
             {
 
 

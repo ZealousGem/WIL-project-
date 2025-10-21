@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Wooden Spoon
   m_EditorClassIdentifier: 
   id: 11
-  obj: {fileID: -277858414, guid: 069a00c4a21d8654bbe27600f3ba7103, type: 3}
+  obj: {fileID: 21300000, guid: 9070739c3a540d846aab711812fe067a, type: 3}
   prefab: {fileID: 5253068994214812024, guid: f92e31a97e9d521419029079d984dc2b, type: 3}

@@ -32,7 +32,7 @@ public class TutorialScript : MonoBehaviour
     {
         if (PlayerInView || StartTutoruail)
         {
-            if (Input.GetKeyDown(KeyCode.E) || StartTutoruail || Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 Time.timeScale = 0f;
                 ActivateTutorial();
