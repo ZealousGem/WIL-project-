@@ -177,18 +177,26 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
     void showInv(int index)
     {
       //  Debug.Log(index);
-        if (items.Count > 0)
-        {
-            InvUI[0].color = Color.white;
-            InvUI[0].sprite = items[index].item.obj;
-            text.text = items[index].item.name;
-        }
-
-        else
+       if (items.Count == 0)
         {
             InvUI[0].color = Color.clear;
             text.text = "No Item";
+            return; // Exit early if no items
         }
+
+        // 2. Check if the index is valid for the list size
+        if (index < 0 || index >= items.Count)
+        {
+            // This shouldn't happen if other methods are correct, but it's a safe guard.
+            Debug.LogError($"Invalid index {index} passed to showInv. items.Count is {items.Count}. Resetting curIndex.");
+            // Reset to a safe index, e.g., 0, and re-call
+            index = 0;
+        }
+        
+        // At this point, items.Count > 0 and 0 <= index < items.Count
+        InvUI[0].color = Color.white;
+        InvUI[0].sprite = items[index].item.obj;
+        text.text = items[index].item.name;
 
     }
 
