@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
 
     public float movementThreshold = 0.1f;
 
+ [SerializeField] ParticleSystem clickEffect;
 
     float currentSpeed = 0;
 
@@ -112,6 +113,8 @@ public class PlayerController : MonoBehaviour
                 if (hit.collider.gameObject)
                 {
                     NavMeshHit hitted;
+                     if(clickEffect != null)
+            {        Instantiate(clickEffect, hit.point + new Vector3(0, 0.1f, 0), clickEffect.transform.rotation); }
 
                     if (NavMesh.SamplePosition(hit.point, out hitted, 1.0f, NavMesh.AllAreas))
                     {

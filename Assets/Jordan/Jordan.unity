@@ -3345,8 +3345,12 @@ MonoBehaviour:
   - Place it in the right order to complete packing up the shelf, press E again to
     quit the shelf
   images:
-  - {fileID: 21300000, guid: de73bd31557aaf7439cd3e17aa68b920, type: 3}
-  - {fileID: 21300000, guid: 7786cc4acad6f9048b47f2d3d23099b5, type: 3}
+  - staticimage: {fileID: 21300000, guid: de73bd31557aaf7439cd3e17aa68b920, type: 3}
+    Animation: {fileID: 0}
+    type: 0
+  - staticimage: {fileID: 21300000, guid: 7786cc4acad6f9048b47f2d3d23099b5, type: 3}
+    Animation: {fileID: 0}
+    type: 0
   title: Puzzles
   Speed: 0.05
   StartTutoruail: 0
@@ -5297,8 +5301,12 @@ MonoBehaviour:
   - Place it in the right order to complete packing up the shelf, press E again to
     quit the shelf
   images:
-  - {fileID: 21300000, guid: de73bd31557aaf7439cd3e17aa68b920, type: 3}
-  - {fileID: 21300000, guid: 7786cc4acad6f9048b47f2d3d23099b5, type: 3}
+  - staticimage: {fileID: 21300000, guid: de73bd31557aaf7439cd3e17aa68b920, type: 3}
+    Animation: {fileID: 0}
+    type: 0
+  - staticimage: {fileID: 21300000, guid: 7786cc4acad6f9048b47f2d3d23099b5, type: 3}
+    Animation: {fileID: 0}
+    type: 0
   title: Puzzles
   Speed: 0.05
   StartTutoruail: 0
@@ -5524,7 +5532,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 33
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -10242,9 +10250,15 @@ MonoBehaviour:
   - Make sure to choose the right decision to obtain desired items or progressiing
     through the game
   images:
-  - {fileID: 21300000, guid: f804408cbdcf2614784cfb4c8849cbfc, type: 3}
-  - {fileID: 21300000, guid: 4b5f476ac1938b149a5eebd17aa28181, type: 3}
-  - {fileID: 21300000, guid: 701c273f27f8ef0419202adf8ffa5b0e, type: 3}
+  - staticimage: {fileID: 21300000, guid: f804408cbdcf2614784cfb4c8849cbfc, type: 3}
+    Animation: {fileID: 0}
+    type: 0
+  - staticimage: {fileID: 21300000, guid: 4b5f476ac1938b149a5eebd17aa28181, type: 3}
+    Animation: {fileID: 0}
+    type: 0
+  - staticimage: {fileID: 21300000, guid: 701c273f27f8ef0419202adf8ffa5b0e, type: 3}
+    Animation: {fileID: 0}
+    type: 0
   title: Characters
   Speed: 0.05
   StartTutoruail: 0
@@ -10517,8 +10531,12 @@ MonoBehaviour:
   - Place it in the right order to complete packing up the shelf, press E again to
     quit the shelf
   images:
-  - {fileID: 21300000, guid: de73bd31557aaf7439cd3e17aa68b920, type: 3}
-  - {fileID: 21300000, guid: 7786cc4acad6f9048b47f2d3d23099b5, type: 3}
+  - staticimage: {fileID: 21300000, guid: de73bd31557aaf7439cd3e17aa68b920, type: 3}
+    Animation: {fileID: 0}
+    type: 0
+  - staticimage: {fileID: 21300000, guid: 7786cc4acad6f9048b47f2d3d23099b5, type: 3}
+    Animation: {fileID: 0}
+    type: 0
   title: Puzzles
   Speed: 0.05
   StartTutoruail: 0
@@ -13454,6 +13472,7 @@ GameObject:
   - component: {fileID: 1552907414}
   - component: {fileID: 1552907416}
   - component: {fileID: 1552907415}
+  - component: {fileID: 1552907417}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -13518,6 +13537,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552907413}
   m_CullTransparentMesh: 1
+--- !u!95 &1552907417
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552907413}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 826f8d601ec10ec47b0986bf63c63a2a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1555138841
 GameObject:
   m_ObjectHideFlags: 0
@@ -13908,9 +13949,15 @@ MonoBehaviour:
   - Make sure to choose the right decision to obtain desired items or progressiing
     through the game
   images:
-  - {fileID: 21300000, guid: f804408cbdcf2614784cfb4c8849cbfc, type: 3}
-  - {fileID: 21300000, guid: 4b5f476ac1938b149a5eebd17aa28181, type: 3}
-  - {fileID: 21300000, guid: 701c273f27f8ef0419202adf8ffa5b0e, type: 3}
+  - staticimage: {fileID: 21300000, guid: f804408cbdcf2614784cfb4c8849cbfc, type: 3}
+    Animation: {fileID: 0}
+    type: 0
+  - staticimage: {fileID: 21300000, guid: 4b5f476ac1938b149a5eebd17aa28181, type: 3}
+    Animation: {fileID: 0}
+    type: 0
+  - staticimage: {fileID: 21300000, guid: 701c273f27f8ef0419202adf8ffa5b0e, type: 3}
+    Animation: {fileID: 0}
+    type: 0
   title: Characters
   Speed: 0.05
   StartTutoruail: 0
@@ -14929,6 +14976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 2
   movementThreshold: 0.1
+  clickEffect: {fileID: 7745407448679953632, guid: 02e94204f5f51854e9ed794d599b7f6f, type: 3}
 --- !u!195 &1657407709
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14985,7 +15033,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657407703}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 696db03bab7483b49bd4a08ef04cd65c, type: 3}
   m_Name: 
@@ -15001,9 +15049,15 @@ MonoBehaviour:
     switch
   - To interact with items press E to interact with npcs, items and puzzles
   images:
-  - {fileID: 21300000, guid: a2bc077d4b4e2c24ca425adedbcb4d77, type: 3}
-  - {fileID: 21300000, guid: 8b0b02595ddbcfd469e3d73e7c47156a, type: 3}
-  - {fileID: 21300000, guid: ded090a8619e9d648bde54d29e5ea110, type: 3}
+  - staticimage: {fileID: 0}
+    Animation: {fileID: 7400000, guid: de539ee4ea0e7f943971364129952532, type: 2}
+    type: 1
+  - staticimage: {fileID: 21300000, guid: 8b0b02595ddbcfd469e3d73e7c47156a, type: 3}
+    Animation: {fileID: 0}
+    type: 0
+  - staticimage: {fileID: 21300000, guid: ded090a8619e9d648bde54d29e5ea110, type: 3}
+    Animation: {fileID: 0}
+    type: 0
   title: Controls
   Speed: 0.05
   StartTutoruail: 1

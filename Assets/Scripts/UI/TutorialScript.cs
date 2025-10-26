@@ -5,6 +5,21 @@ using TMPro;
 using UnityEngine.UI;
 //using UnityEngine.UIElements;
 
+[System.Serializable]
+public class TutorialImages
+{
+    public Sprite staticimage;
+
+    public AnimationClip Animation;
+
+    public VisualType type;
+}
+
+public enum VisualType {
+        StaticSprite,
+        AnimatedGIF
+    }
+
 public class TutorialScript : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -15,7 +30,7 @@ public class TutorialScript : MonoBehaviour
     public TMP_Text titleUI;
     public Image image;
     public string[] dialouge;
-    public Sprite[] images;
+    public TutorialImages[] images;
 
     public string title;
     private int element;
@@ -26,7 +41,9 @@ public class TutorialScript : MonoBehaviour
 
     public string tags;
 
-    
+    Animator imageAnimator;
+
+
     // Update is called once per frame
     void Update()
     {
@@ -41,18 +58,25 @@ public class TutorialScript : MonoBehaviour
         }
 
     }
-    
+
     void ActivateTutorial()
     {
-            Button but = button.GetComponent<Button>();
-            but.onClick.AddListener(NextLine);
-            dialoguePanel.SetActive(true);
-            button.SetActive(false);
-            PlayerInView = false;
-            StartTutoruail = false;
-            titleUI.text = title;
-            StartCoroutine(TypeDialoguew());
-            UpdateImage();
+        imageAnimator = image.GetComponent<Animator>();
+        if (imageAnimator != null)
+        {
+            // CRITICAL: Set Update Mode to Unscaled Time so it plays when Time.timeScale is 0
+            imageAnimator.updateMode = AnimatorUpdateMode.UnscaledTime;
+            imageAnimator.enabled = false; // Disable it initially
+        }
+        Button but = button.GetComponent<Button>();
+        but.onClick.AddListener(NextLine);
+        dialoguePanel.SetActive(true);
+        button.SetActive(false);
+        PlayerInView = false;
+        StartTutoruail = false;
+        titleUI.text = title;
+        StartCoroutine(TypeDialoguew());
+        UpdateImage();
     }
 
     public void ActivateButton()
@@ -62,18 +86,35 @@ public class TutorialScript : MonoBehaviour
 
     public void UpdateImage()
     {
-        image.sprite = images[element];
+
+        if (VisualType.StaticSprite == images[element].type)
+        {
+            image.sprite = images[element].staticimage;
+        }
+
+        else if (VisualType.AnimatedGIF == images[element].type)
+        {
+            imageAnimator.enabled = true;
+            imageAnimator.Play(images[element].Animation.name);
+        }
         
+        else
+        {
+            image.sprite = null;
+        }
+       
+
     }
 
     public void NextLine()
     {
-        
+
         button.SetActive(false);
         if (element < dialouge.Length - 1)
         {
             element++;
             DialogueText.text = "";
+        if (imageAnimator != null) imageAnimator.enabled = false;
             StartCoroutine(TypeDialoguew());
             UpdateImage();
         }
@@ -82,7 +123,7 @@ public class TutorialScript : MonoBehaviour
         {
             noText();
             PlayerInView = false;
-            
+
 
         }
     }
@@ -97,6 +138,7 @@ public class TutorialScript : MonoBehaviour
         Button but = button.GetComponent<Button>();
         but.onClick.RemoveListener(NextLine);
         shiftObjects.AddRange(GameObject.FindGameObjectsWithTag(tags));
+        if (imageAnimator != null) imageAnimator.enabled = false;
 
         foreach (GameObject n in shiftObjects)
         {
@@ -106,7 +148,7 @@ public class TutorialScript : MonoBehaviour
                 puzzle.enabled = false;
             }
         }
-        
+
     }
 
     IEnumerator TypeDialoguew()
@@ -124,9 +166,9 @@ public class TutorialScript : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-     if (other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            
+
             PlayerInView = true;
 
         }
