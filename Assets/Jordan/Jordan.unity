@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.735, y: -198}
+  m_AnchoredPosition: {x: 5.735, y: -321}
   m_SizeDelta: {x: 1361.621, y: 108.379}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3226836
@@ -255,6 +255,122 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3226834}
   m_CullTransparentMesh: 1
+--- !u!1001 &9780645
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6717205
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6717205
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6717205
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -22.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 496
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 294.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525701411600092276, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1805840169, guid: 4cf71b7b2421c0440a208db39d4d6a3e, type: 3}
+    - target: {fileID: 8559797499118704933, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      propertyPath: m_Name
+      value: Image
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8559797499118704933, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1370399346}
+  m_SourcePrefab: {fileID: 100100000, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
 --- !u!1 &27299040
 GameObject:
   m_ObjectHideFlags: 0
@@ -3358,9 +3474,11 @@ MonoBehaviour:
   images:
   - staticimage: {fileID: 21300000, guid: de73bd31557aaf7439cd3e17aa68b920, type: 3}
     Animation: {fileID: 0}
+    Controler: {fileID: 0}
     type: 0
   - staticimage: {fileID: 21300000, guid: 7786cc4acad6f9048b47f2d3d23099b5, type: 3}
     Animation: {fileID: 0}
+    Controler: {fileID: 0}
     type: 0
   title: Puzzles
   Speed: 0.05
@@ -5351,9 +5469,11 @@ MonoBehaviour:
   images:
   - staticimage: {fileID: 21300000, guid: de73bd31557aaf7439cd3e17aa68b920, type: 3}
     Animation: {fileID: 0}
+    Controler: {fileID: 0}
     type: 0
   - staticimage: {fileID: 21300000, guid: 7786cc4acad6f9048b47f2d3d23099b5, type: 3}
     Animation: {fileID: 0}
+    Controler: {fileID: 0}
     type: 0
   title: Puzzles
   Speed: 0.05
@@ -5395,7 +5515,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21, y: -315}
+  m_AnchoredPosition: {x: 21, y: -443}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &547305222
@@ -8270,7 +8390,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: 318}
+  m_AnchoredPosition: {x: -1, y: 419}
   m_SizeDelta: {x: 566.351, y: 66.811}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &982452670
@@ -10443,14 +10563,17 @@ MonoBehaviour:
   - Make sure to choose the right decision to obtain desired items or progressiing
     through the game
   images:
-  - staticimage: {fileID: 21300000, guid: f804408cbdcf2614784cfb4c8849cbfc, type: 3}
+  - staticimage: {fileID: 21300000, guid: 8e06b962b293add48801b0c1608ebcc8, type: 3}
     Animation: {fileID: 0}
+    Controler: {fileID: 0}
     type: 0
-  - staticimage: {fileID: 21300000, guid: 4b5f476ac1938b149a5eebd17aa28181, type: 3}
+  - staticimage: {fileID: 21300000, guid: be1c50b68b7f18142bf0ed96536bf1d4, type: 3}
     Animation: {fileID: 0}
+    Controler: {fileID: 0}
     type: 0
-  - staticimage: {fileID: 21300000, guid: 701c273f27f8ef0419202adf8ffa5b0e, type: 3}
+  - staticimage: {fileID: 21300000, guid: 9bf6fc0c15963f94091168ed7943c61b, type: 3}
     Animation: {fileID: 0}
+    Controler: {fileID: 0}
     type: 0
   title: Characters
   Speed: 0.05
@@ -10727,9 +10850,11 @@ MonoBehaviour:
   images:
   - staticimage: {fileID: 21300000, guid: de73bd31557aaf7439cd3e17aa68b920, type: 3}
     Animation: {fileID: 0}
+    Controler: {fileID: 0}
     type: 0
   - staticimage: {fileID: 21300000, guid: 7786cc4acad6f9048b47f2d3d23099b5, type: 3}
     Animation: {fileID: 0}
+    Controler: {fileID: 0}
     type: 0
   title: Puzzles
   Speed: 0.05
@@ -11772,6 +11897,33 @@ RectTransform:
   m_AnchoredPosition: {x: -5249.9385, y: 851.2209}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1370399345 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8559797499118704933, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
+  m_PrefabInstance: {fileID: 9780645}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1370399346
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370399345}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ba0344bb774274946994f8a966d7f0bf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1396735125
 GameObject:
   m_ObjectHideFlags: 0
@@ -13829,14 +13981,14 @@ RectTransform:
   m_GameObject: {fileID: 1552907413}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6541, y: 1.6541, z: 1.6541}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1974807287}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.555, y: 62}
+  m_AnchoredPosition: {x: 10.555, y: 47}
   m_SizeDelta: {x: 559.838, y: 340.379}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1552907415
@@ -14300,14 +14452,17 @@ MonoBehaviour:
   - Make sure to choose the right decision to obtain desired items or progressiing
     through the game
   images:
-  - staticimage: {fileID: 21300000, guid: f804408cbdcf2614784cfb4c8849cbfc, type: 3}
+  - staticimage: {fileID: 21300000, guid: 8e06b962b293add48801b0c1608ebcc8, type: 3}
     Animation: {fileID: 0}
+    Controler: {fileID: 0}
     type: 0
-  - staticimage: {fileID: 21300000, guid: 4b5f476ac1938b149a5eebd17aa28181, type: 3}
+  - staticimage: {fileID: 21300000, guid: be1c50b68b7f18142bf0ed96536bf1d4, type: 3}
     Animation: {fileID: 0}
+    Controler: {fileID: 0}
     type: 0
-  - staticimage: {fileID: 21300000, guid: 701c273f27f8ef0419202adf8ffa5b0e, type: 3}
+  - staticimage: {fileID: 21300000, guid: 9bf6fc0c15963f94091168ed7943c61b, type: 3}
     Animation: {fileID: 0}
+    Controler: {fileID: 0}
     type: 0
   title: Characters
   Speed: 0.05
@@ -15394,7 +15549,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657407703}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 696db03bab7483b49bd4a08ef04cd65c, type: 3}
   m_Name: 
@@ -15409,15 +15564,24 @@ MonoBehaviour:
   - The is camera static so when the chatacter leaves to another room, cameras will
     switch
   - To interact with items press E to interact with npcs, items and puzzles
+  - Keep an eye for yellow arrows, they can help you get on the right if you get
+    lost
   images:
   - staticimage: {fileID: 0}
-    Animation: {fileID: 7400000, guid: de539ee4ea0e7f943971364129952532, type: 2}
+    Animation: {fileID: 7400000, guid: b1f6c178562c7f64e944ca5d67e1b7c1, type: 2}
+    Controler: {fileID: 9100000, guid: 826f8d601ec10ec47b0986bf63c63a2a, type: 2}
     type: 1
   - staticimage: {fileID: 21300000, guid: 8b0b02595ddbcfd469e3d73e7c47156a, type: 3}
     Animation: {fileID: 0}
+    Controler: {fileID: 0}
     type: 0
   - staticimage: {fileID: 21300000, guid: ded090a8619e9d648bde54d29e5ea110, type: 3}
     Animation: {fileID: 0}
+    Controler: {fileID: 0}
+    type: 0
+  - staticimage: {fileID: 21300000, guid: 50bf0a487c053be439ea2ea33f1f8672, type: 3}
+    Animation: {fileID: 0}
+    Controler: {fileID: 0}
     type: 0
   title: Controls
   Speed: 0.05
@@ -18470,3 +18634,4 @@ SceneRoots:
   - {fileID: 31426115}
   - {fileID: 415220963}
   - {fileID: 1454141165}
+  - {fileID: 9780645}

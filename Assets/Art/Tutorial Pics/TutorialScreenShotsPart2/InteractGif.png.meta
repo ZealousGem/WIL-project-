@@ -1,0 +1,2532 @@
+fileFormatVersion: 2
+guid: 6e8a58a19e7f808429565d6835787605
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: InteractGif_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4760
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0f7c47dedb5d543a4aa5de30e4e2c1
+      internalID: 1428669564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_1
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 4760
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4a65177f0a1394d8d27f2d42bb8703
+      internalID: 1365635488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_2
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 4760
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc36d2c6d9c4fae49a508e704773e4ec
+      internalID: -296246445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_3
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 4760
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d782acc366068644aaf7edcb345d0342
+      internalID: 1811190278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_4
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 4760
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b010865f85986674385a5a85462d2bc2
+      internalID: -91031764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_5
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 4760
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba36a84545938d145a07a98148b8bf82
+      internalID: 296182998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_6
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 4760
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1693a0390cf03d843b0e68509eeb3269
+      internalID: -394433189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4420
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919117754ecc0f44f82ca172a2b1c52d
+      internalID: -1151243248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_8
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 4420
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2697d136bc6e81649aefcf55a76d1231
+      internalID: -1449550018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_9
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 4420
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13cf5ae777f11614e8f75c4ff6a574ef
+      internalID: 1665662067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_10
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 4420
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367c0f79a3fc2c343ada156c4e55d40d
+      internalID: -58359658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_11
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 4420
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f323c2b511b7a43995627e7e060167
+      internalID: 1838328159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_12
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 4420
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f4a7a417e1ccc429ed855520ddec98
+      internalID: -1714121057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_13
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 4420
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b6a9de7bd5f734185c43fde0f9c152
+      internalID: 49787592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4080
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c851fba2bcaa943803e653d6a06a8b
+      internalID: 275400288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_15
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 4080
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9603aae1fb3abe40ba3aec8c0033e35
+      internalID: -1758178610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_16
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 4080
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9597c0d523146fe4b86d90a03a38cef3
+      internalID: -1321713309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_17
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 4080
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91c073bf738cb84d8d1a4e7dc02b84c
+      internalID: 325841977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_18
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 4080
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7220fa6a84b67946947eb86c1775146
+      internalID: -338147023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_19
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 4080
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84308d9960be0ca4883770812a840652
+      internalID: -1209898396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_20
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 4080
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8707f393e30434582b10d9343ba78f
+      internalID: 298620153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3740
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b4ec5e14e15ec41917a7d77ecb2e67
+      internalID: 864515282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_22
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 3740
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6b8c2a91c4f2d4499d4caef4368a50
+      internalID: -1550408346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_23
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 3740
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c715cfa01173924dbe8ac35789fc119
+      internalID: -384329736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_24
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 3740
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4b00392d60d084583d6f4869d5ef7e
+      internalID: -1537874260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_25
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 3740
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9dededa8841404d807ca300d4d8646
+      internalID: -933366869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_26
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 3740
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef9cf69cce2172429b84d780207cb1b
+      internalID: 1845337585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_27
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 3740
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aefbe04d37eb0b04e917d5806683c74e
+      internalID: -316867199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93056e87d92e1fb40a458465808dfa53
+      internalID: -522326832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_29
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1418daa4914eb4ab301c33c513d632
+      internalID: 664062769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_30
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347e6d75d1342754d8ceb56281199473
+      internalID: -532357973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_31
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc2fefabc1e0ad4b9d0ec5d55cc46e4
+      internalID: 1590191028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_32
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dacab67b2f1ab34a96a675880f998bf
+      internalID: -1805638035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_33
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61bb5a36e40f1e49bbc8c09a0253339
+      internalID: -472645166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_34
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed72a0af582ef742b409bc38b046706
+      internalID: 1213372823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b75aee54aebb094a8d432d6b3c86d3f
+      internalID: 518488548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_36
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e9ff45933d9ed40b693075a97dd5c8
+      internalID: -238966453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_37
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf3c263f7c8b56479fdb02872612c55
+      internalID: 2078074221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_38
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbc2a6e64849ea4c8b9a3414ce96f78
+      internalID: -2007060429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_39
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435946f4c09247544885d01fb8d03613
+      internalID: -859604201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_40
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa4e85b768b56bc4e837552af3824a1a
+      internalID: 2069436333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_41
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79fbb9af2ee0dc641aa2776104f930ec
+      internalID: -1172878268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c34654961d83847bcce2628322a18c
+      internalID: -1571307658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_43
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27533750487e5904ab1aa574448943b7
+      internalID: -384325480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_44
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e76c3b0870f2542b4e61f0dea212b0
+      internalID: 540470398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_45
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab397400815193f4f9eae43d8c2fee0b
+      internalID: 1525066385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_46
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a32c458a70715469c5a58004946100
+      internalID: 1759623715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_47
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df31c7c365d7964fbf89d6f8e13aec0
+      internalID: 1673483737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_48
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee4333fe3accf94a96f88ed2ec72ea4
+      internalID: 307370367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255a1459958e68a4f9915bdd2b303605
+      internalID: -963354982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_50
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0d20ff96feb3049968923f79af71a1
+      internalID: 824170013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_51
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48cb7809c82d93840ae071484fb60392
+      internalID: 686650348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_52
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a424ad5e6de2bba4a8e82df9180a541d
+      internalID: -477485129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_53
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00f20e878e4d8d4690257cf6b94524c
+      internalID: 1352326019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_54
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08223602c30822049acc862e3957cdfb
+      internalID: 2051647986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_55
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7404ffa5465bb50408c4ad0e04acd0bd
+      internalID: 1030070039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1659ceb95f1c574b885be4f46060059
+      internalID: -979070948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_57
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97cc5c38d7a975740bf901fa9a5c80b3
+      internalID: -1102482943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_58
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1931e1d7b305c41ab6593bf46751b2
+      internalID: 1152841920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_59
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11bfbaaf28a615346a073750fb66a113
+      internalID: 184603598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_60
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21554678e8c49b47ac6f44a97b55565
+      internalID: -515289602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_61
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 223ec127180b343498e69d2b0f04e660
+      internalID: 131821966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_62
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af58d13b4056a3540b4120358b91cd5a
+      internalID: -301331826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0cb6f0b261cd4408b42d595eaf08b5
+      internalID: -458141788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_64
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34f8df3ba58f654abc8b976d5529c1e
+      internalID: 1339372432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_65
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5536f646e782ce94a8d304629a361fcc
+      internalID: 1796517628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_66
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a266d8074ed9311428b8680151b6936d
+      internalID: 2051619849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_67
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b312e5ad2ba5c4fa4d38aaffebb22a
+      internalID: -1337565311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_68
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80b9c5f3c6c6fc4eaeeb135c52caca5
+      internalID: 504221696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_69
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37e9ea25d02f2b4ba8f125dc221b134
+      internalID: 1287144826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de63d049170c11b43acc899d461a71d7
+      internalID: -774210277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_71
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c34c716cb38834a9acacf4371faf57
+      internalID: -931584240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_72
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76f08d4ecb425a4c8cca1908bf444b9
+      internalID: -813344008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_73
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc81be46d0dec124186d2e1acf79acfc
+      internalID: -1286227824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_74
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06fdbba700cbe5343bd9f68585058eb0
+      internalID: 638145135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_75
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0836721aea51eea45ba190ecf7a3786e
+      internalID: -906986632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_76
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87090904365f1f4f9e8aa776e9377d7
+      internalID: 108723554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1020
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1fa2e609b0c0394995215d47c0ea9c4
+      internalID: -1328990225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_78
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1020
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd2caa321143de4aabddc171755b4e4
+      internalID: 1232514460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_79
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1020
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8097b06f7f7a1b3458e22252c9712721
+      internalID: -815266942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_80
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 1020
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fce02de2de9a954ab809d0cc32a64e4
+      internalID: -1462432411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_81
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 1020
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f716993dfce6346a79053db9f7f57a
+      internalID: 184105047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_82
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 1020
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 383124ce6b41bfa4c8d3f3f2688a2c47
+      internalID: -626160613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_83
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 1020
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a39ca7dbbb9b745aad29702fcf08fd
+      internalID: 862908789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b4f3a828c519841b8980379df9360e
+      internalID: 1755146177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_85
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1962a4203d4f925469704940c00cd2ef
+      internalID: 1982853548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_86
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee3640bcd9d9c342bd4f8c0c5172e8f
+      internalID: 1214505361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_87
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ee33443b1dbee4fbeba3e392e41235
+      internalID: -271170414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_88
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d45b1d49f1251a449652ca16255ef0b
+      internalID: -498828196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_89
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056fc1e2c0caf5c4ca16b7800bdc6df5
+      internalID: -1995031440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_90
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbda68269c1fef418f83436a269d4fb
+      internalID: 528938678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21acaeb53d025924a9a21b404a0cde21
+      internalID: -1869763881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_92
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3f806ca67ca87429bcdcad616e0466
+      internalID: -1464382940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_93
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea43dbc1e118e6429095844da57ec9f
+      internalID: -173583227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_94
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e8d47670371be498b5ff05a0e5eed9
+      internalID: -135489264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_95
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad0ae35518fe5b42a73df52d7994165
+      internalID: -402630635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_96
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd00a2726810abd40b73d3a2494d9943
+      internalID: -1025370317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_97
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e667e525a39106438d669c8113e9b89
+      internalID: -913419507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_98
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff69a94b9ab1d14eb1710b961aa0256
+      internalID: -1348180178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_99
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225200849adc9a94abc256c1cac3546a
+      internalID: 276569669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_100
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8538d1290b05717469112ad52fb5dc86
+      internalID: -1337580204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_101
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97552be17094a8c44b3fbd681e0307ec
+      internalID: 1653059543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_102
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a317d096ce6fb45ac5ddc9b4a191ff
+      internalID: -1566960276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_103
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff07c73bcb1a84641b4bd462d38a8a5f
+      internalID: -17914057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractGif_104
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb5a8cbe524d43429ee639108b2b3f2
+      internalID: -92462088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5fdd8bef37993b141a702ddd2115d01d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      InteractGif_0: 1428669564
+      InteractGif_1: 1365635488
+      InteractGif_10: -58359658
+      InteractGif_100: -1337580204
+      InteractGif_101: 1653059543
+      InteractGif_102: -1566960276
+      InteractGif_103: -17914057
+      InteractGif_104: -92462088
+      InteractGif_11: 1838328159
+      InteractGif_12: -1714121057
+      InteractGif_13: 49787592
+      InteractGif_14: 275400288
+      InteractGif_15: -1758178610
+      InteractGif_16: -1321713309
+      InteractGif_17: 325841977
+      InteractGif_18: -338147023
+      InteractGif_19: -1209898396
+      InteractGif_2: -296246445
+      InteractGif_20: 298620153
+      InteractGif_21: 864515282
+      InteractGif_22: -1550408346
+      InteractGif_23: -384329736
+      InteractGif_24: -1537874260
+      InteractGif_25: -933366869
+      InteractGif_26: 1845337585
+      InteractGif_27: -316867199
+      InteractGif_28: -522326832
+      InteractGif_29: 664062769
+      InteractGif_3: 1811190278
+      InteractGif_30: -532357973
+      InteractGif_31: 1590191028
+      InteractGif_32: -1805638035
+      InteractGif_33: -472645166
+      InteractGif_34: 1213372823
+      InteractGif_35: 518488548
+      InteractGif_36: -238966453
+      InteractGif_37: 2078074221
+      InteractGif_38: -2007060429
+      InteractGif_39: -859604201
+      InteractGif_4: -91031764
+      InteractGif_40: 2069436333
+      InteractGif_41: -1172878268
+      InteractGif_42: -1571307658
+      InteractGif_43: -384325480
+      InteractGif_44: 540470398
+      InteractGif_45: 1525066385
+      InteractGif_46: 1759623715
+      InteractGif_47: 1673483737
+      InteractGif_48: 307370367
+      InteractGif_49: -963354982
+      InteractGif_5: 296182998
+      InteractGif_50: 824170013
+      InteractGif_51: 686650348
+      InteractGif_52: -477485129
+      InteractGif_53: 1352326019
+      InteractGif_54: 2051647986
+      InteractGif_55: 1030070039
+      InteractGif_56: -979070948
+      InteractGif_57: -1102482943
+      InteractGif_58: 1152841920
+      InteractGif_59: 184603598
+      InteractGif_6: -394433189
+      InteractGif_60: -515289602
+      InteractGif_61: 131821966
+      InteractGif_62: -301331826
+      InteractGif_63: -458141788
+      InteractGif_64: 1339372432
+      InteractGif_65: 1796517628
+      InteractGif_66: 2051619849
+      InteractGif_67: -1337565311
+      InteractGif_68: 504221696
+      InteractGif_69: 1287144826
+      InteractGif_7: -1151243248
+      InteractGif_70: -774210277
+      InteractGif_71: -931584240
+      InteractGif_72: -813344008
+      InteractGif_73: -1286227824
+      InteractGif_74: 638145135
+      InteractGif_75: -906986632
+      InteractGif_76: 108723554
+      InteractGif_77: -1328990225
+      InteractGif_78: 1232514460
+      InteractGif_79: -815266942
+      InteractGif_8: -1449550018
+      InteractGif_80: -1462432411
+      InteractGif_81: 184105047
+      InteractGif_82: -626160613
+      InteractGif_83: 862908789
+      InteractGif_84: 1755146177
+      InteractGif_85: 1982853548
+      InteractGif_86: 1214505361
+      InteractGif_87: -271170414
+      InteractGif_88: -498828196
+      InteractGif_89: -1995031440
+      InteractGif_9: 1665662067
+      InteractGif_90: 528938678
+      InteractGif_91: -1869763881
+      InteractGif_92: -1464382940
+      InteractGif_93: -173583227
+      InteractGif_94: -135489264
+      InteractGif_95: -402630635
+      InteractGif_96: -1025370317
+      InteractGif_97: -913419507
+      InteractGif_98: -1348180178
+      InteractGif_99: 276569669
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEditor.Animations;
 //using UnityEngine.UIElements;
 
 [System.Serializable]
@@ -11,6 +12,8 @@ public class TutorialImages
     public Sprite staticimage;
 
     public AnimationClip Animation;
+
+    public RuntimeAnimatorController Controler; 
 
     public VisualType type;
 }
@@ -86,7 +89,7 @@ public class TutorialScript : MonoBehaviour
 
     public void UpdateImage()
     {
-
+        
         if (VisualType.StaticSprite == images[element].type)
         {
             image.sprite = images[element].staticimage;
@@ -94,6 +97,7 @@ public class TutorialScript : MonoBehaviour
 
         else if (VisualType.AnimatedGIF == images[element].type)
         {
+            imageAnimator.runtimeAnimatorController = images[element].Controler;
             imageAnimator.enabled = true;
             imageAnimator.Play(images[element].Animation.name);
         }

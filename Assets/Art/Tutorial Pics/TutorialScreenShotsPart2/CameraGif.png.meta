@@ -1,0 +1,3981 @@
+fileFormatVersion: 2
+guid: 8d8cae3ca0b510141975603015e244fc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CameraGif_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7820
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd95ee2eb129dc4e97cfaba020ec375
+      internalID: -1094881978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_1
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 7820
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ec3eee7a4bbdf4ea0368e80b2fec43
+      internalID: 1592498294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_2
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 7820
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd343d6198da484997811e4abfa264d
+      internalID: 458360509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_3
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 7820
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a147088af239b2346941e984ca71035a
+      internalID: -2083017425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_4
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 7820
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76383ea55edc4245a0cecdcfe772267
+      internalID: -430712054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_5
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 7820
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30f20e04fd8e8c4095879d81c5004d7
+      internalID: -940229756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_6
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 7820
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc949b45f82b1e43a0e1fcb6dd8098d
+      internalID: -406776724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7480
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c07a72145915849837e55d11d8d084
+      internalID: -175013680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_8
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 7480
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3e8e48196c263418b3f0f1d05611c6
+      internalID: -399990259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_9
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 7480
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dfa1ace1159ce64e9d425bc3be3932f
+      internalID: -822345969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_10
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 7480
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae6089bfb58a0c4bba1f274b0aae41d
+      internalID: -1269967409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_11
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 7480
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7407f3ba43546147a8c79183f3d5d82
+      internalID: 697374374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_12
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 7480
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870c131f0b884d54f90ca72596906b5f
+      internalID: 1136349378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_13
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 7480
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6488dd4745fb36a4c9a3012248d46b51
+      internalID: -315599182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7140
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d139b4ef91498478d9166310a86822
+      internalID: -1622933436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_15
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 7140
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798acec632fe43741b72e80b4be54b22
+      internalID: 422237233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_16
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 7140
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d87e43dfc699b4a9ec92a485c6a802
+      internalID: 1239241889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_17
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 7140
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149dc0d53f688cd4db5c994e622e20a9
+      internalID: -835675015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_18
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 7140
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20cf7bd6a07ad745af66c7b79c20760
+      internalID: 1528157891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_19
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 7140
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384f833dfad194d449025c39f63f007c
+      internalID: -1117585629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_20
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 7140
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252c296c9bb5d3c4cad160811364339c
+      internalID: 521251630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6800
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a17beb17598f445b30579e7800b934
+      internalID: 1387988507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_22
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 6800
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed22489c6bfc35341aad5f177f7d2297
+      internalID: -1081787350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_23
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 6800
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5584646231ac6645829eabb2eb3cf42
+      internalID: 1417181199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_24
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 6800
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e472efad8451cc746aeac41f1fd0cd5f
+      internalID: 1137983473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_25
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 6800
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c482928fe5eca9458414a7f51f7b8da
+      internalID: 1714129854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_26
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 6800
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb1a3a68784b4894e919edf04d0dd507
+      internalID: -1724918775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_27
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 6800
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53caeb77004f1a84fbcc9ebf849ca5e6
+      internalID: 98871826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6460
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6685361a0bc0ea54db1083648dfb1310
+      internalID: -867626969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_29
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 6460
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421659aac01206f43b812b1f807e8416
+      internalID: 950696007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_30
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 6460
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed43c72e88e43b4b9b524cc3e484ed6
+      internalID: -854008758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_31
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 6460
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dcb4054444e1d443a7d02ec6edcf97b
+      internalID: 2044806231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_32
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 6460
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6f50420d6c7d44987edd55d781fed2
+      internalID: -628269594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_33
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 6460
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd2e9bc7d21c1d48810f307c32bd253
+      internalID: 1992061377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_34
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 6460
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c894c5a6e1a2ed4f9cfd74d4f9e77cf
+      internalID: -614570335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6120
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f5bcffb461b13498c099ae2ed4319d
+      internalID: -256512955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_36
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 6120
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03083346cfa045c4e92c78c5eccea710
+      internalID: -1195441068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_37
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 6120
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e421fc0a280f0e4da2aa8f7443d1378
+      internalID: -1583939711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_38
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 6120
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49233d3615b4ef44a8cac0b62e39b64f
+      internalID: 1578290813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_39
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 6120
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e02c6c16778654fa414b67e2f3bd63
+      internalID: -1042080664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_40
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 6120
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd902c13afc51c40ad235c796bb9083
+      internalID: -1601168734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_41
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 6120
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d828463a0c6fb4741991b16881cb66ca
+      internalID: 866088556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5780
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5621bbd7710094da3ba45d0111210c
+      internalID: -1092342115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_43
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 5780
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66fd22533c574214984bac003584973e
+      internalID: 507896659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_44
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 5780
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a285a77b7e5983c419e125974f69bb51
+      internalID: -622790364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_45
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 5780
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7b76b86123b714ca80c1e998856b84
+      internalID: -2026675100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_46
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 5780
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb465015f33efb64299252e9cd723ff6
+      internalID: -1724714250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_47
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 5780
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7efb242607c022f4db91f38157ae9eca
+      internalID: 516655423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_48
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 5780
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8be66e902e39a4449bdde442581f52d
+      internalID: -738522945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5440
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280c88c3b4cbf1e418972af6ebf0322b
+      internalID: 729449042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_50
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 5440
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba9386049b855b48956bf0e0716459c
+      internalID: 1800098701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_51
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 5440
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c9119ad64d3ef4080aeca6a1af8f22
+      internalID: 1093470532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_52
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 5440
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab39c3a71032aaa418a01851731e4646
+      internalID: 824710889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_53
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 5440
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2e31533729b4f4694ad4207b1aebd9
+      internalID: -1787993693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_54
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 5440
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1b0c53277915d48b50a9f0fd635d36
+      internalID: 742930167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_55
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 5440
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de122ea17eb74f14f9be23d9faeb9907
+      internalID: -1915847334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5100
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b59587096422c44850c3a0f6fc7cd0
+      internalID: -287931709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_57
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 5100
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad3b1916b10a334b8cf97cdebbc4602
+      internalID: -1917987200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_58
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 5100
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d21b40f3c33ba4e86ff2aed0019155
+      internalID: -1074247002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_59
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 5100
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d30f5120eca134688db7de7247e250
+      internalID: -326410609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_60
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 5100
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7abed7692ad1ca740a81a41d2c118937
+      internalID: 1652003875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_61
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 5100
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7100d2947179e24cbe879eb75c9ce40
+      internalID: -834113536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_62
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 5100
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec43b07fd514ace48a47e1cdbf9685d9
+      internalID: 2087394080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4760
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb500a6becbaffb4389276767407e48d
+      internalID: 1159663240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_64
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 4760
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89415edb4118a6d4b8ea2d253bb184ea
+      internalID: 39915768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_65
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 4760
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9a6ecaa3be3104d92e292235d2f347
+      internalID: 2118187593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_66
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 4760
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657f6a882e97bb044aac015bfe9799d7
+      internalID: -1265290777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_67
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 4760
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6425f91140e75a4d9872cfe78e4454c
+      internalID: 891857980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_68
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 4760
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b74a93180bd41540b6aa127ed0beb3f
+      internalID: 733756610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_69
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 4760
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd37e58a09edea45815217171dc2ec3
+      internalID: -656555271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4420
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7ba5f3fd0897c42a8b7579f2c40de9
+      internalID: -471839212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_71
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 4420
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e61fe353ee7f74697af519b290fe8d
+      internalID: -1363545221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_72
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 4420
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f7a2719ad7e9944b45ff18606b9a7a
+      internalID: 792337667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_73
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 4420
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd723655397ee604aab6a52369ab081e
+      internalID: -474278616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_74
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 4420
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1f26f74f80bf945b073ca74fbb67f8
+      internalID: 1940122372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_75
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 4420
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ae2b5b148f01147aafe4def506d1a7
+      internalID: -1887522717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_76
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 4420
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ec8fa1737976645aea04604de94a52
+      internalID: 229856751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4080
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d636d8623245e49a13fcd10155bc28
+      internalID: 1326151416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_78
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 4080
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81cd9e976c499a4e99f3ba0ec459bac
+      internalID: -423445635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_79
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 4080
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929a96b6b13f6904dbb10b7073f15577
+      internalID: -1069798216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_80
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 4080
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1362ed266aa284a4aa995fae1d5e0de2
+      internalID: 1379038304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_81
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 4080
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b812815719c203c41b1cb5cdde95e484
+      internalID: 397556134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_82
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 4080
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c26ef813614e44988a58bda7b7517f
+      internalID: -935073054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_83
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 4080
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161be5da44f369e4ca47f84fe927fc80
+      internalID: 1785784827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3740
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb760d9247e97e47a4665255414cfae
+      internalID: -1594932112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_85
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 3740
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a4c94be0e358d4fac52ed674c0bb10
+      internalID: 1483998521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_86
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 3740
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8a9afb426638e49a276f6ad3d5e41b
+      internalID: 2135292808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_87
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 3740
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfcbc8fd6addc644d97255b621efad9a
+      internalID: 632822506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_88
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 3740
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ae55e1b5e3e46409508f05dd9c8214
+      internalID: 1131780632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_89
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 3740
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f739f122057e4459f92fef49d766be
+      internalID: 825517974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_90
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 3740
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45bb07ffd515204ca213d1440e91302
+      internalID: -1932163627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57862a45c60aa424bb30c9db41e77e57
+      internalID: 616360526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_92
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb33066b6f1f9e74dae4acf62669cf27
+      internalID: -251374213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_93
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e328831239d5b448c1ea86263ae927
+      internalID: 664063223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_94
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f89517dc6e96b46852dd06d764d0d2
+      internalID: -1611508500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_95
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2184f080c2e534e84b1537383ad795
+      internalID: -327847173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_96
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c85ab7447438242a7a2410705ab439
+      internalID: -1838052391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_97
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d52c1b0e5aeb84495a8e7a1078ce58
+      internalID: 1851324785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_98
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f9bbc886fc4894e9c58fb38283dd61
+      internalID: -2014543672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_99
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353d057298a13db4a992473511435948
+      internalID: -427911267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_100
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9742f8c4ca44fd144bb7ec22eca1dd87
+      internalID: 2032026883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_101
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a196ab985e380b246b8a6252d96c0c76
+      internalID: 1772523588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_102
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6c9954f323c7b46adf07ce5b9264b0
+      internalID: -25376342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_103
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0b44c36258a714d86b257ae345ea28
+      internalID: -2043813091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_104
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9910ea3b2cbf1ea45aa5a3be4df8eb16
+      internalID: -1178095054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b19fb17dcb34ba49b9594c6b16a0c14
+      internalID: 1992014894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_106
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525c5d758d19d5e4b8060e3e2f398053
+      internalID: 1854038116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_107
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a521c04a81cc8e04d882f1895bc2c7af
+      internalID: -668403594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_108
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88deb0c11bd76b749a73c2b9633cd34c
+      internalID: -191213942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_109
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473a40c5d23c1d640b9348ad7ee43e8a
+      internalID: -1718737370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_110
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01cd99690b1c6d047b813b90b16ae9d2
+      internalID: -358757904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_111
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ccb42ae1278ea14f803db90f2474fc8
+      internalID: -2052256545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577e4d6e0d7e74443ae17c5d3767f24d
+      internalID: 405664197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_113
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f892928f5483a44b8682fd05f236fe
+      internalID: 1847721169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_114
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d4ab4537f047640bfc2d4a91ba8709
+      internalID: -2029990311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_115
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a6b2634551ed94eb37e46e96798179
+      internalID: -1478543444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_116
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f13ef4a37603645aadc9081359cca5
+      internalID: 1421853354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_117
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28550340c87d3f84aa078a36bf71beb1
+      internalID: 1020477919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_118
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a10b069a46ad1449b97032ae2673eb
+      internalID: -376370608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_119
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98395ca429ecf1f49bcb9a96bc1366ad
+      internalID: -297985711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_120
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3508435c03aed4c8041a53534bdd7f
+      internalID: 832182701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_121
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7049ee8273a587a41894cc2c8f438847
+      internalID: 643558689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_122
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d8d014030a394418a8ee3c7bb41f60
+      internalID: 1118698842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_123
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581dcdc2f34c2c84d84aca3bdf8c5525
+      internalID: -836612462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_124
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0728583ce99c1c4e9ed7f0cc28ad20d
+      internalID: -543120065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_125
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af371f2fd45b8384a95ee481af63632d
+      internalID: -1201500497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1427f5837e4bd1245bbecc48dbaa9fa7
+      internalID: -1704974186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_127
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4b9cb679ea2e24ab24a6291eab9817
+      internalID: 1669928989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_128
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d25e01bf478586418a2e0193c2d74b7
+      internalID: 1191656940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_129
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884ac2348204f5e48ba21b9bc33f3bee
+      internalID: -781230044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_130
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da38d175d64f16044878354db6e3a28c
+      internalID: -754355333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_131
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e083872e0732014299132b642d8083e
+      internalID: 616462307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_132
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ec96c81fbdf7d4691f3f7a81f7a435
+      internalID: 241940278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_133
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714ed12e973bd3148824a77d44a638d5
+      internalID: 959502846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_134
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1fc620b25d0c1489cabf93a084f6a8
+      internalID: -1879742572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_135
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0860b0161a7699d40acd4589707ab4ae
+      internalID: -956325970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_136
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940a6c5950897b947b69f25b69e77667
+      internalID: -1472448755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_137
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0ec9243c9bf2f4484746c8542fb965
+      internalID: -572453887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_138
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6ca4a284405b94bbf1da340ebe1c4f
+      internalID: -1612682125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_139
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c43e3bd6748e4409eb8ab277518328
+      internalID: 657588128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1020
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b95cb799338c9a4d9647ce25f77e595
+      internalID: 446776005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_141
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1020
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca662dfe5a6c93408337c1f65224794
+      internalID: -2094142857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_142
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1020
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec6a127084cefea459edf14dc37712b8
+      internalID: 1162517419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_143
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 1020
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfddcc82736660e49a031ff373da04a6
+      internalID: -333553788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_144
+      rect:
+        serializedVersion: 2
+        x: 2242
+        y: 1715
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46f3abb65d2f844bb3d266f4793ab98
+      internalID: -1516751076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_145
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 1020
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3d86109b00d9c46b65c8621007513d
+      internalID: -269647781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_146
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 1020
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8cc0853be1f8e44dbcb080f3ec0750d
+      internalID: 1686105899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_147
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006f7df92bf3ca24c8804d20d6b62b98
+      internalID: 371281827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_148
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798106f79c41f4f4f8ce5235ba8a4a71
+      internalID: 1954284378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_149
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc3300ae7a288149a63af1ea6cd74b2
+      internalID: -2073392952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_150
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8696c9d1cd2187f4a89e71d93035a056
+      internalID: 1839183541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_151
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e559f6db30bac854aaffb1a7e37bc6d0
+      internalID: 1563586705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_152
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20f64201fcc70a45a11b361b6e62245
+      internalID: -11474452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_153
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b693ac71105a80d4a97bc4d95544accb
+      internalID: -1826413495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_154
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c3767d8e6bbed45aab52390865219a
+      internalID: 1851042714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_155
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3243b9dd6d7385243bd3f1290f30ef84
+      internalID: 1013509478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_156
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a24fee964a9664eb60b6ab589e53ca
+      internalID: 348644755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_157
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762d441b125d31e428f44272fb3ab042
+      internalID: -1843056977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_158
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba866f58bbe10743800e6561fc36a2b
+      internalID: 1924904265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_159
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1208313c6ff390748a0dcc4934e93ee0
+      internalID: 1188107784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_160
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3138caba57ea97d47b795a3464f513a1
+      internalID: 1469286671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_161
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff354ec7ce873974382b454ab352e852
+      internalID: -1191145493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_162
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e775b58b74479c3468f9e3fee3188afb
+      internalID: 1711970833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_163
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6223314dfa534fd4c91bf3176af3cc7d
+      internalID: -1733758405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_164
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6013f41c1e9bc9a43b3bff1554e0761f
+      internalID: 32436693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_165
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0646e7c5182f34bae616d7d8f02a70
+      internalID: -885652159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_166
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3afe14c25da3e3429f42c3c8f3ab8ec
+      internalID: 60514241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CameraGif_167
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f619ac557b2f7b7438682b203b21af6e
+      internalID: -754198936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4d27b2794369a564da2d894c61e75736
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CameraGif_0: -1094881978
+      CameraGif_1: 1592498294
+      CameraGif_10: -1269967409
+      CameraGif_100: 2032026883
+      CameraGif_101: 1772523588
+      CameraGif_102: -25376342
+      CameraGif_103: -2043813091
+      CameraGif_104: -1178095054
+      CameraGif_105: 1992014894
+      CameraGif_106: 1854038116
+      CameraGif_107: -668403594
+      CameraGif_108: -191213942
+      CameraGif_109: -1718737370
+      CameraGif_11: 697374374
+      CameraGif_110: -358757904
+      CameraGif_111: -2052256545
+      CameraGif_112: 405664197
+      CameraGif_113: 1847721169
+      CameraGif_114: -2029990311
+      CameraGif_115: -1478543444
+      CameraGif_116: 1421853354
+      CameraGif_117: 1020477919
+      CameraGif_118: -376370608
+      CameraGif_119: -297985711
+      CameraGif_12: 1136349378
+      CameraGif_120: 832182701
+      CameraGif_121: 643558689
+      CameraGif_122: 1118698842
+      CameraGif_123: -836612462
+      CameraGif_124: -543120065
+      CameraGif_125: -1201500497
+      CameraGif_126: -1704974186
+      CameraGif_127: 1669928989
+      CameraGif_128: 1191656940
+      CameraGif_129: -781230044
+      CameraGif_13: -315599182
+      CameraGif_130: -754355333
+      CameraGif_131: 616462307
+      CameraGif_132: 241940278
+      CameraGif_133: 959502846
+      CameraGif_134: -1879742572
+      CameraGif_135: -956325970
+      CameraGif_136: -1472448755
+      CameraGif_137: -572453887
+      CameraGif_138: -1612682125
+      CameraGif_139: 657588128
+      CameraGif_14: -1622933436
+      CameraGif_140: 446776005
+      CameraGif_141: -2094142857
+      CameraGif_142: 1162517419
+      CameraGif_143: -333553788
+      CameraGif_144: -1516751076
+      CameraGif_145: -269647781
+      CameraGif_146: 1686105899
+      CameraGif_147: 371281827
+      CameraGif_148: 1954284378
+      CameraGif_149: -2073392952
+      CameraGif_15: 422237233
+      CameraGif_150: 1839183541
+      CameraGif_151: 1563586705
+      CameraGif_152: -11474452
+      CameraGif_153: -1826413495
+      CameraGif_154: 1851042714
+      CameraGif_155: 1013509478
+      CameraGif_156: 348644755
+      CameraGif_157: -1843056977
+      CameraGif_158: 1924904265
+      CameraGif_159: 1188107784
+      CameraGif_16: 1239241889
+      CameraGif_160: 1469286671
+      CameraGif_161: -1191145493
+      CameraGif_162: 1711970833
+      CameraGif_163: -1733758405
+      CameraGif_164: 32436693
+      CameraGif_165: -885652159
+      CameraGif_166: 60514241
+      CameraGif_167: -754198936
+      CameraGif_17: -835675015
+      CameraGif_18: 1528157891
+      CameraGif_19: -1117585629
+      CameraGif_2: 458360509
+      CameraGif_20: 521251630
+      CameraGif_21: 1387988507
+      CameraGif_22: -1081787350
+      CameraGif_23: 1417181199
+      CameraGif_24: 1137983473
+      CameraGif_25: 1714129854
+      CameraGif_26: -1724918775
+      CameraGif_27: 98871826
+      CameraGif_28: -867626969
+      CameraGif_29: 950696007
+      CameraGif_3: -2083017425
+      CameraGif_30: -854008758
+      CameraGif_31: 2044806231
+      CameraGif_32: -628269594
+      CameraGif_33: 1992061377
+      CameraGif_34: -614570335
+      CameraGif_35: -256512955
+      CameraGif_36: -1195441068
+      CameraGif_37: -1583939711
+      CameraGif_38: 1578290813
+      CameraGif_39: -1042080664
+      CameraGif_4: -430712054
+      CameraGif_40: -1601168734
+      CameraGif_41: 866088556
+      CameraGif_42: -1092342115
+      CameraGif_43: 507896659
+      CameraGif_44: -622790364
+      CameraGif_45: -2026675100
+      CameraGif_46: -1724714250
+      CameraGif_47: 516655423
+      CameraGif_48: -738522945
+      CameraGif_49: 729449042
+      CameraGif_5: -940229756
+      CameraGif_50: 1800098701
+      CameraGif_51: 1093470532
+      CameraGif_52: 824710889
+      CameraGif_53: -1787993693
+      CameraGif_54: 742930167
+      CameraGif_55: -1915847334
+      CameraGif_56: -287931709
+      CameraGif_57: -1917987200
+      CameraGif_58: -1074247002
+      CameraGif_59: -326410609
+      CameraGif_6: -406776724
+      CameraGif_60: 1652003875
+      CameraGif_61: -834113536
+      CameraGif_62: 2087394080
+      CameraGif_63: 1159663240
+      CameraGif_64: 39915768
+      CameraGif_65: 2118187593
+      CameraGif_66: -1265290777
+      CameraGif_67: 891857980
+      CameraGif_68: 733756610
+      CameraGif_69: -656555271
+      CameraGif_7: -175013680
+      CameraGif_70: -471839212
+      CameraGif_71: -1363545221
+      CameraGif_72: 792337667
+      CameraGif_73: -474278616
+      CameraGif_74: 1940122372
+      CameraGif_75: -1887522717
+      CameraGif_76: 229856751
+      CameraGif_77: 1326151416
+      CameraGif_78: -423445635
+      CameraGif_79: -1069798216
+      CameraGif_8: -399990259
+      CameraGif_80: 1379038304
+      CameraGif_81: 397556134
+      CameraGif_82: -935073054
+      CameraGif_83: 1785784827
+      CameraGif_84: -1594932112
+      CameraGif_85: 1483998521
+      CameraGif_86: 2135292808
+      CameraGif_87: 632822506
+      CameraGif_88: 1131780632
+      CameraGif_89: 825517974
+      CameraGif_9: -822345969
+      CameraGif_90: -1932163627
+      CameraGif_91: 616360526
+      CameraGif_92: -251374213
+      CameraGif_93: 664063223
+      CameraGif_94: -1611508500
+      CameraGif_95: -327847173
+      CameraGif_96: -1838052391
+      CameraGif_97: 1851324785
+      CameraGif_98: -2014543672
+      CameraGif_99: -427911267
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

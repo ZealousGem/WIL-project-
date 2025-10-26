@@ -1,0 +1,1888 @@
+fileFormatVersion: 2
+guid: 75eeb2901730d11439d307acc407624c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PuzzleGif_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e22635bcc5902e94d8da865f2aae0220
+      internalID: 345539553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_1
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec4d540e6a09094ba88b2074c86d246
+      internalID: 293594018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_2
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0dca5fea1c6314899a3c55e299af25
+      internalID: -1363039968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_3
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c5fa34e12d45b41b46acbcb9d17048
+      internalID: -1547740702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_4
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3c0ec3b535f6d4d95b5d6b0b680f47
+      internalID: -700252448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_5
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7964952481812314aa11de3f2d126d2f
+      internalID: -789615925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_6
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 3400
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de012bd4d2da0941821ad083839ca26
+      internalID: 1928593229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac3bd06b79cd4a4abf595842cab5e74
+      internalID: 1950991664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_8
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8430d61017cedfd4a8c3507a715a806f
+      internalID: 1718458452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_9
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5ad42e5a825e840a9cb85d7038a337
+      internalID: -269951452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_10
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587b3769a300d8444abf6c5f81f56439
+      internalID: -1607688505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_11
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263b06ced9a0f1a49b23b3b34b7c4ad3
+      internalID: 201725870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_12
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff79fa3b7869ec48868e05da536a718
+      internalID: 1456530324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_13
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 3060
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8122fd6e58a39e64b842764038b4caa4
+      internalID: -482502679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fac3996d4d749940868559ed8e8b368
+      internalID: -293590126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_15
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4134c22534122de4e9fffa79b9528ef0
+      internalID: -1461990950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_16
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd06dcf042dd294f9a8fa3adbba3740
+      internalID: -106718023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_17
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b9d368564b3e2438bc357dc37f870a
+      internalID: 789986490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_18
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9083a87cbb63b4245bbf86aa20da4def
+      internalID: 565446373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_19
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c500601df6ade2c42a5e8a0b95c9d23c
+      internalID: -1785216808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_20
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 2720
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e507e1ae30ce1448d5112218c1b531
+      internalID: -2053616781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6acc7e23db28f48ace4a03503238be
+      internalID: -19569915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_22
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bfb46dce25ef124383b0625af5116d4
+      internalID: -768860630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_23
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e013302e78f35f44a92e0f2b58b2bfce
+      internalID: 1030305342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_24
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972cb4142336e40499f6c56a8cd50f1e
+      internalID: 1690284738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_25
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7812d043f5b884baf45b38979d990d
+      internalID: -951126973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_26
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df5203e52783f84e9adb56b2495806e
+      internalID: -364198635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_27
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 2380
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51df5d79e31cc842929e29ce498d0cc
+      internalID: -975235918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2ef92fedf2c9845aa6ab5d28b735fe
+      internalID: -748084645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_29
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe37cbdf2a0a3fe429640af0302d0ac3
+      internalID: 33903120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_30
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dbb1b5bc8f31814aac816074277a0a0
+      internalID: -162288903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_31
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1ef1202e7c1b94cb63e9a49edad16c
+      internalID: 1403807794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_32
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d2e9241aa24764a976232b586e2a92
+      internalID: -715894394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_33
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c2179f520ea8c4f9055be84e63bccd
+      internalID: -949179787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_34
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 2040
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09487eae1a705346abaa70173540548
+      internalID: -1101246530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6564bcaa191ec4ea069085f2dd62c8
+      internalID: 1875605376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_36
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668ed8961c3e27447980f348e3f3b0a6
+      internalID: -1929613158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_37
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bed9594d3131e84aaa66e9b6a464a2b
+      internalID: -588587880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_38
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1653c826ea40fb4284fa5c7dd4924bf
+      internalID: -519535642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_39
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd141a964d20414384e5228a69a576b
+      internalID: -437189965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_40
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063daa0d6cf56464fb54d466c5dc574e
+      internalID: -1657572927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_41
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 1700
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0fab3d296be584e8d38c75eb6c840e
+      internalID: 867975216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df33d236b66e9e45b7b3d98c784410b
+      internalID: 1616601568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_43
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5f0cfdd647d7944badf49d59d8aed5
+      internalID: 1656100763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_44
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5b96f7fece6064c8509e9ac1bb332d
+      internalID: 1842002263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_45
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4a56abe13a7d14081f6c1764076337
+      internalID: 501380542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_46
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab995ddd48edacf428a18d6423c0ce09
+      internalID: -1374177026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_47
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0a19396ee00c5489c90004e1389f20
+      internalID: -189995764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_48
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 1360
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4ebcc6d4edbf34688e27125ecb3891
+      internalID: 328110213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1020
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964a59f1a6ae5f143b99b0b6ba4ef194
+      internalID: 427428651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_50
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1020
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb204fb29bffd7142b88dfcd888b0210
+      internalID: 448909349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_51
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1020
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c9eb4b1b196562418204f2fedbe5d41
+      internalID: 1611045993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_52
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 1020
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a83bfb6ba2c29342b960f066079854f
+      internalID: -112827631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_53
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 1020
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d9d74e3992fcf43ab218fb356a8e6a
+      internalID: -1372442472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_54
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 1020
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e62bf86bbfe1942b186105e2f3e72a
+      internalID: 1323728576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_55
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 1020
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30cf5de504e6a94aac036a333aad8e5
+      internalID: 1932989280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6340c4ea8a1607a49a61cf5a90dfd782
+      internalID: -1211902782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_57
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb0dd242d2e47948b290f992c80e367
+      internalID: -1263731093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_58
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817ece7e517212c4db9882eaf631d72a
+      internalID: -1187112053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_59
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7850150b6d0424b91a2f91121942ac
+      internalID: 571179453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_60
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d71acb93b27b524b85e1838ddae64c5
+      internalID: -472697047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_61
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4685a76558a390e4c81267d8c2e9be35
+      internalID: -161128527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_62
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 680
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3886fd020e5fb3e45a20fe1cd90439e4
+      internalID: 636256443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed839d4eca95ed4582047f2e24e9b3c
+      internalID: -367244155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_64
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a15383e238ee944bf0ffc18b1a81af
+      internalID: 673094492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_65
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c000578ae1b774e4aa5e91d5b937f305
+      internalID: 1760066283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_66
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4a0ee27b105df499ecdc0eb900e46f
+      internalID: 1289756466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_67
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3242a35d7481048a5c0f679746212a
+      internalID: 2122058448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_68
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9bf11cc2cefada41a251c19ed9ee52b
+      internalID: -2107096605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_69
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 340
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0191569128ca3dd4c8c1a01ce81a20e1
+      internalID: -270761760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05986d68662f9d8419bb383c7df72259
+      internalID: -1059969548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_71
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd641fb1c9443d34cb7b6a5793a57be5
+      internalID: -1178192256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_72
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f397d3aa8f2dae241acbe29189c2942a
+      internalID: -693040754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_73
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5394b3098712bcb4884d8aff38475680
+      internalID: 763314330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_74
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51dcb049478549c48bc9b60175010ba9
+      internalID: -1633302254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_75
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df42f39c822d8e24b8c29098878c63fd
+      internalID: -557119674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PuzzleGif_76
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 0
+        width: 559
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0065a118f6461594b96ea8033ef36b62
+      internalID: 289606331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c330237e0a9d6754099a4c0cc342c9d9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PuzzleGif_0: 345539553
+      PuzzleGif_1: 293594018
+      PuzzleGif_10: -1607688505
+      PuzzleGif_11: 201725870
+      PuzzleGif_12: 1456530324
+      PuzzleGif_13: -482502679
+      PuzzleGif_14: -293590126
+      PuzzleGif_15: -1461990950
+      PuzzleGif_16: -106718023
+      PuzzleGif_17: 789986490
+      PuzzleGif_18: 565446373
+      PuzzleGif_19: -1785216808
+      PuzzleGif_2: -1363039968
+      PuzzleGif_20: -2053616781
+      PuzzleGif_21: -19569915
+      PuzzleGif_22: -768860630
+      PuzzleGif_23: 1030305342
+      PuzzleGif_24: 1690284738
+      PuzzleGif_25: -951126973
+      PuzzleGif_26: -364198635
+      PuzzleGif_27: -975235918
+      PuzzleGif_28: -748084645
+      PuzzleGif_29: 33903120
+      PuzzleGif_3: -1547740702
+      PuzzleGif_30: -162288903
+      PuzzleGif_31: 1403807794
+      PuzzleGif_32: -715894394
+      PuzzleGif_33: -949179787
+      PuzzleGif_34: -1101246530
+      PuzzleGif_35: 1875605376
+      PuzzleGif_36: -1929613158
+      PuzzleGif_37: -588587880
+      PuzzleGif_38: -519535642
+      PuzzleGif_39: -437189965
+      PuzzleGif_4: -700252448
+      PuzzleGif_40: -1657572927
+      PuzzleGif_41: 867975216
+      PuzzleGif_42: 1616601568
+      PuzzleGif_43: 1656100763
+      PuzzleGif_44: 1842002263
+      PuzzleGif_45: 501380542
+      PuzzleGif_46: -1374177026
+      PuzzleGif_47: -189995764
+      PuzzleGif_48: 328110213
+      PuzzleGif_49: 427428651
+      PuzzleGif_5: -789615925
+      PuzzleGif_50: 448909349
+      PuzzleGif_51: 1611045993
+      PuzzleGif_52: -112827631
+      PuzzleGif_53: -1372442472
+      PuzzleGif_54: 1323728576
+      PuzzleGif_55: 1932989280
+      PuzzleGif_56: -1211902782
+      PuzzleGif_57: -1263731093
+      PuzzleGif_58: -1187112053
+      PuzzleGif_59: 571179453
+      PuzzleGif_6: 1928593229
+      PuzzleGif_60: -472697047
+      PuzzleGif_61: -161128527
+      PuzzleGif_62: 636256443
+      PuzzleGif_63: -367244155
+      PuzzleGif_64: 673094492
+      PuzzleGif_65: 1760066283
+      PuzzleGif_66: 1289756466
+      PuzzleGif_67: 2122058448
+      PuzzleGif_68: -2107096605
+      PuzzleGif_69: -270761760
+      PuzzleGif_7: 1950991664
+      PuzzleGif_70: -1059969548
+      PuzzleGif_71: -1178192256
+      PuzzleGif_72: -693040754
+      PuzzleGif_73: 763314330
+      PuzzleGif_74: -1633302254
+      PuzzleGif_75: -557119674
+      PuzzleGif_76: 289606331
+      PuzzleGif_8: 1718458452
+      PuzzleGif_9: -269951452
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
