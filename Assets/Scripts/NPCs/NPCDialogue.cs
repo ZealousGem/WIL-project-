@@ -7,6 +7,7 @@ public class NPCDialogue : ScriptableObject
     public int CharacterId;
 
     public List<DialogueTree> dialogueNodes;
+    
 
     public string Name;
 

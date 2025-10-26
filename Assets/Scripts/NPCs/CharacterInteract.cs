@@ -37,6 +37,8 @@ public class CharacterInteract : MonoBehaviour
     DialogueSystem pepe;
     string NPCname;
 
+    public PointerArrowTypes arrow;
+
     public int id;
 
     int curId;
@@ -119,6 +121,7 @@ public class CharacterInteract : MonoBehaviour
             if (data.change == option)
             {
                 Change(data.index);
+              
 //                Debug.Log(option+ NPCname);
                 break;
             }
@@ -146,8 +149,10 @@ public class CharacterInteract : MonoBehaviour
 
     void ChangeCurIndex(DialogueEndedEvent data)
     {
+      
         if (data.curState == DialogueState.NextDialogue && data.name == NPCname)
         {
+              Interact.SetActive(true);
           //  Debug.Log("triggered");
             if (curIndex == data.id)
             {
@@ -181,7 +186,8 @@ public class CharacterInteract : MonoBehaviour
         
         else if (data.curState == DialogueState.Ended && data.name == NPCname)
         {
-          
+           // Debug.Log("finished");
+             Interact.SetActive(true);
             if (curIndex != data.id)
             {
 
@@ -200,7 +206,6 @@ public class CharacterInteract : MonoBehaviour
                     pepe.ChangeTree(x);
                     fuck = x;
                     curCharState.EnterState(NPCname, curIndex);
-                    
                     break;
                 }
 
@@ -226,17 +231,33 @@ public class CharacterInteract : MonoBehaviour
 
 
 
-              
+
                 //DialogueSystem pepe = GameObject.FindWithTag("Finish").GetComponent<DialogueSystem>();
                 pepe.ChangeTree(fuck);
                 curCharState.EnterState(NPCname, curIndex);
-            //    Debug.Log(curIndex);
+                //    Debug.Log(curIndex);
+                Interact.SetActive(false);
                 inBox = false;
-               // Debug.Log("clicked " + gameObject.name + "id " + curId);
+                CheckArrow();
+                // Debug.Log("clicked " + gameObject.name + "id " + curId);
 
 
 
             }
+        }
+    }
+    
+    void CheckArrow()
+    {
+        if (arrow != PointerArrowTypes.none)
+        {
+            PointerEvent pointer = new PointerEvent(arrow, false);
+            EventBus.Act(pointer);
+        }
+        
+        else
+        {
+            return;
         }
     }
 

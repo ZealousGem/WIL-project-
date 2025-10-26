@@ -14,6 +14,10 @@ public class DialogueChoice
 
     public itemSO item;
 
+    public PointerArrowTypes changeObjective;
+
+    public bool hidePointer;
+
     public string eventChanged;
 }
 

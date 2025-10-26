@@ -262,17 +262,24 @@ public class DialogueSystem : MonoBehaviour
                     EventBus.Act(transfer);
                 }
 
-                if (tree.Choices[index].eventChanged != null && tree.Choices[index].eventChanged != "")
-                {
-                    Debug.Log(tree.Choices[index].eventChanged + "we have an answer");
-                }
+            if (tree.Choices[index].eventChanged != null && tree.Choices[index].eventChanged != "")
+            {
+                Debug.Log(tree.Choices[index].eventChanged + "we have an answer");
+            }
 
-                else if (tree.Choices[index].item != null)
-                {
-                    Debug.Log(tree.Choices[index].item + "we have found an item");
-                    itemEvent it = new itemEvent(tree.Choices[index].item);
-                    EventBus.Act(it);
+            if (tree.Choices[index].item != null)
+            {
+                Debug.Log(tree.Choices[index].item + "we have found an item");
+                itemEvent it = new itemEvent(tree.Choices[index].item);
+                EventBus.Act(it);
 
+            }
+                
+            if (tree.Choices[index].changeObjective != PointerArrowTypes.none)
+            {
+                Debug.Log("change objective");
+                PointerEvent pointer = new PointerEvent(tree.Choices[index].changeObjective, tree.Choices[index].hidePointer);
+                EventBus.Act(pointer);
             }
 
             }

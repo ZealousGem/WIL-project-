@@ -38,6 +38,8 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
 
     public Sprite image;
 
+    public PointerArrowTypes arrow;
+
     bool PuzzleCompleted = false;
 
     Camera cam;
@@ -83,7 +85,7 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-        Game = GameObject.FindGameObjectWithTag("signleton").GetComponent<GameManager>();
+        Game = GameObject.FindGameObjectWithTag("Pointer").GetComponent<GameManager>();
         Interact.SetActive(false);
         for (int i = 0; i < addedItems.Count; i++)
         {
@@ -147,6 +149,9 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
             PuzzleCompleted = true;
             Interact.SetActive(false);
             Game.PuzzleCompleted(1);
+            PointerEvent pointer = new PointerEvent(arrow, false);
+            EventBus.Act(pointer);
+           // Debug.Log(pointer);
             // ChangeDialogueState change = new ChangeDialogueState(DialougeChange.TutorialPuzzle, 1);
             // EventBus.Act(change);
         }

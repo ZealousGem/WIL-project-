@@ -209,5 +209,18 @@ public class CheckedEvent : EventData
     }
 }
 
+public class PointerEvent : EventData
+{
+    public PointerArrowTypes Arrow;
+
+    public bool visibility; 
+
+    public PointerEvent(PointerArrowTypes _go, bool _vis)
+    {
+        Arrow = _go;
+        visibility = _vis;
+    }
+}
+
 
 

@@ -33,6 +33,8 @@ public class LockedDoor : MonoBehaviour
                 {
                     doorOpened = true;
                     door.Open(GameObject.FindGameObjectWithTag("Player").transform.position);
+                    PointerEvent pointer = new PointerEvent(PointerArrowTypes.Arrow5, false);
+                     EventBus.Act(pointer);
                     spriteEvent sprite = new spriteEvent(inventory.items[i].item.obj);
                     EventBus.Act(sprite);
                     inventory.RemoveItem(inventory.items[i].item.obj);

@@ -8,6 +8,7 @@ TagManager:
   - signleton
   - npc
   - puzzle
+  - Pointer
   layers:
   - Default
   - TransparentFX

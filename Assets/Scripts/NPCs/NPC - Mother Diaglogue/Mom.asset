@@ -20,6 +20,8 @@ MonoBehaviour:
       answer: 
       amount: 0
       item: {fileID: 0}
+      changeObjective: 2
+      hidePointer: 1
       eventChanged: 
   - id: 2
     Choices:
@@ -27,6 +29,8 @@ MonoBehaviour:
       answer: 
       amount: 0
       item: {fileID: 0}
+      changeObjective: 0
+      hidePointer: 0
       eventChanged: 
   Name: Mom
   RepeatDialogueIndex: 2
