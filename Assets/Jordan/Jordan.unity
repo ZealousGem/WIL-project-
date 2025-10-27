@@ -255,122 +255,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3226834}
   m_CullTransparentMesh: 1
---- !u!1001 &9780645
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.6717205
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.6717205
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.6717205
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -22.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 496
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 294.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5271796902207160349, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7525701411600092276, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1805840169, guid: 4cf71b7b2421c0440a208db39d4d6a3e, type: 3}
-    - target: {fileID: 8559797499118704933, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      propertyPath: m_Name
-      value: Image
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8559797499118704933, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1370399346}
-  m_SourcePrefab: {fileID: 100100000, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
 --- !u!1 &27299040
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,11 +3356,11 @@ MonoBehaviour:
   - Place it in the right order to complete packing up the shelf, press E again to
     quit the shelf
   images:
-  - staticimage: {fileID: 21300000, guid: de73bd31557aaf7439cd3e17aa68b920, type: 3}
+  - staticimage: {fileID: 21300000, guid: 4888176a3a879ce43a1252a149363467, type: 3}
     Animation: {fileID: 0}
     Controler: {fileID: 0}
     type: 0
-  - staticimage: {fileID: 21300000, guid: 7786cc4acad6f9048b47f2d3d23099b5, type: 3}
+  - staticimage: {fileID: 21300000, guid: be53f39e4ece16145bed7e87e14477fb, type: 3}
     Animation: {fileID: 0}
     Controler: {fileID: 0}
     type: 0
@@ -5467,11 +5351,11 @@ MonoBehaviour:
   - Place it in the right order to complete packing up the shelf, press E again to
     quit the shelf
   images:
-  - staticimage: {fileID: 21300000, guid: de73bd31557aaf7439cd3e17aa68b920, type: 3}
+  - staticimage: {fileID: 21300000, guid: 4888176a3a879ce43a1252a149363467, type: 3}
     Animation: {fileID: 0}
     Controler: {fileID: 0}
     type: 0
-  - staticimage: {fileID: 21300000, guid: 7786cc4acad6f9048b47f2d3d23099b5, type: 3}
+  - staticimage: {fileID: 21300000, guid: be53f39e4ece16145bed7e87e14477fb, type: 3}
     Animation: {fileID: 0}
     Controler: {fileID: 0}
     type: 0
@@ -10848,11 +10732,11 @@ MonoBehaviour:
   - Place it in the right order to complete packing up the shelf, press E again to
     quit the shelf
   images:
-  - staticimage: {fileID: 21300000, guid: de73bd31557aaf7439cd3e17aa68b920, type: 3}
+  - staticimage: {fileID: 21300000, guid: 4888176a3a879ce43a1252a149363467, type: 3}
     Animation: {fileID: 0}
     Controler: {fileID: 0}
     type: 0
-  - staticimage: {fileID: 21300000, guid: 7786cc4acad6f9048b47f2d3d23099b5, type: 3}
+  - staticimage: {fileID: 21300000, guid: be53f39e4ece16145bed7e87e14477fb, type: 3}
     Animation: {fileID: 0}
     Controler: {fileID: 0}
     type: 0
@@ -11897,33 +11781,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5249.9385, y: 851.2209}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1370399345 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8559797499118704933, guid: 9d5e4bea2ed05e54b9197b8581962ed3, type: 3}
-  m_PrefabInstance: {fileID: 9780645}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1370399346
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1370399345}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ba0344bb774274946994f8a966d7f0bf, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1396735125
 GameObject:
   m_ObjectHideFlags: 0
@@ -15564,18 +15421,23 @@ MonoBehaviour:
   - The is camera static so when the chatacter leaves to another room, cameras will
     switch
   - To interact with items press E to interact with npcs, items and puzzles
-  - Keep an eye for yellow arrows, they can help you get on the right if you get
-    lost
+  - Once you have picked up the object press the inventory button to see your inventory
+  - Keep an eye for yellow arrows, they can help you get on the right track if you
+    get lost
   images:
-  - staticimage: {fileID: 0}
-    Animation: {fileID: 7400000, guid: b1f6c178562c7f64e944ca5d67e1b7c1, type: 2}
-    Controler: {fileID: 9100000, guid: 826f8d601ec10ec47b0986bf63c63a2a, type: 2}
-    type: 1
-  - staticimage: {fileID: 21300000, guid: 8b0b02595ddbcfd469e3d73e7c47156a, type: 3}
+  - staticimage: {fileID: 21300000, guid: b2a6f185a1b9b6b49b97b72afcfc3687, type: 3}
     Animation: {fileID: 0}
     Controler: {fileID: 0}
     type: 0
-  - staticimage: {fileID: 21300000, guid: ded090a8619e9d648bde54d29e5ea110, type: 3}
+  - staticimage: {fileID: 21300000, guid: fe95ec9970e93d24a9096f905f81f19d, type: 3}
+    Animation: {fileID: 0}
+    Controler: {fileID: 0}
+    type: 0
+  - staticimage: {fileID: 21300000, guid: 150d584f76d92ed4e9955c70ac0a2feb, type: 3}
+    Animation: {fileID: 0}
+    Controler: {fileID: 0}
+    type: 0
+  - staticimage: {fileID: 21300000, guid: 7c43c567eb2f81e43a724a1a7849ea1f, type: 3}
     Animation: {fileID: 0}
     Controler: {fileID: 0}
     type: 0
@@ -18634,4 +18496,3 @@ SceneRoots:
   - {fileID: 31426115}
   - {fileID: 415220963}
   - {fileID: 1454141165}
-  - {fileID: 9780645}
