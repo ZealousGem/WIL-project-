@@ -57,7 +57,10 @@ public class ObjectInteract : MonoBehaviour
 //            Debug.Log("here");
             GameObjectEvent obj = new GameObjectEvent(this.gameObject);
             EventBus.Act(obj);
-
+            if (SoundManager.Instance != null)
+            {
+             SoundManager.Instance.PlaySound("obj");
+            }
             itemEvent it = new itemEvent(item);
             EventBus.Act(it);
 

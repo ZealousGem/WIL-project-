@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using UnityEditor.Animations;
 //using UnityEngine.UIElements;
 
 [System.Serializable]
@@ -64,6 +63,10 @@ public class TutorialScript : MonoBehaviour
 
     void ActivateTutorial()
     {
+         if (SoundManager.Instance != null)
+         {
+             SoundManager.Instance.PlaySound("ps1");
+         }
         imageAnimator = image.GetComponent<Animator>();
         if (imageAnimator != null)
         {
@@ -85,6 +88,7 @@ public class TutorialScript : MonoBehaviour
     public void ActivateButton()
     {
         NextLine();
+    
     }
 
     public void UpdateImage()
@@ -112,7 +116,10 @@ public class TutorialScript : MonoBehaviour
 
     public void NextLine()
     {
-
+        if (SoundManager.Instance != null)
+            {
+             SoundManager.Instance.PlaySound("ps1");
+            }
         button.SetActive(false);
         if (element < dialouge.Length - 1)
         {

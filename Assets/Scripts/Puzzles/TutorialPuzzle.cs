@@ -120,6 +120,10 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
                         addedItems[i].color = Color.white;
                         CheckedEvent check = new CheckedEvent(true);
                         EventBus.Act(check);
+                        if (SoundManager.Instance != null)
+                        {
+                          SoundManager.Instance.PlaySound("drop");
+                        }
                     }
                 }
                 break;
@@ -151,6 +155,10 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
             Game.PuzzleCompleted(1);
             PointerEvent pointer = new PointerEvent(arrow, false);
             EventBus.Act(pointer);
+            if (SoundManager.Instance != null)
+            {
+             SoundManager.Instance.PlaySound("tutorial");
+            }
            // Debug.Log(pointer);
             // ChangeDialogueState change = new ChangeDialogueState(DialougeChange.TutorialPuzzle, 1);
             // EventBus.Act(change);
@@ -305,6 +313,10 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
                 Image hitImage = dropTarget.GetComponent<Image>();
                 Sprite tempSprite = tempItemPrefab.sprite;
                 Color tempColor = tempItemPrefab.color;
+                 if (SoundManager.Instance != null)
+                    {
+                      SoundManager.Instance.PlaySound("drop");
+                    }
 
                 tempItemPrefab.sprite = hitImage.sprite;
                 tempItemPrefab.color = hitImage.color;

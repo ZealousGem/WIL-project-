@@ -154,6 +154,10 @@ public class DialogueSystem : MonoBehaviour
     // Update is called once per frame
     public void DisplayNextSentence()
     {
+         if (SoundManager.Instance != null)
+            {
+             SoundManager.Instance.PlaySound("ps1");
+            }
         if (lines.Count == 0) // if all the elements have been dequed the dailogue will end
         {
             EndDialogue();
@@ -172,13 +176,16 @@ public class DialogueSystem : MonoBehaviour
 
     public IEnumerator TypeDialogue(string sentence)
     {
+        
         description.text = "";
         foreach (var T in sentence.ToCharArray()) // will loop the text string through it's characters
         {
             description.text += T; // will dsiplay each character at a certain timed update to create dialogue text animation 
             yield return new WaitForSeconds(0.03f);
+         
+          
         }
-
+         
         if (isAutomatic) // bool will check if the dialogue is an automatic for the button not to be displayed
         {
             yield return new WaitForSeconds(2f);
@@ -289,6 +296,10 @@ public class DialogueSystem : MonoBehaviour
     {
         if (answers != null)
         {
+            if (SoundManager.Instance != null)
+            {
+             SoundManager.Instance.PlaySound("ps1");
+            }
             ChoiceButton.SetActive(false);
             GiveAmount(0);
             DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.Ended, names, answers[0]);
@@ -304,7 +315,10 @@ public class DialogueSystem : MonoBehaviour
         if (answers != null)
         {
 
-           
+           if (SoundManager.Instance != null)
+            {
+             SoundManager.Instance.PlaySound("ps1");
+            }
             ChoiceButton.SetActive(false);
             GiveAmount(1);
             DialogueEndedEvent ending = new DialogueEndedEvent(DialogueState.Ended, names, answers[1]);

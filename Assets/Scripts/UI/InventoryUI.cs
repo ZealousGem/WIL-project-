@@ -258,7 +258,10 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
         if (displayed)
 
         {
-
+             if (SoundManager.Instance != null && Time.timeScale != 0f)
+            {
+                SoundManager.Instance.PlaySound("arrow");
+            }
             UI.SetActive(false);
 
             displayed = false;
@@ -271,7 +274,10 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
         {
 
             //showItem();
-
+            if (SoundManager.Instance != null && Time.timeScale != 0f)
+            {
+                SoundManager.Instance.PlaySound("arrow");
+            }
             showInv(curIndex);
 
             UI.SetActive(true);
@@ -291,7 +297,10 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
         {
 
-
+            if (SoundManager.Instance != null && Time.timeScale != 0f)
+            {
+                SoundManager.Instance.PlaySound("arrow");
+            }
             curIndex--;
 
             showInv(curIndex);
@@ -303,7 +312,10 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
         else
 
         {
-
+            if (SoundManager.Instance != null && Time.timeScale != 0f)
+            {
+                SoundManager.Instance.PlaySound("arrow");
+            }
             curIndex = items.Count - 1;
 
             showInv(curIndex);
@@ -354,7 +366,10 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
         {
 
-
+            if (SoundManager.Instance != null && Time.timeScale != 0f)
+            {
+                SoundManager.Instance.PlaySound("arrow");
+            }
             curIndex++;
 
             showInv(curIndex);
@@ -366,7 +381,10 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
         else
 
         {
-
+            if (SoundManager.Instance != null && Time.timeScale != 0f)
+            {
+                SoundManager.Instance.PlaySound("arrow");
+            }
             curIndex = 0;
 
             showInv(curIndex);
@@ -458,6 +476,11 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
                     tempItemPrefab = ob.GetComponent<Image>();
 
                     it = InvUI[i].transform.position;
+
+                     if (SoundManager.Instance != null)
+                    {
+                          SoundManager.Instance.PlaySound("pickup");
+                    }
 
                     tempItemPrefab.raycastTarget = false;
 

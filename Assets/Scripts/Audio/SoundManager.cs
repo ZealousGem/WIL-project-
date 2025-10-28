@@ -49,7 +49,7 @@ public class Sound
 
     public void Play()
     {
-        Debug.Log("Playing sound: " + nameClip);
+        //Debug.Log("Playing sound: " + nameClip);
         source.Play();
     }
 }
@@ -84,7 +84,7 @@ public class SoundManager : MonoBehaviour
             sounds[i].setSource(play.AddComponent<AudioSource>());
         }
 
-      //  PlaySound("rain");
+        PlaySound("theme");
     }
 
     public void PlaySound(string name)

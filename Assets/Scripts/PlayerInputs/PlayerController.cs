@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     LayerMask ignoredLayerMask;
 
     public float rotationSpeed;
-    bool ReachedDestination = false;
+    
 
     public float movementThreshold = 0.1f;
 
@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
     float currentSpeed = 0;
 
     float agentSpeed = 3.5f;
+
+   
     void OnEnable()
     {
         EventBus.Subscribe<InputChangeEvent>(ChangingCameras);
@@ -67,18 +69,7 @@ public class PlayerController : MonoBehaviour
 
     void AnimateCharacter()
     {
-        if (agent.velocity.magnitude > 0.1f)
-        {
-
-            // Debug.Log(ReachedDestination);
-            ReachedDestination = false;
-        }
-
-        else
-        {
-            ReachedDestination = true;
-            //   Debug.Log(ReachedDestination);
-        }
+        
 
         currentSpeed = agent.velocity.magnitude;
         animator.SetFloat("Speed", currentSpeed);
@@ -93,12 +84,17 @@ public class PlayerController : MonoBehaviour
 
             agent.isStopped = true;
             agent.speed = 0;
+             if (SoundManager.Instance != null)
+            {
+                
+                SoundManager.Instance.StopMusic("move");
+            }
 
 
         }
 
 
-
+        
 
 
         if (Input.GetMouseButtonDown(1))
@@ -107,14 +103,12 @@ public class PlayerController : MonoBehaviour
             // cam = Camera.main;
             Ray raycast = cam.ScreenPointToRay(Input.mousePosition);
 
-
             if (Physics.Raycast(raycast, out RaycastHit hit, Mathf.Infinity, ignoredLayerMask))
             {
                 if (hit.collider.gameObject)
                 {
                     NavMeshHit hitted;
-                     if(clickEffect != null)
-            {        Instantiate(clickEffect, hit.point + new Vector3(0, 0.1f, 0), clickEffect.transform.rotation); }
+                    
 
                     if (NavMesh.SamplePosition(hit.point, out hitted, 1.0f, NavMesh.AllAreas))
                     {
@@ -123,6 +117,15 @@ public class PlayerController : MonoBehaviour
                         // Debug.Log(hitted.position);
                         agent.isStopped = false;
                         agent.stoppingDistance = 0.1f;
+                        if (clickEffect != null)
+                        {
+                            Instantiate(clickEffect, hit.point + new Vector3(0, 0.1f, 0), clickEffect.transform.rotation);
+                        }
+                        if (SoundManager.Instance != null && Time.timeScale != 0f)
+                        {
+                          SoundManager.Instance.PlaySound("click");
+                          SoundManager.Instance.PlaySound("move");
+                        }
                     }
 
 
