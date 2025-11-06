@@ -14613,7 +14613,7 @@ MonoBehaviour:
     Controler: {fileID: 0}
     type: 0
   title: Controls
-  Speed: 0.02
+  Speed: 0.005
   StartTutoruail: 1
   tags: Player
 --- !u!1 &1688225635
