@@ -73,6 +73,108 @@
           ]
          }
       ]
+    },
+    {
+      "name": "Brother",
+      "dialogue": [
+        {
+          "id": "1",
+          "Text": [
+            { "words": "Hi bro, Getting ready for School?" },
+            { "words": "Well you are in luck i have two differnt choices you can go" },
+            { "words": "One is the bike, other is the taxi. Which one are you picking. Gotca, you cant choose at all bitch" }
+            
+          ]
+        },
+        {
+          "id": "2",
+          "Text": [
+            { "words": "Howzit Bru, Busy right now" }
+          ]
+        },
+
+         {
+          "id": "3",
+          "Text": [
+            { "words": "Nice job, you packed everything correclty" },
+            { "words": "I can now relax, you better going to school. Time is ticking" }
+          ]
+         },
+         {
+          "id": "4",
+          "Text": [
+            { "words": "Huh, you still here dont have school to get to'?" }
+          ]
+         }
+      ]
+    },
+    {
+      "name": "Neighbour",
+      "dialogue": [
+        {
+          "id": "1",
+          "Text": [
+            { "words": "Hi kid, just look around nothing to worry about" },
+            { "words": "Its the quite the ealry morning, clearly everyone is still asleep haha. Well better get ready for work today" }
+          
+            
+          ]
+        },
+        {
+          "id": "2",
+          "Text": [
+            { "words": "sorry kid got to get going now" }
+          ]
+        },
+
+         {
+          "id": "3",
+          "Text": [
+            { "words": "Nice job, you packed everything correclty" },
+            { "words": "I can now relax, you better going to school. Time is ticking" }
+          ]
+         },
+         {
+          "id": "4",
+          "Text": [
+            { "words": "Huh, you still here dont have school to get to'?" }
+          ]
+         }
+      ]
+    },
+     {
+      "name": "Taxi Driver",
+      "dialogue": [
+        {
+          "id": "1",
+          "Text": [
+            { "words": "Hey, busy trying to fix my car" },
+            { "words": "Stop Bothering me, I need my car to work so can make more mola" }
+          
+            
+          ]
+        },
+        {
+          "id": "2",
+          "Text": [
+            { "words": "Scram Kid!" }
+          ]
+        },
+
+         {
+          "id": "3",
+          "Text": [
+            { "words": "Nice job, you packed everything correclty" },
+            { "words": "I can now relax, you better going to school. Time is ticking" }
+          ]
+         },
+         {
+          "id": "4",
+          "Text": [
+            { "words": "Huh, you still here dont have school to get to'?" }
+          ]
+         }
+      ]
     }
   ]
 }
