@@ -26,7 +26,12 @@ public class CarJackPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, I
  [SerializeField]
     TMP_Text text;
 
+[SerializeField]
+    itemSO CreateItem; 
+
     Vector3 it;
+
+    bool itemCreated = false;
 
     public int changedIndex = 0;
 
@@ -43,6 +48,8 @@ public class CarJackPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, I
     Plane draggedPlane;
 
     Image tempItemPrefab;
+
+    public GameObject TakeButton;
    
    // GameManager Game;
 
@@ -78,6 +85,11 @@ public class CarJackPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, I
         additem(data.go, data.go2);
     }
 
+    void ButtonUI(bool item)
+    {
+        TakeButton.SetActive(item);
+    }
+
      void additem(Image image, Image FoundImage)
     {
 
@@ -106,7 +118,19 @@ public class CarJackPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, I
 
         }
 
-        
+         CheckIfCorrect();
+    }
+
+    public void TakeItem()
+    {
+        HideBox();
+        PuzzleCompleted = true;
+        for (int i = 0; i < addedItems.Count; i++)
+        {
+            addedItems[i].color = Color.clear;
+        }
+        itemEvent it = new itemEvent(CreateItem);
+        EventBus.Act(it);
     }
 
     void ShowBox()
@@ -119,17 +143,23 @@ public class CarJackPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, I
         cam = Camera.main;
         draggedPlane = new Plane(cam.transform.forward, transform.position);
         CheckIfCorrect();
+        
 
 
     }
 
     void CheckIfCorrect()
     {
-        // if (addedItems[0].sprite == requiredItems[0].obj && addedItems[1].sprite == requiredItems[1].obj ||
-        // addedItems[1].sprite == requiredItems[0].obj && addedItems[0].sprite == requiredItems[1].obj)
-        // {
-            
-        // }
+        if (addedItems[0].sprite == requiredItems[0].obj && addedItems[1].sprite == requiredItems[1].obj ||
+        addedItems[1].sprite == requiredItems[0].obj && addedItems[0].sprite == requiredItems[1].obj)
+        {
+            addedItems[2].color = Color.white;
+            addedItems[2].sprite = CreateItem.obj;
+            text.text = CreateItem.name;
+            itemCreated = true;
+        ButtonUI(itemCreated);
+        }
+       
     }
 
      void HideBox()
@@ -139,6 +169,7 @@ public class CarJackPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, I
         CameraChangeEvent cam = new CameraChangeEvent(index, 0f);
         EventBus.Act(cam);
         InventoryUI.inPuzzle = false;
+        ButtonUI(false);
 
 
     }
@@ -174,7 +205,7 @@ public class CarJackPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, I
             GameObject ob = eventData.pointerCurrentRaycast.gameObject;
             for (int i = 0; i < addedItems.Count; i++)
             {
-                if (addedItems[i].color == Color.white && ob == addedItems[i].gameObject)
+                if (addedItems[i].color == Color.white && ob == addedItems[i].gameObject && ob != addedItems[2].gameObject)
                 {
                     it = addedItems[i].transform.position;
                     //   Debug.Log("clicked");
@@ -275,6 +306,7 @@ public class CarJackPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, I
 
     void Start()
     {
+        TakeButton.SetActive(false);
          player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
       //  Game = GameObject.FindGameObjectWithTag("Pointer").GetComponent<GameManager>();
         Interact.SetActive(false);
