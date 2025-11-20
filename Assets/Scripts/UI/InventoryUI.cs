@@ -568,8 +568,115 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
                 Image hitImage = ob.GetComponent<Image>();
 
+                if (ob.GetComponentInParent<TutorialPuzzle>())
+                {
+                    DetermineItem(ob, hitImage);
+                }
 
-                TutorialPuzzle targetPuzzle = ob.GetComponentInParent<TutorialPuzzle>();
+                else if (ob.GetComponentInParent<CarJackPuzzle>())
+                {
+                    DetermineCarJack(ob, hitImage);
+                }
+              
+
+                // You can now proceed with your swap logic here
+
+            }
+
+            else
+
+            {
+
+                Debug.Log("no drop target.");
+
+            }
+
+        }
+
+        else
+
+        {
+
+            Debug.Log("No object found to drop on.");
+
+        }
+
+
+        // Always return the item to its original position regardless of drop success
+
+        tempItemPrefab.transform.position = it;
+
+        tempItemPrefab.raycastTarget = true;
+
+        tempItemPrefab = null;
+
+    }
+
+     void DetermineCarJack(GameObject ob, Image hitImage)
+    {
+          CarJackPuzzle targetPuzzle = ob.GetComponentInParent<CarJackPuzzle>();
+
+                if (hitImage.color == Color.clear && targetPuzzle != null)
+
+                {
+
+//                    Debug.Log("Found a valid inventory slot in world space!" + ob.gameObject.name);
+
+                    CarJackEvent puzzle = new CarJackEvent(tempItemPrefab, hitImage, targetPuzzle);
+
+                    EventBus.Act(puzzle);
+
+
+                    if (isPuzzle)
+
+                    {
+
+                        imageEvent removeItem = new imageEvent(tempItemPrefab);
+
+                        EventBus.Act(removeItem);
+
+                        RemoveItem(tempItemPrefab.sprite);
+
+                        isPuzzle = false;
+
+                    }
+
+                   
+
+                    else
+
+                    {
+
+                        Debug.Log("Wrong Puzzle");
+
+                        info.text = "wrong shelf";
+
+                        StartCoroutine(TextInfo(info.text));
+
+                    }
+
+                   
+
+                     
+
+
+                }
+
+
+                else
+
+                {
+
+                    Debug.Log("Invalid drop target.");
+
+                }
+
+
+    }
+
+    void DetermineItem(GameObject ob, Image hitImage)
+    {
+          TutorialPuzzle targetPuzzle = ob.GetComponentInParent<TutorialPuzzle>();
 
                 if (hitImage.color == Color.clear && targetPuzzle != null)
 
@@ -626,38 +733,6 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
                 }
 
-
-
-                // You can now proceed with your swap logic here
-
-            }
-
-            else
-
-            {
-
-        //        Debug.Log("Invalid drop target.");
-
-            }
-
-        }
-
-        else
-
-        {
-
-            Debug.Log("No object found to drop on.");
-
-        }
-
-
-        // Always return the item to its original position regardless of drop success
-
-        tempItemPrefab.transform.position = it;
-
-        tempItemPrefab.raycastTarget = true;
-
-        tempItemPrefab = null;
 
     }
 

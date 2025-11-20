@@ -172,6 +172,21 @@ public class PuzzleEvent : EventData
     }
 }
 
+public class CarJackEvent : EventData
+{
+    public Image go;
+    public Image go2;
+
+    public CarJackPuzzle puzzle;
+
+    public CarJackEvent(Image _go, Image _go2, CarJackPuzzle _puzzle)
+    {
+        go = _go;
+        go2 = _go2;
+        puzzle = _puzzle;
+    }
+}
+
 public class ChangeDialogueState : EventData
 {
 
