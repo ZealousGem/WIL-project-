@@ -154,7 +154,7 @@ Transform:
   - {fileID: 1543081413}
   - {fileID: 1208419288}
   - {fileID: 221604781}
-  - {fileID: 311101399}
+  - {fileID: 804352317}
   - {fileID: 1190834922}
   - {fileID: 1774552644}
   - {fileID: 1222311797}
@@ -843,7 +843,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71510014}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15212005, y: -0.3108898, z: 0.050481245, w: 0.93683445}
+  m_LocalRotation: {x: -0.186667, y: 0.54931676, z: -0.12819493, w: -0.80434614}
   m_LocalPosition: {x: 82.67, y: 15.54, z: -34.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1656,7 +1656,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 135727750}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.16329461, y: -0.4942133, z: 0.10077519, w: 0.8478988}
+  m_LocalRotation: {x: -0.20529239, y: -0.05425075, z: 0.011460414, w: -0.97712874}
   m_LocalPosition: {x: 30.01, y: 12.04, z: -37.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3212,11 +3212,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1103186}
+    m_TransformParent: {fileID: 804352317}
     m_Modifications:
     - target: {fileID: 2339194747847421247, guid: 01def6b3ec37a284fa2da40a2f26b1ea, type: 3}
       propertyPath: m_Name
-      value: CarTaxi (6)
+      value: StoryCarTaxi
       objectReference: {fileID: 0}
     - target: {fileID: 3115837378566551429, guid: 01def6b3ec37a284fa2da40a2f26b1ea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6655,7 +6655,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668075160}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.010424861, y: 0.9765468, z: -0.20156041, w: -0.0749748}
+  m_LocalRotation: {x: 0.0688131, y: -0.9300481, z: 0.22868389, w: 0.2792471}
   m_LocalPosition: {x: 91.77, y: 14.39, z: -11.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7803,6 +7803,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4521060583481493231, guid: bcad52546da51c848ad8058bdd118d81, type: 3}
   m_PrefabInstance: {fileID: 802717854}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &804352316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 804352317}
+  - component: {fileID: 804352318}
+  m_Layer: 3
+  m_Name: TaxiTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &804352317
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804352316}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 311101399}
+  m_Father: {fileID: 1103186}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &804352318
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804352316}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 9.100588
+  m_Center: {x: 101.2, y: 4.0072994, z: 8.44}
 --- !u!1001 &808125898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11944,13 +11998,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220261825}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.07944044, y: 0.74795145, z: -0.089763105, w: 0.6528404}
+  m_LocalRotation: {x: 0.055361126, y: 0.93767893, z: -0.17545015, w: 0.29480633}
   m_LocalPosition: {x: 26.94, y: 16.14, z: 2.7299995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1928578565}
-  m_LocalEulerAnglesHint: {x: 13.769, y: 97.78, z: 0.096}
+  m_LocalEulerAnglesHint: {x: 21.203, y: 145.098, z: 0.023}
 --- !u!114 &1220261831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13404,7 +13458,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1314609077}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.22745548, y: 0.09426497, z: -0.022127876, w: 0.9689626}
+  m_LocalRotation: {x: 0.17416161, y: -0.5127237, z: 0.10682331, w: 0.83388907}
   m_LocalPosition: {x: 57.5, y: 15.98, z: -36.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
