@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 857018207026f734f99a5d8c5f292c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: ee7758b5e2b9e4947a06b68c24bfc219, type: 2}
+  item: {fileID: 11400000, guid: 2afcf0a6e7239084cb0021459d9a4c97, type: 2}
   interact: {fileID: 2664853769451912765}
   uiOffset: {x: 0, y: 1, z: 0}
 --- !u!65 &7319719671835536650

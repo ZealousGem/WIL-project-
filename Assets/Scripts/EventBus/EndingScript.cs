@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndingScript : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
   bool inBox3 = false;
+
+  public string SceneName;
 
 [SerializeField]
     GameObject Interact;
@@ -61,7 +64,7 @@ public class EndingScript : MonoBehaviour
               UpdateUIPosition();
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    
+                    SceneManager.LoadScene(SceneName);
                 }
             }
         

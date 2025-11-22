@@ -1,0 +1,61 @@
+{
+
+"Characters": [
+{
+  "id": "1",
+  "character":  [
+  
+  
+  {"name" :""},
+  {"name" :""},
+  {"name" :""},
+  {"name" :""}
+ 
+  
+  
+  
+  ],
+   "data" :[
+ 
+   {"Text": "In a house of quiet corners and worn-out stories, a young boy found his rhythm. His days were often spent in the gentle hum of his own company, the silent companionship of books, and the unspoken understanding of a world navigated mostly by one. He had learned early to find his own solace, to occupy the spaces left by absence."},
+   {"Text": "Resilience was an early lesson, taught not by words, but by the quiet passage of time. He understood the meaning of independence, not as a choice, but as a condition of his existence. There were spaces in his life that remained unfilled, moments of comfort unshared, and shadows that only he truly saw when the light was not quite enough."},
+   {"Text": "Then came the night when the world outside seemed to hold its breath. The steady pulse of electricity, the reassuring glow of everyday life, began to falter. A subtle tremor, a warning of what was to come, rippled through the familiar quiet of his home."},
+   {"Text": "The sudden darkness was absolute, swallowing the last vestiges of comfort. The familiar chill of the house deepened, an uninvited guest. And in that cold, silent void, the boy was left with a singular, primal need: to find warmth, to survive the sudden, overwhelming night, and to navigate this new, daunting reality entirely on his own terms."}
+  
+   
+   ]
+
+
+},
+
+{
+  "id": "2",
+  "character":  [
+  
+  
+  {"name" :""},
+  {"name" :""},
+  {"name" :""},
+  {"name" :""}
+ 
+  
+  
+  
+  ],
+   "data" :[
+ 
+   {"Text": "Hours crawled by. The cold deepened its grip, and the silence pressed in, broken only by the boy's own shallow breaths. He had endured the night, a small sentinel against the overwhelming dark, fueled by a primal need for warmth and the faint hope of morning. But morning brought not relief, but another kind of arrival."},
+   {"Text": "She returned. Not with the vibrant energy of a rescuer, but with the weary drag of one who had just finished another shift, another battle in the endless fight for survival. The exhaustion clung to her like a second skin, a tangible weight pulling her down."},
+   {"Text": "Her gaze swept past him, a blur of exhaustion too profound to see beyond the immediate need for rest. The struggle of her own day, the demands of the world outside, had consumed every last ounce of her attention, leaving nothing left for the quiet plea in his eyes, the silent story of his long, cold night."},
+    {"Text": "He saw her. He understood. The silence that had been his companion through the long hours of darkness now extended to the very person he longed for. He was warm, he was safe, but the connection, the recognition, remained just out of reach, lost in the overwhelming weariness of a mother pushed to her absolute limit. The fight for survival continued, but on different, equally quiet, battlefields."}
+  
+  
+   
+   ]
+
+
+}
+
+]
+
+}

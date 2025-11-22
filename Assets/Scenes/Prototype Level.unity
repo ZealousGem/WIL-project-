@@ -9105,6 +9105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a26999fb237034e48b866f7695fdd7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneName: Taxi Ending
   Interact: {fileID: 1003984820}
   uiOffset: {x: 0, y: 3, z: 0}
 --- !u!1001 &808125898
@@ -10167,6 +10168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a26999fb237034e48b866f7695fdd7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneName: Bicycle Ending
   Interact: {fileID: 2074826787}
   uiOffset: {x: 0.6, y: 2.41, z: 0}
 --- !u!135 &879149726
