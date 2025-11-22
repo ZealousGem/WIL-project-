@@ -37,6 +37,8 @@ public class OutsideLevelGameManager : MonoBehaviour
 
     public List<GameObject> CarJackObjects;
 
+    public GameObject Pamplhet; 
+
     public CarJackPuzzle craftingTable;
 
     public LockPuzzle LockPick;
@@ -46,6 +48,8 @@ public class OutsideLevelGameManager : MonoBehaviour
     void ActivateLockPickPuzzle()
     {
         LockPick.PuzzleCompleted = false;
+        Pamplhet.SetActive(true);
+        
     }
 
     void ActivateCraftingPuzzle()
@@ -109,5 +113,7 @@ public class OutsideLevelGameManager : MonoBehaviour
            CarJackObjects[i].SetActive(false);
             
         }
+
+        Pamplhet.SetActive(false);
     }
 }

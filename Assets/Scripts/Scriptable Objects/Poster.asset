@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d47522aef65fd443a60c26505697d3b, type: 3}
+  m_Name: Poster
+  m_EditorClassIdentifier: 
+  id: 19
+  obj: {fileID: 21300000, guid: 0dbfb4be928d9f746884af8b7514a1d4, type: 3}
+  prefab: {fileID: 801902792338246551, guid: 6155954f4692e344db0d7038dd334d6b, type: 3}
