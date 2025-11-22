@@ -22,7 +22,7 @@ public class DialogueManager : MonoBehaviour
 
     void OnDisable()
     {
-        EventBus.Subscribe<DialogueEvent>(PassingData);
+        EventBus.Unsubscribe<DialogueEvent>(PassingData);
     }
 
     public void PassingData(DialogueEvent data)
