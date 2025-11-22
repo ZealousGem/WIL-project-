@@ -84,7 +84,7 @@ public class SoundManager : MonoBehaviour
             sounds[i].setSource(play.AddComponent<AudioSource>());
         }
 
-        PlaySound("theme");
+        PlaySound("start");
     }
 
     public void PlaySound(string name)

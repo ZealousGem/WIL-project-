@@ -56,7 +56,7 @@ public class EndingManager : MonoBehaviour
             }
             start.end = true;
 
-           // SkipDialogue(); // will go to the next scene once dialogue cutscene has finished 
+           SkipDialogue();  
         
 
 
@@ -65,7 +65,11 @@ public class EndingManager : MonoBehaviour
 
     public void SkipDialogue()
     {
-
+        if (SoundManager.Instance != null)
+        {
+            SoundManager.Instance.StopMusic("theme");
+            SoundManager.Instance.PlaySound("start");
+        }
         SceneManager.LoadScene(Nextscene);
     }
 

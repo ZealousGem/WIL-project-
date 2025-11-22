@@ -454,7 +454,7 @@ MonoBehaviour:
   start: {fileID: 1489782139}
   Disname: 1
   info: {fileID: 1289545438}
-  Nextscene: 
+  Nextscene: MainMenu
   nextSong: 
 --- !u!1 &1327848365
 GameObject:
