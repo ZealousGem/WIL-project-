@@ -99,6 +99,12 @@ public class InventoryManager : MonoBehaviour
             size = items.Count - 1;
             itemUIEvent ui = new itemUIEvent(item, size);
             EventBus.Act(ui);
+
+            if (item.id == "18" || item.id == "17")
+            {
+                 PointerEvent pointer = new PointerEvent(PointerArrowTypes.PuzzleArrows, true);
+                 EventBus.Act(pointer);
+            }
           //  observer.TellObervers(PlayerActions.ActionSeven, itemTemp.item);
             try { Destroyobj(); } catch { }
 

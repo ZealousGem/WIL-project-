@@ -20,8 +20,8 @@ MonoBehaviour:
       answer: 
       amount: 0
       item: {fileID: 0}
-      changeObjective: 0
-      hidePointer: 0
+      changeObjective: 5
+      hidePointer: 1
       TakeItem: {fileID: 0}
       eventChanged: 1
       DialogueStateIndex: 0

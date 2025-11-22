@@ -129,6 +129,12 @@ public class CarJackPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, I
         {
             addedItems[i].color = Color.clear;
         }
+        PointerEvent pointer = new PointerEvent(PointerArrowTypes.Arrow6, false);
+        EventBus.Act(pointer);
+        PointerEvent pointer2 = new PointerEvent(PointerArrowTypes.Arrow2, true);
+        EventBus.Act(pointer2);
+        ChangeDialogueState change = new ChangeDialogueState(DialougeChange.FoundCarJack, 2);
+        EventBus.Act(change);
         itemEvent it = new itemEvent(CreateItem);
         EventBus.Act(it);
     }
@@ -157,7 +163,7 @@ public class CarJackPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, I
             addedItems[2].sprite = CreateItem.obj;
             text.text = CreateItem.name;
             itemCreated = true;
-        ButtonUI(itemCreated);
+            ButtonUI(itemCreated);
         }
        
     }

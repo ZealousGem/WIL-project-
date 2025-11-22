@@ -32,7 +32,7 @@ MonoBehaviour:
       changeObjective: 0
       hidePointer: 0
       TakeItem: {fileID: 0}
-      eventChanged: 0
+      eventChanged: 1
       DialogueStateIndex: 0
   - id: 2
     Choices:
@@ -51,8 +51,8 @@ MonoBehaviour:
       answer: 
       amount: 0
       item: {fileID: 0}
-      changeObjective: 0
-      hidePointer: 0
+      changeObjective: 3
+      hidePointer: 1
       TakeItem: {fileID: 0}
       eventChanged: 2
       DialogueStateIndex: 1
@@ -62,8 +62,8 @@ MonoBehaviour:
       answer: 
       amount: 0
       item: {fileID: 0}
-      changeObjective: 0
-      hidePointer: 0
+      changeObjective: 4
+      hidePointer: 1
       TakeItem: {fileID: 0}
       eventChanged: 3
       DialogueStateIndex: 1

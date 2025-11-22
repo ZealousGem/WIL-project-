@@ -19,16 +19,19 @@ public class OutsideLevelGameManager : MonoBehaviour
         switch (data.Arrow)
         {
             case PointerArrowTypes.Arrow1: ShowOrHideArrow(Pointers[0].name, data.visibility); break;
-            case  PointerArrowTypes.Arrow2:ShowOrHideArrow(Pointers[1].name, data.visibility); break;
-            case  PointerArrowTypes.Arrow3: ShowOrHideArrow(Pointers[2].name, data.visibility);break;
-            case  PointerArrowTypes.Arrow4: ShowOrHideArrow(Pointers[3].name, data.visibility);break;
-            case  PointerArrowTypes.Arrow5: ShowOrHideArrow(Pointers[4].name, data.visibility);break;
-            case  PointerArrowTypes.PuzzleArrows: ShowOrHideArrow(Pointers[1].name, data.visibility);  ShowOrHideArrow(Pointers[2].name, data.visibility); ShowOrHideArrow(Pointers[3].name, data.visibility);break;
+            case PointerArrowTypes.Arrow2:ShowOrHideArrow(Pointers[1].name, data.visibility); break;
+            case PointerArrowTypes.Arrow3: ShowOrHideArrow(Pointers[2].name, data.visibility);break;
+            case PointerArrowTypes.Arrow4: ShowOrHideArrow(Pointers[3].name, data.visibility);break;
+            case PointerArrowTypes.Arrow5: ShowOrHideArrow(Pointers[5].name, data.visibility);break;
+            case PointerArrowTypes.Arrow6: ShowOrHideArrow(Pointers[4].name, data.visibility);break;
+            case PointerArrowTypes.Arrow8: ShowOrHideArrow(Pointers[6].name, data.visibility);break;
+            case PointerArrowTypes.CarJackPuzzle: ShowCarJackItems(data.visibility); break;
+            case PointerArrowTypes.PuzzleArrows: ItemPickedUp(data.visibility); break;
             case PointerArrowTypes.none: Debug.Log("nothing here"); break;
         }
     }
 
-   // int itemCounter = 0;
+    int itemCounter = 0;
 
     public List<GameObject> Pointers;
 
@@ -36,7 +39,24 @@ public class OutsideLevelGameManager : MonoBehaviour
 
     // Start is called once before the first execution of Update after the MonoBehaviour is create
 
-   
+    void ItemPickedUp( bool visbilibty)
+    {
+        itemCounter++;
+        if (itemCounter == 2)
+        {
+            ShowOrHideArrow(Pointers[4].name, visbilibty);
+        }
+    }
+
+    void ShowCarJackItems(bool visibility)
+    {
+         for (int i = 0; i < CarJackObjects.Count; i++)
+        {
+
+           CarJackObjects[i].SetActive(visibility);
+            
+        }
+    }
     
     void ShowOrHideArrow(string ArrowName, bool condition)
     {

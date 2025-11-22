@@ -15,6 +15,12 @@ public enum PointerArrowTypes
 
     Arrow5,
 
+    Arrow6,
+
+    Arrow8,
+
+    CarJackPuzzle,
+
 
 }
 

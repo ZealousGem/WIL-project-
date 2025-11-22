@@ -135,6 +135,10 @@ public class LockPuzzle : MonoBehaviour
            // StartCoroutine(ActivateSafe());
            gate.Open(player.transform.position);
            HideBox();
+           PointerEvent pointer = new PointerEvent(PointerArrowTypes.Arrow4, false);
+           EventBus.Act(pointer);
+           PointerEvent pointer2 = new PointerEvent(PointerArrowTypes.Arrow5, true);
+           EventBus.Act(pointer2);
            PuzzleCompleted = true;
            inBox2 = false;
         }
