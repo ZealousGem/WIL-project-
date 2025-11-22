@@ -1,0 +1,78 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class OutsideLevelGameManager : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+     void OnEnable()
+    {
+       EventBus.Subscribe<PointerEvent>(FindType);
+    }
+
+    void OnDisable()
+    {
+        EventBus.Unsubscribe<PointerEvent>(FindType);
+    }
+
+    void FindType(PointerEvent data)
+    {
+        switch (data.Arrow)
+        {
+            case PointerArrowTypes.Arrow1: ShowOrHideArrow(Pointers[0].name, data.visibility); break;
+            case  PointerArrowTypes.Arrow2:ShowOrHideArrow(Pointers[1].name, data.visibility); break;
+            case  PointerArrowTypes.Arrow3: ShowOrHideArrow(Pointers[2].name, data.visibility);break;
+            case  PointerArrowTypes.Arrow4: ShowOrHideArrow(Pointers[3].name, data.visibility);break;
+            case  PointerArrowTypes.Arrow5: ShowOrHideArrow(Pointers[4].name, data.visibility);break;
+            case  PointerArrowTypes.PuzzleArrows: ShowOrHideArrow(Pointers[1].name, data.visibility);  ShowOrHideArrow(Pointers[2].name, data.visibility); ShowOrHideArrow(Pointers[3].name, data.visibility);break;
+            case PointerArrowTypes.none: Debug.Log("nothing here"); break;
+        }
+    }
+
+   // int itemCounter = 0;
+
+    public List<GameObject> Pointers;
+
+    public List<GameObject> CarJackObjects;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is create
+
+   
+    
+    void ShowOrHideArrow(string ArrowName, bool condition)
+    {
+        for (int i = 0; i < Pointers.Count; i++)
+        {
+            if (ArrowName == Pointers[i].name)
+            {
+                if (condition)
+                {
+                     Pointers[i].SetActive(true);
+                }
+                
+                else
+                {
+                     Pointers[i].SetActive(false);
+                }
+               
+            }
+        }
+    }
+
+     void Start()
+    {
+        for (int i = 0; i < Pointers.Count; i++)
+        {
+            if (Pointers[i].name != "BeginingArrow")
+            {
+                Pointers[i].SetActive(false);
+            }
+        }
+
+        for (int i = 0; i < CarJackObjects.Count; i++)
+        {
+
+           CarJackObjects[i].SetActive(false);
+            
+        }
+    }
+}

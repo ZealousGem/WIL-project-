@@ -157,6 +157,16 @@ public class imageEvent : EventData
     }
 }
 
+public class RemoveEvent : EventData
+{
+    public Sprite go;
+
+    public RemoveEvent(Sprite _go)
+    {
+        go = _go;
+    }
+}
+
 public class PuzzleEvent : EventData
 {
     public Image go;

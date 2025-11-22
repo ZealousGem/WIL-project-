@@ -10,7 +10,13 @@ public enum DialougeChange
 
     TutorialPuzzle,
   
-    none
+    none,
+
+    TaxiRoute, 
+
+    BikeRoute,
+
+    FoundCarJack,
 
 }
 

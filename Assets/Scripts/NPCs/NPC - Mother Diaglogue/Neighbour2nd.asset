@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64a368a819c40ed4a82005d97325fbe2, type: 3}
-  m_Name: Taxi Driver
+  m_Name: Neighbour2nd
   m_EditorClassIdentifier: 
-  CharacterId: 5
+  CharacterId: 4
   dialogueNodes:
-  - id: 1
+  - id: 3
     Choices:
-    - Choice: 2
+    - Choice: 4
       answer: 
       amount: 0
       item: {fileID: 0}
@@ -25,9 +25,9 @@ MonoBehaviour:
       TakeItem: {fileID: 0}
       eventChanged: 1
       DialogueStateIndex: 0
-  - id: 2
+  - id: 4
     Choices:
-    - Choice: 2
+    - Choice: 4
       answer: 
       amount: 0
       item: {fileID: 0}
@@ -36,5 +36,5 @@ MonoBehaviour:
       TakeItem: {fileID: 0}
       eventChanged: 1
       DialogueStateIndex: 0
-  Name: Taxi Driver
-  RepeatDialogueIndex: 2
+  Name: Neighbour
+  RepeatDialogueIndex: 4

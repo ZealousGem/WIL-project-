@@ -46,7 +46,7 @@
           "Text": [
             { "words": "Where are you going?, Leaving before cleaning up the mess in house" },
             { "words": "I'm not letting you out until you clean it up, I did it last time so it's your turn to do it now" },
-            { "words": "If you have fogotten, I'll tell you just so you don't cause any more trouble" },
+            { "words": "If you have forgotten, I'll tell you just so you don't cause any more trouble" },
             { "words": "All you need to do is pickup any books or items that are laid around the house" },
             { "words": "Then place it on the shelf in the Main room, but make sure to put it in the right spots, I will lose it if it's placed incorrectly" },
             { "words": "That's all, you got it now? Good, now go clean it up before so you can get to school on time" }
@@ -81,29 +81,32 @@
           "id": "1",
           "Text": [
             { "words": "Hi bro, Getting ready for School?" },
-            { "words": "Well you are in luck i have two differnt choices you can go" },
-            { "words": "One is the bike, other is the taxi. Which one are you picking. Gotca, you cant choose at all bitch" }
+            { "words": "Well you are in luck i have two differnt choices you can go." },
+            { "words": "One is my bike, other is the taxi. Which one are you picking." }
             
           ]
         },
         {
           "id": "2",
           "Text": [
-            { "words": "Howzit Bru, Busy right now" }
+            { "words": "You better get going bro, School should be starting soon." }
           ]
         },
 
          {
           "id": "3",
           "Text": [
-            { "words": "Nice job, you packed everything correclty" },
-            { "words": "I can now relax, you better going to school. Time is ticking" }
+            { "words": "The Taxi huh, okay you better get there soon. They tend to leave very ealry, here some money to get in the taxi." },
+            { "words": "Also bro make sure, you pick the right taxi. you dont want to end up on the wrong side of town." }
           ]
          },
          {
           "id": "4",
           "Text": [
-            { "words": "Huh, you still here dont have school to get to'?" }
+            { "words": "My Bike. Hmm, Well I was hoping you would pick the latter." },
+            { "words": "My Bike is locked up behind in a small Exclosure, so no one would steal it." },
+             { "words": "However, I lent it to my neighbour ealier last week. He changed lock combination for some reason so I cant get in." },
+             { "words": "He should be getting ready for work, you can go ask him for the combination if you want." }
           ]
          }
       ]
@@ -114,8 +117,8 @@
         {
           "id": "1",
           "Text": [
-            { "words": "Hi kid, just look around nothing to worry about" },
-            { "words": "Its the quite the ealry morning, clearly everyone is still asleep haha. Well better get ready for work today" }
+            { "words": "Hi kid, just looking around nothing to worry about" },
+            { "words": "Its the quite the ealry this morning, clearly everyone is still asleep haha. Well better get ready for work today" }
           
             
           ]
@@ -130,14 +133,18 @@
          {
           "id": "3",
           "Text": [
-            { "words": "Nice job, you packed everything correclty" },
-            { "words": "I can now relax, you better going to school. Time is ticking" }
+            { "words": "Hi kid, about to head out soon, what's wrong?" },
+            { "words": "Huh?, You want to know the lock combination to the bike exclosure?" },
+            { "words": "If I can remeber correctly, I changed it because I thought your borther was giving me the bike." },
+            { "words": "I see that you are in a hurry though so I dont mind giving the key code. I beleive it is just my birthdate. I was born on the 28th February 1997."},
+            { "words": "However my memory isnt great so i dont remember if I used the day or the month for the first two digits, I wrote a pamphlet somewhere so i could remeber the code. Try go looking for that."},
+             { "words": "Cool that should be everyone better get going. If you are still struggling just come and ask me."}
           ]
          },
          {
           "id": "4",
           "Text": [
-            { "words": "Huh, you still here dont have school to get to'?" }
+            { "words": "you back?, well as I said I only know the last two digits which is the year I was born 1997." }
           ]
          }
       ]
@@ -149,9 +156,7 @@
           "id": "1",
           "Text": [
             { "words": "Hey, busy trying to fix my car" },
-            { "words": "Stop Bothering me, I need my car to work so can make more mola" }
-          
-            
+            { "words": "Stop Bothering me, I need my car to work so can make more mola" }      
           ]
         },
         {
@@ -164,14 +169,30 @@
          {
           "id": "3",
           "Text": [
-            { "words": "Nice job, you packed everything correclty" },
-            { "words": "I can now relax, you better going to school. Time is ticking" }
+            { "words": "Waht do you want kid, Ah I see thank you very much(Takes Money giving from school childs brother). I'm guessing you are heading school, well there's a problem with my taxi." },
+            { "words": "My brake has been damaged from the last trip and I have the new parts to fix it, just need the car lifted." },
+            { "words": "However some kids like yourself stole my car jack and i have no idea where it's located" },
+            { "words": "Please can you find it if you can. If you do find it please bring it to me as soon as possible. I will take you to school first thing." }
           ]
          },
          {
           "id": "4",
           "Text": [
-            { "words": "Huh, you still here dont have school to get to'?" }
+            { "words": "Huh, I don't see a car jack in your hands. If you don't have a car jack we can't go anywhere." }
+          ]
+         },
+          {
+          "id": "5",
+          "Text": [
+            { "words": "You got the Car Jack, I am saved!!!. Thank you so much for helping, I will start getting these new brakes installed as soon as possible." },
+            { "words": "(Repiaring taxi)" },
+            { "words": "Alright, we are ready to go, just hop in and we will be off." }
+          ]
+         },
+         {
+          "id": "6",
+          "Text": [
+            { "words": "Why are you just standing there?, come lets get going." }
           ]
          }
       ]

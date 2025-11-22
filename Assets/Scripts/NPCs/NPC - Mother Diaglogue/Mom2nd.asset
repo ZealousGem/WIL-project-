@@ -22,7 +22,9 @@ MonoBehaviour:
       item: {fileID: 11400000, guid: 2afcf0a6e7239084cb0021459d9a4c97, type: 2}
       changeObjective: 6
       hidePointer: 1
-      eventChanged: 
+      TakeItem: {fileID: 0}
+      eventChanged: 1
+      DialogueStateIndex: 0
   - id: 4
     Choices:
     - Choice: 4
@@ -31,6 +33,8 @@ MonoBehaviour:
       item: {fileID: 0}
       changeObjective: 0
       hidePointer: 0
-      eventChanged: 
+      TakeItem: {fileID: 0}
+      eventChanged: 0
+      DialogueStateIndex: 0
   Name: Mom
   RepeatDialogueIndex: 4

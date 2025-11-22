@@ -70,6 +70,8 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
         EventBus.Subscribe<spriteEvent>(SpriteChange);
 
         EventBus.Subscribe<CheckedEvent>(PuzzleEvent);
+        
+         EventBus.Subscribe<RemoveEvent>(RemoveInventory);
 
     }
 
@@ -84,6 +86,13 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
         EventBus.Subscribe<CheckedEvent>(PuzzleEvent);
 
+         EventBus.Unsubscribe<RemoveEvent>(RemoveInventory);
+
+    }
+
+    public void RemoveInventory(RemoveEvent Sprite)
+    {
+        RemoveItem(Sprite.go);
     }
 
 

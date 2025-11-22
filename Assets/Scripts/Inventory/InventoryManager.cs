@@ -46,7 +46,7 @@ public class InventoryManager : MonoBehaviour
         // observer.RemoveObserver(this);
         EventBus.Unsubscribe<GameObjectEvent>(GameObjectTrans);
         EventBus.Unsubscribe<itemEvent>(itemTrans);
-        EventBus.Unsubscribe<imageEvent>(Inventory);
+        EventBus.Unsubscribe<RemoveEvent>(RemoveInventory);
     }
 
     private void OnEnable()
@@ -55,6 +55,12 @@ public class InventoryManager : MonoBehaviour
         EventBus.Subscribe<GameObjectEvent>(GameObjectTrans);
         EventBus.Subscribe<itemEvent>(itemTrans);
         EventBus.Subscribe<imageEvent>(Inventory);
+          EventBus.Subscribe<RemoveEvent>(RemoveInventory);
+    }
+
+    public void RemoveInventory(RemoveEvent Sprite)
+    {
+        RemoveItem(Sprite.go);
     }
 
      public void Inventory(imageEvent data)

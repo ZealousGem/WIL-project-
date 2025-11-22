@@ -16,13 +16,24 @@ MonoBehaviour:
   dialogueNodes:
   - id: 1
     Choices:
-    - Choice: 2
-      answer: 
+    - Choice: 3
+      answer: Taxi
       amount: 0
       item: {fileID: 0}
       changeObjective: 0
       hidePointer: 0
-      eventChanged: 
+      TakeItem: {fileID: 0}
+      eventChanged: 1
+      DialogueStateIndex: 0
+    - Choice: 4
+      answer: Biycyle
+      amount: 0
+      item: {fileID: 0}
+      changeObjective: 0
+      hidePointer: 0
+      TakeItem: {fileID: 0}
+      eventChanged: 0
+      DialogueStateIndex: 0
   - id: 2
     Choices:
     - Choice: 2
@@ -31,6 +42,30 @@ MonoBehaviour:
       item: {fileID: 0}
       changeObjective: 0
       hidePointer: 0
-      eventChanged: 
+      TakeItem: {fileID: 0}
+      eventChanged: 1
+      DialogueStateIndex: 0
+  - id: 3
+    Choices:
+    - Choice: 2
+      answer: 
+      amount: 0
+      item: {fileID: 0}
+      changeObjective: 0
+      hidePointer: 0
+      TakeItem: {fileID: 0}
+      eventChanged: 1
+      DialogueStateIndex: 0
+  - id: 4
+    Choices:
+    - Choice: 2
+      answer: 
+      amount: 0
+      item: {fileID: 0}
+      changeObjective: 0
+      hidePointer: 0
+      TakeItem: {fileID: 0}
+      eventChanged: 1
+      DialogueStateIndex: 0
   Name: Brother
   RepeatDialogueIndex: 2

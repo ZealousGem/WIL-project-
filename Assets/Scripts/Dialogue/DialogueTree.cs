@@ -18,7 +18,11 @@ public class DialogueChoice
 
     public bool hidePointer;
 
-    public string eventChanged;
+    public Sprite TakeItem;
+
+    public DialougeChange eventChanged;
+
+    public int DialogueStateIndex;
 }
 
 [System.Serializable]

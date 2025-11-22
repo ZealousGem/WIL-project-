@@ -262,15 +262,17 @@ public class DialogueSystem : MonoBehaviour
          if (tree != null)
             {
 
-                if (tree.Choices[index].amount > 0)
-                {
-                    int GiveAmount = tree.Choices[index].amount;
-                    GiveMoneyEvent transfer = new GiveMoneyEvent(GiveAmount);
-                    EventBus.Act(transfer);
-                }
-
-            if (tree.Choices[index].eventChanged != null && tree.Choices[index].eventChanged != "")
+            if (tree.Choices[index].amount > 0)
             {
+                int GiveAmount = tree.Choices[index].amount;
+                GiveMoneyEvent transfer = new GiveMoneyEvent(GiveAmount);
+                EventBus.Act(transfer);
+            }
+
+            if (tree.Choices[index].eventChanged != DialougeChange.none && tree.Choices[index].DialogueStateIndex != 0)
+            {
+                ChangeDialogueState change = new ChangeDialogueState(tree.Choices[index].eventChanged, tree.Choices[index].DialogueStateIndex);
+                EventBus.Act(change);
                 Debug.Log(tree.Choices[index].eventChanged + "we have an answer");
             }
 
@@ -287,6 +289,13 @@ public class DialogueSystem : MonoBehaviour
                 Debug.Log("change objective");
                 PointerEvent pointer = new PointerEvent(tree.Choices[index].changeObjective, tree.Choices[index].hidePointer);
                 EventBus.Act(pointer);
+            }
+
+            if (tree.Choices[index].TakeItem != null)
+            {
+                Debug.Log("item taken");
+                RemoveEvent removeItem = new RemoveEvent(tree.Choices[index].TakeItem);
+                EventBus.Act(removeItem);
             }
 
             }
