@@ -35,8 +35,8 @@ public class LockPuzzle : MonoBehaviour
      [SerializeField]
      int index = 0;
 
-    // [SerializeField]
-    // DoorMovement door;
+    [SerializeField]
+    DoorMovement gate;
 
     [SerializeField]
      Vector3 uiOffset = new Vector3(0, 1f, 0);
@@ -48,7 +48,6 @@ public class LockPuzzle : MonoBehaviour
 
     private void OnDisable()
     {
- 
         EventBus.Unsubscribe<InputChangeEvent>(ChangingCameras);
     }
 
@@ -71,7 +70,9 @@ public class LockPuzzle : MonoBehaviour
         num[1] = 0;
         numUI[1].text = num[1].ToString();
         num[2] = 0;
-        numUI[2].text = num[2].ToString();
+        numUI[2].text = num[3].ToString();
+        num[3] = 0;
+        numUI[3].text = num[3].ToString();
 
 
     }
@@ -129,9 +130,13 @@ public class LockPuzzle : MonoBehaviour
             Debug.LogWarning("Correct combination not set yet!");
             return;
         }
-        if (num[0] == correctNum[0] && num[1] == correctNum[1] && num[2] == correctNum[2] && num.Count() >= 3)
+        if (num[0] == correctNum[0] && num[1] == correctNum[1] && num[2] == correctNum[2] && num[3] == correctNum[3] && num.Count() >= 3)
         {
            // StartCoroutine(ActivateSafe());
+           gate.Open(player.transform.position);
+           HideBox();
+           PuzzleCompleted = true;
+           inBox2 = false;
         }
 
        
@@ -149,7 +154,7 @@ public class LockPuzzle : MonoBehaviour
         CheckNum();
     }
 
-  public void arrowUp2()
+    public void arrowUp2()
     {
      
         if (num[1] < 9 && num.Count() >= 3)
@@ -161,13 +166,25 @@ public class LockPuzzle : MonoBehaviour
          CheckNum();
     }
 
-      public void arrowUp3()
+     public void arrowUp3()
     {
      
         if (num[2] < 9 && num.Count() >= 3)
         {
             num[2] += 1;
             numUI[2].text = num[2].ToString();
+        }
+
+         CheckNum();
+    }
+
+     public void arrowUp4()
+    {
+     
+        if (num[3] < 9 && num.Count() >= 3)
+        {
+            num[3] += 1;
+            numUI[3].text = num[3].ToString();
         }
 
          CheckNum();
@@ -204,6 +221,18 @@ public class LockPuzzle : MonoBehaviour
         {
             num[2] -= 1;
             numUI[2].text = num[2].ToString();
+        }
+
+         CheckNum();
+    }
+
+     public void arrowDown4()
+    {
+      
+        if (num[3] > 0 && num.Count() >= 3)
+        {
+            num[3] -= 1;
+            numUI[3].text = num[3].ToString();
         }
 
          CheckNum();
