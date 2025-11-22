@@ -54,8 +54,8 @@ MonoBehaviour:
       changeObjective: 0
       hidePointer: 0
       TakeItem: {fileID: 0}
-      eventChanged: 1
-      DialogueStateIndex: 0
+      eventChanged: 2
+      DialogueStateIndex: 1
   - id: 4
     Choices:
     - Choice: 2
@@ -65,7 +65,7 @@ MonoBehaviour:
       changeObjective: 0
       hidePointer: 0
       TakeItem: {fileID: 0}
-      eventChanged: 1
-      DialogueStateIndex: 0
+      eventChanged: 3
+      DialogueStateIndex: 1
   Name: Brother
   RepeatDialogueIndex: 2

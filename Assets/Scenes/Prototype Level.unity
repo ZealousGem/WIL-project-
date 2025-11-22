@@ -12778,6 +12778,7 @@ MonoBehaviour:
   Interact: {fileID: 1819299599}
   dialogueState:
   - {fileID: 11400000, guid: bea9da8e50043094491d66ddbf1db960, type: 2}
+  - {fileID: 11400000, guid: ebe4b2fd6202f2d48b6dc0a8ef9694dd, type: 2}
   pepe: {fileID: 4994331854867201490}
   arrow: 0
   id: 5
@@ -26101,6 +26102,7 @@ MonoBehaviour:
   Interact: {fileID: 1226347134}
   dialogueState:
   - {fileID: 11400000, guid: d5cbfa311aa559d42b6ef298995383d2, type: 2}
+  - {fileID: 11400000, guid: 2b696122d25798f4a9c261ef564d9ae0, type: 2}
   pepe: {fileID: 4994331854867201490}
   arrow: 0
   id: 4
