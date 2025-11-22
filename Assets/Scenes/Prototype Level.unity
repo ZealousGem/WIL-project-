@@ -3190,11 +3190,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.02999878
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.71931547
+      value: -0.77515477
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3202,7 +3202,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.6946836
+      value: 0.6317714
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_LocalRotation.z
@@ -3210,7 +3210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 0.7799988
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3222,7 +3222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 271.996
+      value: 281.638
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -8034,6 +8034,8 @@ MonoBehaviour:
   - {fileID: 2123412912}
   - {fileID: 1991955072}
   Pamplhet: {fileID: 2482797075707905028}
+  TaxiEnd: {fileID: 804352316}
+  BikeEnd: {fileID: 879149723}
   craftingTable: {fileID: 8134204619311202647}
   LockPick: {fileID: 65867571}
 --- !u!1 &693464039
@@ -9107,7 +9109,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Taxi Ending
   Interact: {fileID: 1003984820}
-  uiOffset: {x: 0, y: 3, z: 0}
 --- !u!1001 &808125898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9228,7 +9229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.6099001
+      value: 1.6099006
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_LocalScale.y
@@ -9236,7 +9237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.6099001
+      value: 1.6099006
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9248,7 +9249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.87
+      value: 3.4977036
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9268,7 +9269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 94.61
+      value: -0.9476532
       objectReference: {fileID: 0}
     - target: {fileID: 5584764766837375803, guid: 15faaa259fe28f142831b0201b22c437, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -10170,7 +10171,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Bicycle Ending
   Interact: {fileID: 2074826787}
-  uiOffset: {x: 0.6, y: 2.41, z: 0}
 --- !u!135 &879149726
 SphereCollider:
   m_ObjectHideFlags: 0

@@ -104,7 +104,7 @@
           "id": "4",
           "Text": [
             { "words": "My Bike. Hmm, Well I was hoping you would pick the latter." },
-            { "words": "My Bike is locked up behind in a small Exclosure, so no one would steal it." },
+            { "words": "My Bike is locked up behind in a small Enclosure, so no one would steal it." },
              { "words": "However, I lent it to my neighbour ealier last week. He changed lock combination for some reason so I cant get in." },
              { "words": "He should be getting ready for work, you can go ask him for the combination if you want." }
           ]
@@ -134,7 +134,7 @@
           "id": "3",
           "Text": [
             { "words": "Hi kid, about to head out soon, what's wrong?" },
-            { "words": "Huh?, You want to know the lock combination to the bike exclosure?" },
+            { "words": "Huh?, You want to know the lock combination to the bike enclosure?" },
             { "words": "If I can remeber correctly, I changed it because I thought your borther was giving me the bike." },
             { "words": "I see that you are in a hurry though so I dont mind giving the key code. I beleive it is just my birthdate. I was born on the 28th February 1997."},
             { "words": "However my memory isnt great so i dont remember if I used the day or the month for the first two digits, I wrote a pamphlet somewhere so i could remeber the code. Try go looking for that."},

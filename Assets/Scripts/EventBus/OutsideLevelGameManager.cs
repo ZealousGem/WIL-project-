@@ -22,9 +22,9 @@ public class OutsideLevelGameManager : MonoBehaviour
             case PointerArrowTypes.Arrow2:ShowOrHideArrow(Pointers[1].name, data.visibility); break;
             case PointerArrowTypes.Arrow3: ShowOrHideArrow(Pointers[2].name, data.visibility);break;
             case PointerArrowTypes.Arrow4: ShowOrHideArrow(Pointers[3].name, data.visibility); ActivateLockPickPuzzle(); break;
-            case PointerArrowTypes.Arrow5: ShowOrHideArrow(Pointers[5].name, data.visibility);break;
+            case PointerArrowTypes.Arrow5: ShowOrHideArrow(Pointers[5].name, data.visibility); BikeEnd.SetActive(true); break;
             case PointerArrowTypes.Arrow6: ShowOrHideArrow(Pointers[4].name, data.visibility);break;
-            case PointerArrowTypes.Arrow8: ShowOrHideArrow(Pointers[6].name, data.visibility);break;
+            case PointerArrowTypes.Arrow8: ShowOrHideArrow(Pointers[6].name, data.visibility); TaxiEnd.SetActive(true); break;
             case PointerArrowTypes.CarJackPuzzle: ShowCarJackItems(data.visibility); break;
             case PointerArrowTypes.PuzzleArrows: ItemPickedUp(data.visibility); break;
             case PointerArrowTypes.none: Debug.Log("nothing here"); break;
@@ -38,6 +38,10 @@ public class OutsideLevelGameManager : MonoBehaviour
     public List<GameObject> CarJackObjects;
 
     public GameObject Pamplhet; 
+
+    public GameObject TaxiEnd;
+
+    public GameObject BikeEnd;
 
     public CarJackPuzzle craftingTable;
 
@@ -114,6 +118,8 @@ public class OutsideLevelGameManager : MonoBehaviour
             
         }
 
+        BikeEnd.SetActive(false);
+        TaxiEnd.SetActive(false);
         Pamplhet.SetActive(false);
     }
 }
