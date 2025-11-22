@@ -21,7 +21,7 @@ public class OutsideLevelGameManager : MonoBehaviour
             case PointerArrowTypes.Arrow1: ShowOrHideArrow(Pointers[0].name, data.visibility); break;
             case PointerArrowTypes.Arrow2:ShowOrHideArrow(Pointers[1].name, data.visibility); break;
             case PointerArrowTypes.Arrow3: ShowOrHideArrow(Pointers[2].name, data.visibility);break;
-            case PointerArrowTypes.Arrow4: ShowOrHideArrow(Pointers[3].name, data.visibility);break;
+            case PointerArrowTypes.Arrow4: ShowOrHideArrow(Pointers[3].name, data.visibility); ActivateLockPickPuzzle(); break;
             case PointerArrowTypes.Arrow5: ShowOrHideArrow(Pointers[5].name, data.visibility);break;
             case PointerArrowTypes.Arrow6: ShowOrHideArrow(Pointers[4].name, data.visibility);break;
             case PointerArrowTypes.Arrow8: ShowOrHideArrow(Pointers[6].name, data.visibility);break;
@@ -37,7 +37,21 @@ public class OutsideLevelGameManager : MonoBehaviour
 
     public List<GameObject> CarJackObjects;
 
+    public CarJackPuzzle craftingTable;
+
+    public LockPuzzle LockPick;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is create
+
+    void ActivateLockPickPuzzle()
+    {
+        LockPick.PuzzleCompleted = false;
+    }
+
+    void ActivateCraftingPuzzle()
+    {
+        craftingTable.PuzzleCompleted = false;
+    }
 
     void ItemPickedUp( bool visbilibty)
     {
@@ -45,6 +59,7 @@ public class OutsideLevelGameManager : MonoBehaviour
         if (itemCounter == 2)
         {
             ShowOrHideArrow(Pointers[4].name, visbilibty);
+            ActivateCraftingPuzzle();
         }
     }
 

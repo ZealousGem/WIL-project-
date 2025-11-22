@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Jordan/Jordan.unity
     guid: d3df3877e25e92b46a94a5af830c95e2
+  - enabled: 1
+    path: Assets/Scenes/Prototype Level.unity
+    guid: a38d38e0d9f8b6b469dbaf15cbdb8efc
   - enabled: 0
     path: Assets/OutdoorsScene.unity
     guid: 8124e5870f4fd4c779e7a5f994e84ad1

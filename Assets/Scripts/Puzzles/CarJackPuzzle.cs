@@ -39,7 +39,8 @@ public class CarJackPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, I
 
     //public PointerArrowTypes arrow;
 
-    bool PuzzleCompleted = false;
+[HideInInspector]
+   public bool PuzzleCompleted;
 
     Camera cam;
 
@@ -312,6 +313,7 @@ public class CarJackPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, I
 
     void Start()
     {
+         PuzzleCompleted = true;
         TakeButton.SetActive(false);
          player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
       //  Game = GameObject.FindGameObjectWithTag("Pointer").GetComponent<GameManager>();

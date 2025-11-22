@@ -20,7 +20,7 @@ MonoBehaviour:
       answer: 
       amount: 0
       item: {fileID: 0}
-      changeObjective: 7
+      changeObjective: 9
       hidePointer: 1
       TakeItem: {fileID: 0}
       eventChanged: 1

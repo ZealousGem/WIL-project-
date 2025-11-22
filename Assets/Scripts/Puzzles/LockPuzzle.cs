@@ -30,7 +30,8 @@ public class LockPuzzle : MonoBehaviour
 
      bool inBox2 = false;
 
-    bool PuzzleCompleted = false;
+    [HideInInspector]
+   public bool PuzzleCompleted;
 
      [SerializeField]
      int index = 0;
@@ -63,6 +64,7 @@ public class LockPuzzle : MonoBehaviour
 
     void Start()
     {
+        PuzzleCompleted = true;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         num = new int[numUI.Length];
         num[0] = 0;

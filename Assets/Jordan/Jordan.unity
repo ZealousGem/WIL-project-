@@ -6184,6 +6184,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1357802632}
     m_Modifications:
+    - target: {fileID: 1055758775750695383, guid: 15f25c824a73d124faf9532574c9b188, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8011193577292947602, guid: 15f25c824a73d124faf9532574c9b188, type: 3}
       propertyPath: m_Name
       value: Toaster
@@ -6202,7 +6206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8623926910844884413, guid: 15f25c824a73d124faf9532574c9b188, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2338819.2
+      value: 2338948
       objectReference: {fileID: 0}
     - target: {fileID: 8623926910844884413, guid: 15f25c824a73d124faf9532574c9b188, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13939,6 +13943,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 897836086594994041, guid: 41559739d890d0241a51bf181204c48a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501278868931408862, guid: 41559739d890d0241a51bf181204c48a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 285.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501278868931408862, guid: 41559739d890d0241a51bf181204c48a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 183.20001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4028494676418302803, guid: 41559739d890d0241a51bf181204c48a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4028494676418302803, guid: 41559739d890d0241a51bf181204c48a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 6544124965441925346, guid: 41559739d890d0241a51bf181204c48a, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8239066687803722820, guid: 41559739d890d0241a51bf181204c48a, type: 3}
