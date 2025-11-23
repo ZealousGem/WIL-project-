@@ -154,6 +154,7 @@ public class DialogueSystem : MonoBehaviour
     // Update is called once per frame
     public void DisplayNextSentence()
     {
+        PauseMenu.HideScreen();
          if (SoundManager.Instance != null)
             {
              SoundManager.Instance.PlaySound("ps1");
@@ -206,6 +207,7 @@ public class DialogueSystem : MonoBehaviour
 
     void EndDialogue() // will end the dialogue by setting bool to false allowing the for loop in dialogue manager to move the i to the next position
     {
+        PauseMenu.UnHideScreen();
         Charname.text = "";
         description.text = "";
         end = true;
@@ -298,6 +300,8 @@ public class DialogueSystem : MonoBehaviour
                 EventBus.Act(removeItem);
             }
 
+             PauseMenu.UnHideScreen();
+
             }
     }
 
@@ -339,6 +343,7 @@ public class DialogueSystem : MonoBehaviour
 
     void ShowButtons()
     {
+        PauseMenu.HideScreen();
         ChoiceButton.SetActive(true);
         StartCoroutine(ButtonUIAnimation(ChoiceButton));
     }

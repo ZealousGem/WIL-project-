@@ -67,6 +67,7 @@ public class TutorialScript : MonoBehaviour
          {
              SoundManager.Instance.PlaySound("ps1");
          }
+        PauseMenu.HideScreen();
         imageAnimator = image.GetComponent<Animator>();
         if (imageAnimator != null)
         {
@@ -149,6 +150,7 @@ public class TutorialScript : MonoBehaviour
         Button but = button.GetComponent<Button>();
         but.onClick.RemoveListener(NextLine);
         shiftObjects.AddRange(GameObject.FindGameObjectsWithTag(tags));
+         PauseMenu.UnHideScreen();
         if (imageAnimator != null) imageAnimator.enabled = false;
 
         foreach (GameObject n in shiftObjects)

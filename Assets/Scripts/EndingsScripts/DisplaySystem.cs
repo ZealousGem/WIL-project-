@@ -52,6 +52,8 @@ public class DisplaySystem : MonoBehaviour
 
     public void StartDialogue(string ChacterName) // method that will start the dialogue using the characters name in the string array from diaslogue manager
     {
+       
+        
         Debug.Log("dialogue starts");
         Dialogue.SetActive(true);
         end = false;
