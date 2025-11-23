@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
   public GameObject startMenu;
-   // public GameObject OptionsMenu;
+    public GameObject OptionsMenu;
 
    
 
@@ -16,19 +16,19 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Jordan");
     }
 
-    // public void Options()
-    // {
-    //     SoundManager.Instance.PlaySound("click");
-    //     startMenu.SetActive(false);
-    //     OptionsMenu.SetActive(true);
-    // }
+    public void Options()
+    {
+        SoundManager.Instance.PlaySound("click");
+        startMenu.SetActive(false);
+        OptionsMenu.SetActive(true);
+    }
 
-    // public void BackToStart()
-    // {
-    //     SoundManager.Instance.PlaySound("click");
-    //     startMenu.SetActive(true);
-    //     OptionsMenu.SetActive(false);
-    // }
+    public void BackToStart()
+    {
+        SoundManager.Instance.PlaySound("click");
+        startMenu.SetActive(true);
+        OptionsMenu.SetActive(false);
+    }
 
     public void OnApplicationQuit()
     {
