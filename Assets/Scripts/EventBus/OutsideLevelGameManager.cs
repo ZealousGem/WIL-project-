@@ -52,7 +52,11 @@ public class OutsideLevelGameManager : MonoBehaviour
     void ActivateLockPickPuzzle()
     {
         LockPick.PuzzleCompleted = false;
-        Pamplhet.SetActive(true);
+        if (Pamplhet != null)
+        {
+             Pamplhet.SetActive(true);
+        }
+       
         
     }
 

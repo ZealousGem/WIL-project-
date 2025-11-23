@@ -486,7 +486,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &58720545
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -515,7 +515,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58720544}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1128,7 +1128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &123447516
 Transform:
   m_ObjectHideFlags: 0
@@ -1138,8 +1138,8 @@ Transform:
   m_GameObject: {fileID: 123447515}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.28, y: -0.143, z: 12.84}
-  m_LocalScale: {x: 1, y: 0.42358, z: 3}
+  m_LocalPosition: {x: -9.28, y: 0.42, z: 13.24}
+  m_LocalScale: {x: 1.0361419, y: 0.43888897, z: 3.1084256}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 968190140}
@@ -1187,7 +1187,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123447515}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3549,6 +3549,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spatula
       objectReference: {fileID: 0}
+    - target: {fileID: 7978488943682153473, guid: e41457c3a070d0749a00ac9a16eb597b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4827,6 +4831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Action Figure (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 174200691410377241, guid: eaaa41fa292691b429a93110efeeeb42, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1393775040925169307, guid: eaaa41fa292691b429a93110efeeeb42, type: 3}
       propertyPath: m_LocalScale.x
       value: 445.6654
@@ -5356,7 +5364,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &769506614
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5387,7 +5395,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769506613}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5442,7 +5450,7 @@ Transform:
   m_GameObject: {fileID: 769506613}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.38, z: 0}
+  m_LocalPosition: {x: 0, y: -0.228, z: 0}
   m_LocalScale: {x: 1, y: 0.3725, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6011,6 +6019,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bed
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32722e90d4640fa44af437f5e06c249b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1738776581880846596, guid: 32722e90d4640fa44af437f5e06c249b, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -6312,6 +6324,10 @@ PrefabInstance:
     - target: {fileID: 8011193577292947602, guid: 15f25c824a73d124faf9532574c9b188, type: 3}
       propertyPath: m_Name
       value: Toaster
+      objectReference: {fileID: 0}
+    - target: {fileID: 8011193577292947602, guid: 15f25c824a73d124faf9532574c9b188, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8623926910844884413, guid: 15f25c824a73d124faf9532574c9b188, type: 3}
       propertyPath: m_LocalScale.x
@@ -7321,6 +7337,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wooden Spoon
       objectReference: {fileID: 0}
+    - target: {fileID: 5253068994214812024, guid: f92e31a97e9d521419029079d984dc2b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7347,6 +7367,10 @@ PrefabInstance:
     - target: {fileID: 4110938791836850373, guid: 700b44b64fef5f549a611cba1c7522c2, type: 3}
       propertyPath: m_Name
       value: Plate (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110938791836850373, guid: 700b44b64fef5f549a611cba1c7522c2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8142152805154576729, guid: 700b44b64fef5f549a611cba1c7522c2, type: 3}
       propertyPath: m_LocalScale.x
@@ -7542,6 +7566,10 @@ PrefabInstance:
     - target: {fileID: 174200691410377241, guid: eaaa41fa292691b429a93110efeeeb42, type: 3}
       propertyPath: m_Name
       value: Action Figure
+      objectReference: {fileID: 0}
+    - target: {fileID: 174200691410377241, guid: eaaa41fa292691b429a93110efeeeb42, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1393775040925169307, guid: eaaa41fa292691b429a93110efeeeb42, type: 3}
       propertyPath: m_LocalScale.x
@@ -8121,6 +8149,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 07fe13a3ae000674eb5b90ce01066607, type: 3}
       propertyPath: m_Name
       value: Stool
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 07fe13a3ae000674eb5b90ce01066607, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 974584544777506935, guid: 07fe13a3ae000674eb5b90ce01066607, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -11350,6 +11382,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stool (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 07fe13a3ae000674eb5b90ce01066607, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 974584544777506935, guid: 07fe13a3ae000674eb5b90ce01066607, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -12394,6 +12430,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plate (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4110938791836850373, guid: 700b44b64fef5f549a611cba1c7522c2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8142152805154576729, guid: 700b44b64fef5f549a611cba1c7522c2, type: 3}
       propertyPath: m_LocalScale.x
       value: 445.6654
@@ -12412,7 +12452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8142152805154576729, guid: 700b44b64fef5f549a611cba1c7522c2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -378990
+      value: -378870
       objectReference: {fileID: 0}
     - target: {fileID: 8142152805154576729, guid: 700b44b64fef5f549a611cba1c7522c2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12593,6 +12633,10 @@ PrefabInstance:
     - target: {fileID: 2176320271679918157, guid: df7e0c0a9447a5947a4cd5061bdab3a4, type: 3}
       propertyPath: m_Name
       value: Toy Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176320271679918157, guid: df7e0c0a9447a5947a4cd5061bdab3a4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7997042174403461487, guid: df7e0c0a9447a5947a4cd5061bdab3a4, type: 3}
       propertyPath: m_LocalScale.x
@@ -13338,7 +13382,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1989085773
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14029,6 +14073,10 @@ PrefabInstance:
     - target: {fileID: 7831545422128084126, guid: a6a6df98ecc1e2a4eaf1afac69a1fd06, type: 3}
       propertyPath: m_Name
       value: Book
+      objectReference: {fileID: 0}
+    - target: {fileID: 7831545422128084126, guid: a6a6df98ecc1e2a4eaf1afac69a1fd06, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
