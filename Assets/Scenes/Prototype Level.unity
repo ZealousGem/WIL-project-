@@ -3390,7 +3390,7 @@ GameObject:
   - component: {fileID: 225346488}
   - component: {fileID: 225346490}
   - component: {fileID: 225346489}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ChangetoBicycleArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4159,7 +4159,7 @@ GameObject:
   - component: {fileID: 310757376}
   - component: {fileID: 310757378}
   - component: {fileID: 310757377}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Changeto2ndStreet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6218,7 +6218,7 @@ GameObject:
   - component: {fileID: 479270023}
   - component: {fileID: 479270024}
   - component: {fileID: 479270025}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ChangetoFlatsStreet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16388,7 +16388,7 @@ GameObject:
   - component: {fileID: 1293910293}
   - component: {fileID: 1293910295}
   - component: {fileID: 1293910294}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bicyle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21833,7 +21833,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7890049691038491381, guid: 4bf7ea4a3e1a33949ae16350ef59fd97, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.61
+      value: 7.2
       objectReference: {fileID: 0}
     - target: {fileID: 7890049691038491381, guid: 4bf7ea4a3e1a33949ae16350ef59fd97, type: 3}
       propertyPath: m_LocalPosition.y
@@ -21841,7 +21841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7890049691038491381, guid: 4bf7ea4a3e1a33949ae16350ef59fd97, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.35
+      value: -15.77
       objectReference: {fileID: 0}
     - target: {fileID: 7890049691038491381, guid: 4bf7ea4a3e1a33949ae16350ef59fd97, type: 3}
       propertyPath: m_LocalRotation.w
@@ -25805,7 +25805,7 @@ GameObject:
   - component: {fileID: 1935840292}
   - component: {fileID: 1935840294}
   - component: {fileID: 1935840293}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ChangetoJojTanks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29070,7 +29070,7 @@ GameObject:
   - component: {fileID: 2143227475}
   - component: {fileID: 2143227477}
   - component: {fileID: 2143227476}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ChangetoTaxiRank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29220,7 +29220,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 415023521982503016, guid: 6155954f4692e344db0d7038dd334d6b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 93.75
+      value: 83.2
       objectReference: {fileID: 0}
     - target: {fileID: 415023521982503016, guid: 6155954f4692e344db0d7038dd334d6b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -29228,7 +29228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 415023521982503016, guid: 6155954f4692e344db0d7038dd334d6b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.5
+      value: -15.1
       objectReference: {fileID: 0}
     - target: {fileID: 415023521982503016, guid: 6155954f4692e344db0d7038dd334d6b, type: 3}
       propertyPath: m_LocalRotation.w

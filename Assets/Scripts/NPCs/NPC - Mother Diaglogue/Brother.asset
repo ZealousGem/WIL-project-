@@ -26,7 +26,7 @@ MonoBehaviour:
       eventChanged: 1
       DialogueStateIndex: 0
     - Choice: 4
-      answer: Biycyle
+      answer: Bicycle
       amount: 0
       item: {fileID: 0}
       changeObjective: 0

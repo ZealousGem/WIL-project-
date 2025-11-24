@@ -10,7 +10,7 @@ public class Sliders : MonoBehaviour
     float AudioSound;
     void Start()
     {
-        AudioSound = 1f;
+        AudioSound = 0.5f;
     }
 
     // Update is called once per frame

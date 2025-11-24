@@ -273,7 +273,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Build Ver.1.1
+  m_text: Build Ver.1.2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e96e3cf457b690c4fb73256d714f73b6, type: 2}
   m_sharedMaterial: {fileID: 4365569780556750019, guid: e96e3cf457b690c4fb73256d714f73b6, type: 2}
@@ -568,8 +568,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278453509
-  m_fontColor: {r: 0.01886791, g: 0.01860091, b: 0.017532917, a: 1}
+    rgba: 4279983770
+  m_fontColor: {r: 0.6037736, g: 0.36792752, b: 0.10537558, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3544,8 +3544,8 @@ RectTransform:
   - {fileID: 1094501392}
   - {fileID: 666045367}
   - {fileID: 739765207}
-  - {fileID: 80681770}
   - {fileID: 206477176}
+  - {fileID: 80681770}
   - {fileID: 1263896603}
   m_Father: {fileID: 1489782138}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
