@@ -84,7 +84,7 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
         EventBus.Unsubscribe<spriteEvent>(SpriteChange);
 
-        EventBus.Subscribe<CheckedEvent>(PuzzleEvent);
+        EventBus.Unsubscribe<CheckedEvent>(PuzzleEvent);
 
          EventBus.Unsubscribe<RemoveEvent>(RemoveInventory);
 

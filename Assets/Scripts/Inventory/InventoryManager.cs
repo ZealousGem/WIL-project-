@@ -47,6 +47,7 @@ public class InventoryManager : MonoBehaviour
         EventBus.Unsubscribe<GameObjectEvent>(GameObjectTrans);
         EventBus.Unsubscribe<itemEvent>(itemTrans);
         EventBus.Unsubscribe<RemoveEvent>(RemoveInventory);
+        EventBus.Unsubscribe<imageEvent>(Inventory);
     }
 
     private void OnEnable()

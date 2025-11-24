@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Biycyle Ending
+  m_text: Bicycle Ending
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e96e3cf457b690c4fb73256d714f73b6, type: 2}
   m_sharedMaterial: {fileID: 4365569780556750019, guid: e96e3cf457b690c4fb73256d714f73b6, type: 2}
