@@ -143,6 +143,10 @@ public class LockPuzzle : MonoBehaviour
            EventBus.Act(pointer2);
            PuzzleCompleted = true;
            inBox2 = false;
+           if (SoundManager.Instance != null)
+            {
+             SoundManager.Instance.PlaySound("tutorial");
+            }
         }
 
        
@@ -157,6 +161,11 @@ public class LockPuzzle : MonoBehaviour
             numUI[0].text = num[0].ToString();
         }
 
+        if (SoundManager.Instance != null)
+        {
+          SoundManager.Instance.PlaySound("pickup");
+        }
+
         CheckNum();
     }
 
@@ -167,6 +176,11 @@ public class LockPuzzle : MonoBehaviour
         {
             num[1] += 1;
             numUI[1].text = num[1].ToString();
+        }
+
+        if (SoundManager.Instance != null)
+        {
+          SoundManager.Instance.PlaySound("pickup");
         }
 
          CheckNum();
@@ -181,6 +195,11 @@ public class LockPuzzle : MonoBehaviour
             numUI[2].text = num[2].ToString();
         }
 
+        if (SoundManager.Instance != null)
+        {
+          SoundManager.Instance.PlaySound("pickup");
+        }
+
          CheckNum();
     }
 
@@ -191,6 +210,11 @@ public class LockPuzzle : MonoBehaviour
         {
             num[3] += 1;
             numUI[3].text = num[3].ToString();
+        }
+
+        if (SoundManager.Instance != null)
+        {
+          SoundManager.Instance.PlaySound("pickup");
         }
 
          CheckNum();
@@ -205,6 +229,11 @@ public class LockPuzzle : MonoBehaviour
             numUI[0].text = num[0].ToString();
         }
 
+        if (SoundManager.Instance != null)
+        {
+          SoundManager.Instance.PlaySound("pickup");
+        }
+
          CheckNum();
     }
 
@@ -215,6 +244,11 @@ public class LockPuzzle : MonoBehaviour
         {
             num[1] -= 1;
             numUI[1].text = num[1].ToString();
+        }
+
+        if (SoundManager.Instance != null)
+        {
+          SoundManager.Instance.PlaySound("pickup");
         }
 
          CheckNum();
@@ -229,6 +263,11 @@ public class LockPuzzle : MonoBehaviour
             numUI[2].text = num[2].ToString();
         }
 
+        if (SoundManager.Instance != null)
+        {
+          SoundManager.Instance.PlaySound("pickup");
+        }
+
          CheckNum();
     }
 
@@ -239,6 +278,11 @@ public class LockPuzzle : MonoBehaviour
         {
             num[3] -= 1;
             numUI[3].text = num[3].ToString();
+        }
+
+        if (SoundManager.Instance != null)
+        {
+          SoundManager.Instance.PlaySound("pickup");
         }
 
          CheckNum();

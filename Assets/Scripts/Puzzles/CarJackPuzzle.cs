@@ -138,6 +138,10 @@ public class CarJackPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, I
         EventBus.Act(change);
         itemEvent it = new itemEvent(CreateItem);
         EventBus.Act(it);
+        if (SoundManager.Instance != null)
+         {
+             SoundManager.Instance.PlaySound("tutorial");
+         }
     }
 
     void ShowBox()
