@@ -10,6 +10,7 @@ public class EndingManager : MonoBehaviour
     public DialogueInfo info;
     public string Nextscene;
     public string nextSong;
+    public string previousSong;
     void Start()
     {
        
@@ -65,10 +66,10 @@ public class EndingManager : MonoBehaviour
 
     public void SkipDialogue()
     {
-        if (SoundManager.Instance != null)
+        if (SoundManager.Instance != null && nextSong != null && previousSong != null)
         {
-            SoundManager.Instance.StopMusic("theme");
-            SoundManager.Instance.PlaySound("start");
+            SoundManager.Instance.StopMusic(previousSong);
+            SoundManager.Instance.PlaySound(nextSong);
         }
         SceneManager.LoadScene(Nextscene);
     }

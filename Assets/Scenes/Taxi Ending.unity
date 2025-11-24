@@ -455,7 +455,8 @@ MonoBehaviour:
   Disname: 1
   info: {fileID: 1289545438}
   Nextscene: MainMenu
-  nextSong: 
+  nextSong: start
+  previousSong: theme
 --- !u!1 &1327848365
 GameObject:
   m_ObjectHideFlags: 0

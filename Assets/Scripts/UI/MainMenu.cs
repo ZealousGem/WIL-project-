@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour
         SoundManager.Instance.PlaySound("click");
         SoundManager.Instance.StopMusic("start");
         SoundManager.Instance.PlaySound("theme");
-        SceneManager.LoadScene("Jordan");
+        SceneManager.LoadScene("IntroScene");
     }
 
     public void Options()

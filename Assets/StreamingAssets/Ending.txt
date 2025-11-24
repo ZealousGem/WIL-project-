@@ -54,6 +54,34 @@
    ]
 
 
+},
+
+{
+  "id": "3",
+  "character":  [
+  
+  
+  {"name" :""},
+  {"name" :""},
+  {"name" :""},
+  {"name" :""}
+ 
+  
+  
+  
+  ],
+   "data" :[
+ 
+   {"Text": "The blue glow of the rickety digital clock fixed the hour at 5:15 AM. The school child registered the dimness—an immediate signal for the long, daily commute. The necessity of the early hour settled over them as they sat up, stretching and pulling on the first thick wool sock."},
+   {"Text": "Moving to the window, the child verified the morning light. The sun was barely ascending, painting the eastern horizon in muted grays and pale pinks. A light dusting of frost coated the ground, dismissing any personal transport option. Focus shifted entirely to the school transport; its notoriously fragile state and recent repairs made a delay inevitable."},
+   {"Text": "The school child could not risk being late. They mentally mapped out the complicated, multi-step route: three local bus stops and a hard sprint in between. This complex detour was the only reliable way to beat the expected delay, solidifying the difficult plan with resolute determination.."},
+    {"Text": "They pulled on a heavy jacket, the backpack was slung tight, and faced the door. The early morning air felt anticipatory even from behind the glass. With the complex, three-stop detour solidified, the child stood by the threshold, waiting for the precise, calculated minute to begin the difficult journey."}
+  
+  
+   
+   ]
+
+
 }
 
 ]

@@ -44,12 +44,12 @@
         {
           "id": "1",
           "Text": [
-            { "words": "Where are you going?, Leaving before cleaning up the mess in house" },
+            { "words": "Where are you going?, Leaving before cleaning up this mess in the house" },
             { "words": "I'm not letting you out until you clean it up, I did it last time so it's your turn to do it now" },
             { "words": "If you have forgotten, I'll tell you just so you don't cause any more trouble" },
             { "words": "All you need to do is pickup any books or items that are laid around the house" },
-            { "words": "Then place it on the shelf in the Main room, but make sure to put it in the right spots, I will lose it if it's placed incorrectly" },
-            { "words": "That's all, you got it now? Good, now go clean it up before so you can get to school on time" }
+            { "words": "Then place it on the shelves located around the house, make sure to put it in the right spots, I will lose it if it's placed incorrectly" },
+            { "words": "That's all, you got it now? Good, now go clean it up so you can get to school on time" }
           ]
         },
         {
@@ -62,14 +62,14 @@
          {
           "id": "3",
           "Text": [
-            { "words": "Nice job, you packed everything correclty" },
+            { "words": "Nice job, you packed everything correctly" },
             { "words": "I can now relax, you better going to school. Time is ticking" }
           ]
          },
          {
           "id": "4",
           "Text": [
-            { "words": "Huh, you still here dont have school to get to'?" }
+            { "words": "Huh, you are still here dont you have school to get to'?" }
           ]
          }
       ]
@@ -96,16 +96,16 @@
          {
           "id": "3",
           "Text": [
-            { "words": "The Taxi huh, okay you better get there soon. They tend to leave very ealry, here some money to get in the taxi." },
-            { "words": "Also bro make sure, you pick the right taxi. you dont want to end up on the wrong side of town." }
+            { "words": "The Taxi huh, okay you better get there soon. They tend to leave very early, here is some money to get in the taxi." },
+            { "words": "Also bro make sure, you pick the right taxi. you dont want to end up in the wrong side of town." }
           ]
          },
          {
           "id": "4",
           "Text": [
             { "words": "My Bike. Hmm, Well I was hoping you would pick the latter." },
-            { "words": "My Bike is locked up behind in a small Enclosure, so no one would steal it." },
-             { "words": "However, I lent it to my neighbour ealier last week. He changed lock combination for some reason so I cant get in." },
+            { "words": "My Bike is locked up behind in a small enclosure, so no one would steal it." },
+             { "words": "However, I lent it to my neighbour ealier last week. He changed the lock combination for some reason so I can't get in." },
              { "words": "He should be getting ready for work, you can go ask him for the combination if you want." }
           ]
          }
@@ -118,7 +118,7 @@
           "id": "1",
           "Text": [
             { "words": "Hi kid, just looking around nothing to worry about" },
-            { "words": "Its the quite the ealry this morning, clearly everyone is still asleep haha. Well better get ready for work today" }
+            { "words": "Its the quite the early this morning, clearly everyone is still asleep haha. Well better get ready for work today" }
           
             
           ]
@@ -135,10 +135,10 @@
           "Text": [
             { "words": "Hi kid, about to head out soon, what's wrong?" },
             { "words": "Huh?, You want to know the lock combination to the bike enclosure?" },
-            { "words": "If I can remeber correctly, I changed it because I thought your borther was giving me the bike." },
-            { "words": "I see that you are in a hurry though so I dont mind giving the key code. I beleive it is just my birthdate. I was born on the 28th February 1997."},
-            { "words": "However my memory isnt great so i dont remember if I used the day or the month for the first two digits, I wrote a pamphlet somewhere so i could remeber the code. Try go looking for that."},
-             { "words": "Cool that should be everyone better get going. If you are still struggling just come and ask me."}
+            { "words": "If I can remember correctly, I changed it because I thought your brother was giving me the bike." },
+            { "words": "I see that you are in a hurry though so I dont mind giving the key code. I believe it is just my birthdate. I was born on the 28th February 1997."},
+            { "words": "However my memory isn't great so i dont remember if I used the day or the month for the first two digits, I wrote a pamphlet somewhere so i could remember the code. Try go looking for that."},
+             { "words": "Cool, that should be everything better get going. If you are still struggling just come and ask me."}
           ]
          },
          {
@@ -169,10 +169,10 @@
          {
           "id": "3",
           "Text": [
-            { "words": "Waht do you want kid, Ah I see thank you very much(Takes Money giving from school childs brother). I'm guessing you are heading school, well there's a problem with my taxi." },
-            { "words": "My brake has been damaged from the last trip and I have the new parts to fix it, just need the car lifted." },
+            { "words": "What do you want kid, Ah I see thank you very much(takes money). I'm guessing you are heading to school, well there's a problem with my taxi." },
+            { "words": "My brake has been damaged from the last trip and I have the new parts to fix it, I just need the car to be lifted." },
             { "words": "However some kids like yourself stole my car jack and i have no idea where it's located" },
-            { "words": "Please can you find it if you can. If you do find it please bring it to me as soon as possible. I will take you to school first thing." }
+            { "words": "Please can you find it and bring it to me as soon as possible? I will take you to school first thing." }
           ]
          },
          {
