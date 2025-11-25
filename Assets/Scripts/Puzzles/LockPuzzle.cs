@@ -81,6 +81,7 @@ public class LockPuzzle : MonoBehaviour
 
     void ShowBox()
     {
+        player.StopMoving();
         displayed = true;
         player.enabled = false;
         CameraChangeEvent cam2 = new CameraChangeEvent(changedIndex, 0f);

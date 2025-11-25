@@ -146,6 +146,7 @@ public class CarJackPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, I
 
     void ShowBox()
     {
+        player.StopMoving();
         displayed = true;
         player.enabled = false;
         CameraChangeEvent cam2 = new CameraChangeEvent(changedIndex, 0f);

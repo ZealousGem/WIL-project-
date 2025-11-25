@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
 
     [HideInInspector]
 
-    public bool isNotMoving = false;
+
 
  [SerializeField] ParticleSystem clickEffect;
 
@@ -50,7 +50,11 @@ public class PlayerController : MonoBehaviour
 
     }
 
-
+    public void StopMoving()
+    {
+        agent.isStopped = true;
+        agent.speed = 0;
+    }
 
     void Start()
     {
