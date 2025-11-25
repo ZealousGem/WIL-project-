@@ -319,7 +319,7 @@ public class DialogueSystem : MonoBehaviour
             EventBus.Act(ending);
 
             
-            //   tree = null;
+            
         }
     }
 
@@ -361,7 +361,7 @@ public class DialogueSystem : MonoBehaviour
             Debug.Log("tree is null");
         }
      
-       // inNextId 
+       
     }
 
 }

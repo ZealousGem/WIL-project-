@@ -107,9 +107,9 @@ public class GameManager : MonoBehaviour
 
     public void GameOver(string reason)
     {
-        //playerStats.isGameOver = true;
+        
         Debug.Log("Game Over: " + reason);
-        // Load end screen or show UI
+        
     }
 
 

@@ -77,7 +77,7 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
     {
         if (data.puzzle != this)
         {
-            return; // Ignore the event if it's not meant for this puzzle instance
+            return; 
         }
         additem(data.go, data.go2);
     }
@@ -147,8 +147,7 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
 
         if (counter == requiredCounter)
         {
-            // solved puzzle
-            //   Debug.Log("solved puzzle");
+           
             HideBox();
             PuzzleCompleted = true;
             Interact.SetActive(false);
@@ -159,9 +158,7 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
             {
              SoundManager.Instance.PlaySound("tutorial");
             }
-           // Debug.Log(pointer);
-            // ChangeDialogueState change = new ChangeDialogueState(DialougeChange.TutorialPuzzle, 1);
-            // EventBus.Act(change);
+          
         }
 
         else

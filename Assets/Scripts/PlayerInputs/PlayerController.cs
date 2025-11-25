@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        // cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        
         animator = GetComponentInChildren<Animator>();
         agent.updateRotation = false;
         ignoredLayerMask = ~LayerMask.GetMask("NPC & Doors");
@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
 
         currentSpeed = agent.velocity.magnitude;
         animator.SetFloat("Speed", currentSpeed);
-       // Debug.Log(currentSpeed);
+     
 
     }
 
@@ -113,7 +113,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             agent.speed = agentSpeed;
-            // cam = Camera.main;
+         
             Ray raycast = cam.ScreenPointToRay(Input.mousePosition);
 
             if (Physics.Raycast(raycast, out RaycastHit hit, Mathf.Infinity, ignoredLayerMask))
@@ -127,7 +127,7 @@ public class PlayerController : MonoBehaviour
                     {
 
                         agent.destination = hitted.position;
-                        // Debug.Log(hitted.position);
+                     
                         agent.isStopped = false;
                         agent.stoppingDistance = 0.1f;
                         if (clickEffect != null)
@@ -143,30 +143,30 @@ public class PlayerController : MonoBehaviour
 
 
 
-                    //  gameObject.transform.LookAt(movepls);
+                    
                 }
             }
         }
 
-        //   agent.isStopped = ReachedDestination;
+       
 
     }
 
     void Rotate()
     {
-        // Only rotate if the agent has a path and is not at the destination
+        
         if (agent.velocity.magnitude > movementThreshold)
         {
-            // Get the direction to the next steering point
+            
             Vector3 direction = agent.steeringTarget - transform.position;
-            direction.y = 0; // Keep rotation on the horizontal plane
+            direction.y = 0; 
 
             if (direction != Vector3.zero)
             {
-                // Calculate the rotation needed to look at the steering target
+                
                 Quaternion targetRotation = Quaternion.LookRotation(direction);
-              //  Debug.Log(direction);
-                // Smoothly rotate the character towards that direction
+            
+               
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
             }
         }

@@ -29,8 +29,7 @@ public class ChoiceDialogueState : BaseCharacterState
 
     public override void ChangeState(string name)
     {
-      //  Debug.Log("changing state D");
-       // OnDisable();
+      
         RepeatDialogueState repeatDialogue = new RepeatDialogueState();
         ChangeStateEvent newState = new ChangeStateEvent(repeatDialogue, name);
         EventBus.Act(newState);
@@ -40,7 +39,7 @@ public class ChoiceDialogueState : BaseCharacterState
 
     public override void EnterState(string name, int curIndex)
     {
-        // throw new System.NotImplementedException();
+      
         
         DialogueEvent setDialogue = new DialogueEvent(name, curIndex);
         EventBus.Act(setDialogue);
@@ -60,17 +59,16 @@ public class RepeatDialogueState : BaseCharacterState
 {
     public override void ChangeState(string name)
     {
-        // throw new System.NotImplementedException();
-       // Debug.Log("changing state");
+        
     }
 
 
     public override void EnterState(string name, int curIndex)
     {
-        // throw new System.NotImplementedException();
+        ;
         DialogueEvent setDialogue = new DialogueEvent(name, curIndex);
         EventBus.Act(setDialogue);
-     //   Debug.Log("entering state");
+     
     }
 }
 

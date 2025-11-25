@@ -220,14 +220,14 @@ public class CarJackPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, I
                 if (addedItems[i].color == Color.white && ob == addedItems[i].gameObject && ob != addedItems[2].gameObject)
                 {
                     it = addedItems[i].transform.position;
-                    //   Debug.Log("clicked");
+                    
                     tempItemPrefab = ob.GetComponent<Image>();
                     tempItemPrefab.raycastTarget = false;
 
-                    cam = Camera.main; // Or use mainCam if you know it's the right one
+                    cam = Camera.main; 
                     draggedPlane = new Plane(cam.transform.forward, it);
 
-                    // Calculate the offset so the item doesn't jump to the mouse's center
+                   
                     Ray ray = cam.ScreenPointToRay(eventData.position);
                     float distance;
                     if (draggedPlane.Raycast(ray, out distance))
@@ -244,7 +244,7 @@ public class CarJackPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, I
 
     public void OnDrag(PointerEventData eventData)
     {
-        // throw new System.NotImplementedException();
+        
         if (tempItemPrefab != null)
         {
             Ray ray = cam.ScreenPointToRay(eventData.position);
@@ -268,7 +268,7 @@ public class CarJackPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, I
 
 
         GameObject dropTarget = eventData.pointerCurrentRaycast.gameObject;
-        // -----------------------------------------------------------------
+        
 
 
         if (dropTarget != null)
@@ -293,12 +293,11 @@ public class CarJackPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, I
               
                 CheckIfCorrect();
 
-                // Debug.Log("Item dropped on world-space inventory!");
+               
             }
         }
 
-        // Always return the dragged item to its original position
-        // and reset the raycast target property and prefab variable
+        
         tempItemPrefab.transform.position = it;
         tempItemPrefab.raycastTarget = true;
         tempItemPrefab = null;
@@ -321,7 +320,7 @@ public class CarJackPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, I
          PuzzleCompleted = true;
         TakeButton.SetActive(false);
          player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-      //  Game = GameObject.FindGameObjectWithTag("Pointer").GetComponent<GameManager>();
+      
         Interact.SetActive(false);
         for (int i = 0; i < addedItems.Count; i++)
         {

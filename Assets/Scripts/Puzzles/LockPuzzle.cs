@@ -87,7 +87,7 @@ public class LockPuzzle : MonoBehaviour
         CameraChangeEvent cam2 = new CameraChangeEvent(changedIndex, 0f);
         EventBus.Act(cam2);
      
-       // draggedPlane = new Plane(cam.transform.forward, transform.position);
+      
         CheckNum();
 
     }
@@ -135,7 +135,7 @@ public class LockPuzzle : MonoBehaviour
         }
         if (num[0] == correctNum[0] && num[1] == correctNum[1] && num[2] == correctNum[2] && num[3] == correctNum[3] && num.Count() >= 3)
         {
-           // StartCoroutine(ActivateSafe());
+      
            gate.Open(player.transform.position);
            HideBox();
            PointerEvent pointer = new PointerEvent(PointerArrowTypes.Arrow4, false);

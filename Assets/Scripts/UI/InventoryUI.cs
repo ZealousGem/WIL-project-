@@ -282,7 +282,7 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
         {
 
-            //showItem();
+            
             if (SoundManager.Instance != null && Time.timeScale != 0f)
             {
                 SoundManager.Instance.PlaySound("arrow");
@@ -460,7 +460,7 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
     {
 
-        //throw new System.NotImplementedException();
+        
 
         if (eventData.button == PointerEventData.InputButton.Left && inPuzzle)
 
@@ -469,7 +469,7 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
             GameObject ob = eventData.pointerCurrentRaycast.gameObject;
 
 
-            //  List<GameObject> tempIamge = new List<GameObject>();
+            
 
 
             for (int i = 0; i < InvUI.Count; i++)
@@ -480,7 +480,7 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
                 {
 
-                    // tempIamge.Add(item[i].gameObject);
+                    
 
                     tempItemPrefab = ob.GetComponent<Image>();
 
@@ -508,7 +508,7 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
     {
 
-        // throw new System.NotImplementedException();
+        
 
         if (tempItemPrefab != null)
 
@@ -537,12 +537,12 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
         }
 
 
-        // Check for a UI element in the screen space canvas first
+       
 
         GameObject ob = eventData.pointerCurrentRaycast.gameObject;
 
 
-        // If no UI element was hit, try a raycast into the 3D world
+       
 
         if (ob == null)
 
@@ -563,13 +563,13 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
         }
 
 
-        // Now, check if the found object (either from UI or world raycast) is a valid inventory slot
+        
 
         if (ob != null)
 
         {
 
-            // Use a null check and then CompareTag to be safe
+            
 
             if (ob.CompareTag("Inventory") && ob.GetComponent<Image>() != null)
 
@@ -588,7 +588,7 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
                 }
               
 
-                // You can now proceed with your swap logic here
+                
 
             }
 
@@ -611,7 +611,7 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
         }
 
 
-        // Always return the item to its original position regardless of drop success
+        
 
         tempItemPrefab.transform.position = it;
 
@@ -629,7 +629,7 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
                 {
 
-//                    Debug.Log("Found a valid inventory slot in world space!" + ob.gameObject.name);
+
 
                     CarJackEvent puzzle = new CarJackEvent(tempItemPrefab, hitImage, targetPuzzle);
 
@@ -691,7 +691,7 @@ public class InventoryUI : MonoBehaviour, IPointerDownHandler, IDragHandler, IPo
 
                 {
 
-//                    Debug.Log("Found a valid inventory slot in world space!" + ob.gameObject.name);
+
 
                     PuzzleEvent puzzle = new PuzzleEvent(tempItemPrefab, hitImage, targetPuzzle);
 
