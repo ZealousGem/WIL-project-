@@ -23,6 +23,10 @@ public class PlayerController : MonoBehaviour
 
     public float movementThreshold = 0.1f;
 
+    [HideInInspector]
+
+    public bool isNotMoving = false;
+
  [SerializeField] ParticleSystem clickEffect;
 
     float currentSpeed = 0;
@@ -60,9 +64,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Movement();
-        AnimateCharacter();
-        Rotate();
+        
+          Movement();
+          AnimateCharacter();
+          Rotate();   
+        
 
 
     }
@@ -79,6 +85,9 @@ public class PlayerController : MonoBehaviour
 
     void Movement()
     {
+
+        
+
         if (agent.remainingDistance <= agent.stoppingDistance && !agent.pathPending)
         {
 

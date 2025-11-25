@@ -200,6 +200,7 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
     void ShowBox()
     {
         displayed = true;
+        player.isNotMoving = true;
         player.enabled = false;
         CameraChangeEvent cam2 = new CameraChangeEvent(changedIndex, 0f);
         EventBus.Act(cam2);
@@ -217,8 +218,11 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
     {
         displayed = false;
         player.enabled = true;
+        player.isNotMoving = false;
         CameraChangeEvent cam = new CameraChangeEvent(index, 0f);
         EventBus.Act(cam);
+        inBox2 = false;
+        Interact.SetActive(false);
         InventoryUI.inPuzzle = false;
 
 
@@ -231,7 +235,6 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
             if (other.CompareTag("Player"))
             {
                 Interact.SetActive(true);
-
                 inBox2 = true;
             }
         }
@@ -241,11 +244,13 @@ public class TutorialPuzzle : MonoBehaviour, IPointerDownHandler, IDragHandler, 
     void OnTriggerExit(Collider other)
     {
 
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && player.isNotMoving == false)
         {
             Interact.SetActive(false);
             inBox2 = false;
         }
+
+        
     }
 
     public void OnPointerDown(PointerEventData eventData)
